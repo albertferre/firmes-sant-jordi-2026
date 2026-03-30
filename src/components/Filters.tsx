@@ -1,46 +1,50 @@
+import type { TimeSlot } from '../hooks/useFilters';
+import { useI18n } from '../i18n/I18nContext';
+
 interface FiltersProps {
-  ubicacions: string[];
-  ubicacionFilter: string;
-  onUbicacioChange: (val: string) => void;
-  franjes: { label: string }[];
-  franjaFilter: string;
-  onFranjaChange: (val: string) => void;
+  locations: string[];
+  locationFilter: string;
+  onLocationChange: (val: string) => void;
+  timeSlots: TimeSlot[];
+  timeSlotFilter: string;
+  onTimeSlotChange: (val: string) => void;
 }
 
 export function Filters({
-  ubicacions,
-  ubicacionFilter,
-  onUbicacioChange,
-  franjes,
-  franjaFilter,
-  onFranjaChange,
+  locations,
+  locationFilter,
+  onLocationChange,
+  timeSlots,
+  timeSlotFilter,
+  onTimeSlotChange,
 }: FiltersProps) {
+  const { t } = useI18n();
   const selectClass =
     'px-3 py-2 rounded-lg border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-rosa focus:border-transparent';
 
   return (
     <div className="flex flex-wrap gap-3">
       <select
-        value={ubicacionFilter}
-        onChange={(e) => onUbicacioChange(e.target.value)}
+        value={locationFilter}
+        onChange={(e) => onLocationChange(e.target.value)}
         className={selectClass}
       >
-        <option value="">Totes les ubicacions</option>
-        {ubicacions.map((u) => (
-          <option key={u} value={u}>
-            {u}
+        <option value="">{t('allLocations')}</option>
+        {locations.map((loc) => (
+          <option key={loc} value={loc}>
+            {loc}
           </option>
         ))}
       </select>
       <select
-        value={franjaFilter}
-        onChange={(e) => onFranjaChange(e.target.value)}
+        value={timeSlotFilter}
+        onChange={(e) => onTimeSlotChange(e.target.value)}
         className={selectClass}
       >
-        <option value="">Totes les hores</option>
-        {franjes.map((f) => (
-          <option key={f.label} value={f.label}>
-            {f.label}
+        <option value="">{t('allTimes')}</option>
+        {timeSlots.map((slot) => (
+          <option key={slot.id} value={slot.id}>
+            {slot.label}
           </option>
         ))}
       </select>

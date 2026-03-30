@@ -1,48 +1,52 @@
 # Firmes Sant Jordi 2026
 
-## Descripció del projecte
+## Project description
 
-WebApp per consultar les firmes de llibres de Sant Jordi 2026 a Barcelona.
-Permet veure quin autor firma, quin llibre presenta, on i a quina hora.
+Web app to browse book signing events for Sant Jordi 2026 in Barcelona.
+Shows which author signs, what book, where and at what time.
 
-## Stack tecnològic
+## Tech stack
 
-- **Frontend**: React 18 + Vite + TypeScript
-- **Estilos**: Tailwind CSS 3
-- **Mapa**: Leaflet + OpenStreetMap (gratuït)
-- **Dades**: JSON estàtic (`src/data/firmes.json`)
-- **Desplegament**: GitHub Pages / Vercel
+- **Frontend**: React + Vite + TypeScript
+- **Styles**: Tailwind CSS 4
+- **Map**: Leaflet + OpenStreetMap
+- **Data**: Static JSON (`src/data/signings.json`)
+- **i18n**: Catalan (default) + Spanish, via React Context
+- **Deployment**: Vercel
 
-## Comandes
+## Commands
 
 ```bash
-npm install          # Instal·lar dependències
-npm run dev          # Servidor de desenvolupament (port 5173)
-npm run build        # Build de producció
-npm run preview      # Preview del build
+npm install          # Install dependencies
+npm run dev          # Dev server (port 5173)
+npm run build        # Production build
+npm run preview      # Preview production build
 ```
 
-## Estructura del projecte
+## Project structure
 
 ```
 src/
-├── components/      # Components React (Header, FirmaCard, FirmaList, Filters, MapView, SearchBar)
-├── data/            # JSON amb les dades de firmes
-├── types/           # Tipus TypeScript
+├── components/      # React components (Header, SigningCard, SigningList, Filters, MapView, SearchBar)
+├── data/            # Signing data JSON
+├── i18n/            # Translations and I18nContext
+├── types/           # TypeScript types
 ├── hooks/           # Custom hooks (useFilters)
-├── App.tsx          # Component principal
+├── App.tsx          # Main component
 ├── main.tsx         # Entry point
-└── index.css        # Estilos globals + Tailwind
+└── index.css        # Global styles + Tailwind
 ```
 
-## Model de dades
+## Data model
 
-Cada firma té: `id`, `autor`, `libro`, `editorial`, `ubicacion`, `direccion`, `coordenadas` (lat/lng), `horaInicio`, `horaFin`, `imagen` (opcional).
+Each signing has: `id`, `author`, `book`, `publisher`, `location`, `address`, `coordinates` (lat/lng), `startTime`, `endTime`, `image` (optional).
 
-## Convencions
+## Conventions
 
-- Codi en TypeScript estricte
-- Components funcionals amb hooks
+- All code in English
+- UI text in Catalan (default) and Spanish via i18n
+- Strict TypeScript
+- Functional components with hooks
 - Mobile-first responsive design
-- Noms de components en PascalCase
-- Noms de hooks amb prefix `use`
+- Component names in PascalCase
+- Hook names prefixed with `use`

@@ -1,56 +1,72 @@
 import { useState, useMemo } from 'react';
-import type { Firma } from '../types';
+import type { Signing } from '../types';
+import { useI18n } from '../i18n/I18nContext';
 
-export function useFilters(firmes: Firma[]) {
+export interface TimeSlot {
+  id: string;
+  label: string;
+  start: string;
+  end: string;
+}
+
+const TIME_SLOT_RANGES = [
+  { id: 'morning', start: '09:00', end: '13:00' },
+  { id: 'midday', start: '13:00', end: '16:00' },
+  { id: 'afternoon', start: '16:00', end: '20:00' },
+] as const;
+
+export function useFilters(signings: Signing[]) {
+  const { t } = useI18n();
   const [searchText, setSearchText] = useState('');
-  const [ubicacionFilter, setUbicacionFilter] = useState('');
-  const [franjaFilter, setFranjaFilter] = useState('');
+  const [locationFilter, setLocationFilter] = useState('');
+  const [timeSlotFilter, setTimeSlotFilter] = useState('');
 
-  const ubicacions = useMemo(() => {
-    const set = new Set(firmes.map((f) => f.ubicacion));
+  const locations = useMemo(() => {
+    const set = new Set(signings.map((s) => s.location));
     return Array.from(set).sort();
-  }, [firmes]);
+  }, [signings]);
 
-  const franjes = useMemo(
-    () => [
-      { label: 'Matí (9-13h)', start: '09:00', end: '13:00' },
-      { label: 'Migdia (13-16h)', start: '13:00', end: '16:00' },
-      { label: 'Tarda (16-20h)', start: '16:00', end: '20:00' },
-    ],
-    [],
+  const timeSlots: TimeSlot[] = useMemo(
+    () =>
+      TIME_SLOT_RANGES.map((slot) => ({
+        ...slot,
+        label: t(slot.id),
+      })),
+    [t],
   );
 
   const filtered = useMemo(() => {
-    return firmes.filter((f) => {
+    return signings.filter((s) => {
+      const query = searchText.toLowerCase();
       const matchesSearch =
         !searchText ||
-        f.autor.toLowerCase().includes(searchText.toLowerCase()) ||
-        f.libro.toLowerCase().includes(searchText.toLowerCase()) ||
-        f.editorial.toLowerCase().includes(searchText.toLowerCase());
+        s.author.toLowerCase().includes(query) ||
+        s.book.toLowerCase().includes(query) ||
+        s.publisher.toLowerCase().includes(query);
 
-      const matchesUbicacio = !ubicacionFilter || f.ubicacion === ubicacionFilter;
+      const matchesLocation = !locationFilter || s.location === locationFilter;
 
-      const matchesFranja =
-        !franjaFilter ||
+      const matchesTimeSlot =
+        !timeSlotFilter ||
         (() => {
-          const franja = franjes.find((fr) => fr.label === franjaFilter);
-          if (!franja) return true;
-          return f.horaInicio >= franja.start && f.horaInicio < franja.end;
+          const slot = TIME_SLOT_RANGES.find((ts) => ts.id === timeSlotFilter);
+          if (!slot) return true;
+          return s.startTime >= slot.start && s.startTime < slot.end;
         })();
 
-      return matchesSearch && matchesUbicacio && matchesFranja;
+      return matchesSearch && matchesLocation && matchesTimeSlot;
     });
-  }, [firmes, searchText, ubicacionFilter, franjaFilter, franjes]);
+  }, [signings, searchText, locationFilter, timeSlotFilter]);
 
   return {
     searchText,
     setSearchText,
-    ubicacionFilter,
-    setUbicacionFilter,
-    franjaFilter,
-    setFranjaFilter,
-    ubicacions,
-    franjes,
+    locationFilter,
+    setLocationFilter,
+    timeSlotFilter,
+    setTimeSlotFilter,
+    locations,
+    timeSlots,
     filtered,
   };
 }

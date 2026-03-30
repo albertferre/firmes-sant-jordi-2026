@@ -1,0 +1,134 @@
+[
+  {
+    "id": "1",
+    "author": "Irene Solà",
+    "book": "Canto jo i la muntanya balla",
+    "publisher": "Anagrama",
+    "location": "La Central del Raval",
+    "address": "Carrer d'Elisabets, 6",
+    "coordinates": { "lat": 41.3825, "lng": 2.1700 },
+    "startTime": "10:00",
+    "endTime": "11:30"
+  },
+  {
+    "id": "2",
+    "author": "Jaume Cabré",
+    "book": "Jo confesso",
+    "publisher": "Proa",
+    "location": "Llibreria Catalònia",
+    "address": "Ronda de Sant Pere, 3",
+    "coordinates": { "lat": 41.3893, "lng": 2.1730 },
+    "startTime": "11:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "3",
+    "author": "Care Santos",
+    "book": "Mitja vida",
+    "publisher": "Edicions 62",
+    "location": "Casa del Llibre - Passeig de Gràcia",
+    "address": "Passeig de Gràcia, 62",
+    "coordinates": { "lat": 41.3945, "lng": 2.1640 },
+    "startTime": "12:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "4",
+    "author": "Albert Espinosa",
+    "book": "Si tu em dius vine ho deixo tot... però digue'm vine",
+    "publisher": "Rosa dels Vents",
+    "location": "FNAC Triangle",
+    "address": "Plaça de Catalunya, 4",
+    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
+    "startTime": "10:30",
+    "endTime": "12:00"
+  },
+  {
+    "id": "5",
+    "author": "Maria Barbal",
+    "book": "Pedra de tartera",
+    "publisher": "Columna",
+    "location": "La Setmana del Llibre en Català",
+    "address": "Avinguda de la Catedral, s/n",
+    "coordinates": { "lat": 41.3841, "lng": 2.1764 },
+    "startTime": "16:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "6",
+    "author": "Raül Garrigasait",
+    "book": "Els estranys",
+    "publisher": "L'Altra Editorial",
+    "location": "Llibreria Laie",
+    "address": "Carrer de Pau Claris, 85",
+    "coordinates": { "lat": 41.3920, "lng": 2.1690 },
+    "startTime": "17:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "7",
+    "author": "Víctor García Tur",
+    "book": "Les mans petites",
+    "publisher": "Proa",
+    "location": "Parada Rambla Catalunya",
+    "address": "Rambla de Catalunya, 40",
+    "coordinates": { "lat": 41.3895, "lng": 2.1630 },
+    "startTime": "11:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "8",
+    "author": "Najat El Hachmi",
+    "book": "El lunes nos querrán",
+    "publisher": "Destino",
+    "location": "Llibreria Alibri",
+    "address": "Carrer de Balmes, 26",
+    "coordinates": { "lat": 41.3880, "lng": 2.1610 },
+    "startTime": "13:00",
+    "endTime": "14:30"
+  },
+  {
+    "id": "9",
+    "author": "Toni Cruanyes",
+    "book": "Llavors tot va satisfer",
+    "publisher": "Columna",
+    "location": "El Corte Inglés - Portal de l'Àngel",
+    "address": "Portal de l'Àngel, 19-21",
+    "coordinates": { "lat": 41.3862, "lng": 2.1740 },
+    "startTime": "18:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "10",
+    "author": "Eva Baltasar",
+    "book": "Boulder",
+    "publisher": "Club Editor",
+    "location": "Llibreria Nollegiu",
+    "address": "Carrer de Méndez Núñez, 1",
+    "coordinates": { "lat": 41.3840, "lng": 2.1830 },
+    "startTime": "12:00",
+    "endTime": "13:30"
+  },
+  {
+    "id": "11",
+    "author": "Llucia Ramis",
+    "book": "Tot allò que una tarda morí amb les bicicletes",
+    "publisher": "Anagrama",
+    "location": "La Central del Raval",
+    "address": "Carrer d'Elisabets, 6",
+    "coordinates": { "lat": 41.3825, "lng": 2.1700 },
+    "startTime": "16:00",
+    "endTime": "17:30"
+  },
+  {
+    "id": "12",
+    "author": "Jordi Puntí",
+    "book": "Els castellans",
+    "publisher": "Empúries",
+    "location": "Parada Rambla Catalunya",
+    "address": "Rambla de Catalunya, 40",
+    "coordinates": { "lat": 41.3895, "lng": 2.1630 },
+    "startTime": "17:00",
+    "endTime": "19:00"
+  }
+]

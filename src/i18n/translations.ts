@@ -1,0 +1,36 @@
+export const translations = {
+  ca: {
+    title: 'Firmes Sant Jordi 2026',
+    subtitle: "Barcelona \u00b7 23 d'abril",
+    signings: 'firmes',
+    of: 'de',
+    list: 'Llista',
+    map: 'Mapa',
+    searchPlaceholder: 'Cerca autor, llibre o editorial...',
+    allLocations: 'Totes les ubicacions',
+    allTimes: 'Totes les hores',
+    morning: 'Mat\u00ed (9-13h)',
+    midday: 'Migdia (13-16h)',
+    afternoon: 'Tarda (16-20h)',
+    noResults: "No s'han trobat firmes",
+    noResultsHint: 'Prova a canviar els filtres de cerca',
+  },
+  es: {
+    title: 'Firmas Sant Jordi 2026',
+    subtitle: 'Barcelona \u00b7 23 de abril',
+    signings: 'firmas',
+    of: 'de',
+    list: 'Lista',
+    map: 'Mapa',
+    searchPlaceholder: 'Busca autor, libro o editorial...',
+    allLocations: 'Todas las ubicaciones',
+    allTimes: 'Todas las horas',
+    morning: 'Ma\u00f1ana (9-13h)',
+    midday: 'Mediod\u00eda (13-16h)',
+    afternoon: 'Tarde (16-20h)',
+    noResults: 'No se han encontrado firmas',
+    noResultsHint: 'Prueba a cambiar los filtros de b\u00fasqueda',
+  },
+} as const;
+
+export type TranslationKey = keyof (typeof translations)['ca'];
