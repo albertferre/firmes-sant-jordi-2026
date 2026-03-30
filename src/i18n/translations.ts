@@ -20,6 +20,8 @@ export const translations = {
     share: 'Compartir',
     shareText: 'Firma de {author} a {location} ({time})',
     install: "Instal\u00b7lar l'app",
+    tbaTime: 'Horari per confirmar',
+    tbaLocation: 'Ubicaci\u00f3 per confirmar',
   },
   es: {
     title: 'Firmas Sant Jordi 2026',
@@ -42,6 +44,8 @@ export const translations = {
     share: 'Compartir',
     shareText: 'Firma de {author} en {location} ({time})',
     install: 'Instalar la app',
+    tbaTime: 'Horario por confirmar',
+    tbaLocation: 'Ubicaci\u00f3n por confirmar',
   },
 } as const;
 

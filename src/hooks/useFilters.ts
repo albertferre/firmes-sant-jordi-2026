@@ -51,6 +51,7 @@ export function useFilters(signings: Signing[]) {
         (() => {
           const slot = TIME_SLOT_RANGES.find((ts) => ts.id === timeSlotFilter);
           if (!slot) return true;
+          if (!s.startTime) return false;
           return s.startTime >= slot.start && s.startTime < slot.end;
         })();
 
