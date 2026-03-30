@@ -10,6 +10,7 @@
 ## Fase 2: Data
 - [x] Define TypeScript types (Signing interface)
 - [x] Create JSON with sample signings (realistic Barcelona data)
+- [x] Replace with real confirmed data (CASA SEAT + Anagrama)
 
 ## Fase 3: UI Core
 - [x] Header component with Sant Jordi branding
@@ -37,6 +38,7 @@
 ## Fase 7: Deployment
 - [x] Configure Vercel (vercel.json)
 - [x] Deploy to Vercel
+- [x] Fix .npmrc for peer deps
 - [ ] Custom domain (optional)
 
 ## Fase 8: Favorites, Share & PWA
@@ -46,7 +48,25 @@
 - [x] PWA with vite-plugin-pwa (manifest, service worker, installable)
 - [x] PWA icons and theme color
 
+## Fase 9: Dark mode
+- [x] useDarkMode hook with system preference detection
+- [x] Sun/moon toggle in header
+- [x] Dark variants on all components
+- [x] Persisted in localStorage
+
+## Fase 10: SEO
+- [x] Open Graph and Twitter Card meta tags
+- [x] JSON-LD structured data (Event schema)
+- [x] robots.txt and sitemap.xml
+- [x] noscript fallback for crawlers
+
+## Fase 11: Real data
+- [x] 19 CASA SEAT signings with exact times
+- [x] 22 Anagrama authors (location/time TBA)
+- [x] Handle empty fields gracefully in UI
+- [ ] Update with Penguin/Planeta/FNAC/Abacus data (available ~April 13-18)
+- [ ] Monitor beteve.cat signing finder for aggregated data
+
 ## Future improvements (backlog)
 - [ ] Notifications (alert X minutes before a signing)
-- [ ] Dark mode
-- [ ] Real Sant Jordi 2026 data when available
+- [ ] Custom domain
