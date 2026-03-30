@@ -3,6 +3,7 @@ import type { ActiveView, Signing } from './types';
 import signingsData from './data/signings.json';
 import { useFilters } from './hooks/useFilters';
 import { useFavorites } from './hooks/useFavorites';
+import { useDarkMode } from './hooks/useDarkMode';
 import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import { Filters } from './components/Filters';
@@ -14,6 +15,7 @@ const signings: Signing[] = signingsData as Signing[];
 function App() {
   const [activeView, setActiveView] = useState<ActiveView>('list');
   const { favoriteIds, toggleFavorite, isFavorite } = useFavorites();
+  const { theme, toggleTheme } = useDarkMode();
   const {
     searchText,
     setSearchText,
@@ -34,13 +36,15 @@ function App() {
   const displayedSignings = activeView === 'favorites' ? favoriteSignings : filtered;
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-[#faf5f0] dark:bg-[#1a1a2e] transition-colors">
       <Header
         activeView={activeView}
         onViewChange={setActiveView}
         totalSignings={signings.length}
         filteredCount={filtered.length}
         favoritesCount={favoriteIds.size}
+        theme={theme}
+        onToggleTheme={toggleTheme}
       />
       <main className="max-w-5xl mx-auto px-4 py-5 space-y-4">
         {activeView !== 'favorites' && (

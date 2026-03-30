@@ -16,7 +16,7 @@ export function SigningList({ signings, isFavorite, onToggleFavorite, emptyState
     const title = emptyStateType === 'noFavorites' ? t('noFavorites') : t('noResults');
     const hint = emptyStateType === 'noFavorites' ? t('noFavoritesHint') : t('noResultsHint');
     return (
-      <div className="text-center py-12 text-gray-500">
+      <div className="text-center py-12 text-gray-500 dark:text-gray-400">
         <p className="text-lg">{title}</p>
         <p className="text-sm mt-1">{hint}</p>
       </div>

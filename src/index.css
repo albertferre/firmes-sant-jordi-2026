@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-rosa: #e8457c;
   --color-rosa-dark: #c93568;
@@ -13,6 +15,11 @@ body {
   background-color: #faf5f0;
   color: #2d3436;
   margin: 0;
+}
+
+.dark body {
+  background-color: #1a1a2e;
+  color: #e0e0e0;
 }
 
 .leaflet-container {
