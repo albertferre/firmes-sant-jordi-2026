@@ -515,5 +515,71 @@
     "coordinates": { "lat": 41.3874, "lng": 2.1686 },
     "startTime": "",
     "endTime": ""
+  },
+  {
+    "id": "eci-01",
+    "author": "Santiago Posteguillo",
+    "book": "",
+    "publisher": "Planeta",
+    "location": "El Corte Inglés - Plaça Catalunya",
+    "address": "Plaça de Catalunya, 14",
+    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
+    "startTime": "",
+    "endTime": ""
+  },
+  {
+    "id": "eci-02",
+    "author": "Pedro Baños",
+    "book": "",
+    "publisher": "",
+    "location": "El Corte Inglés - Plaça Catalunya",
+    "address": "Plaça de Catalunya, 14",
+    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
+    "startTime": "",
+    "endTime": ""
+  },
+  {
+    "id": "eci-03",
+    "author": "Defreds",
+    "book": "",
+    "publisher": "",
+    "location": "El Corte Inglés - Plaça Catalunya",
+    "address": "Plaça de Catalunya, 14",
+    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
+    "startTime": "",
+    "endTime": ""
+  },
+  {
+    "id": "eci-04",
+    "author": "Reyes Monforte",
+    "book": "",
+    "publisher": "",
+    "location": "El Corte Inglés - Plaça Catalunya",
+    "address": "Plaça de Catalunya, 14",
+    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
+    "startTime": "",
+    "endTime": ""
+  },
+  {
+    "id": "varios-01",
+    "author": "Dolores Redondo",
+    "book": "",
+    "publisher": "Planeta",
+    "location": "Per confirmar",
+    "address": "",
+    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "startTime": "",
+    "endTime": ""
+  },
+  {
+    "id": "varios-02",
+    "author": "Julia Navarro",
+    "book": "",
+    "publisher": "",
+    "location": "Per confirmar",
+    "address": "",
+    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "startTime": "",
+    "endTime": ""
   }
 ]
