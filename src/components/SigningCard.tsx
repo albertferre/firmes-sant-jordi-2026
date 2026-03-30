@@ -10,12 +10,15 @@ interface SigningCardProps {
 export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCardProps) {
   const { t } = useI18n();
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${signing.coordinates.lat},${signing.coordinates.lng}`;
+  const hasTime = signing.startTime && signing.endTime;
+  const hasLocation = signing.location && signing.location !== 'Per confirmar';
 
   const handleShare = () => {
+    const time = hasTime ? `${signing.startTime}-${signing.endTime}` : t('tbaTime');
     const text = t('shareText')
       .replace('{author}', signing.author)
-      .replace('{location}', signing.location)
-      .replace('{time}', `${signing.startTime}-${signing.endTime}`);
+      .replace('{location}', hasLocation ? signing.location : t('tbaLocation'))
+      .replace('{time}', time);
 
     if (navigator.share) {
       navigator.share({ text }).catch(() => {});
@@ -37,7 +40,7 @@ export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCa
           <div className="flex items-start justify-between gap-2">
             <div className="min-w-0">
               <h3 className="font-semibold text-gray-900 dark:text-gray-100 truncate">{signing.author}</h3>
-              <p className="text-sm text-rosa font-medium truncate">{signing.book}</p>
+              {signing.book && <p className="text-sm text-rosa font-medium truncate">{signing.book}</p>}
             </div>
             <div className="flex shrink-0 gap-1">
               <button
@@ -64,27 +67,37 @@ export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCa
               </button>
             </div>
           </div>
-          <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{signing.publisher}</p>
+          {signing.publisher && <p className="text-xs text-gray-500 dark:text-gray-400 mt-0.5">{signing.publisher}</p>}
 
           <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-gray-600 dark:text-gray-400">
             <span className="flex items-center gap-1">
               <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              {signing.startTime} - {signing.endTime}
+              {hasTime ? `${signing.startTime} - ${signing.endTime}` : t('tbaTime')}
             </span>
-            <a
-              href={mapsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-rosa transition-colors"
-            >
-              <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-              </svg>
-              {signing.location}
-            </a>
+            {hasLocation ? (
+              <a
+                href={mapsUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-1 text-gray-600 dark:text-gray-400 hover:text-rosa transition-colors"
+              >
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                {signing.location}
+              </a>
+            ) : (
+              <span className="flex items-center gap-1 italic">
+                <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                </svg>
+                {t('tbaLocation')}
+              </span>
+            )}
           </div>
         </div>
       </div>
