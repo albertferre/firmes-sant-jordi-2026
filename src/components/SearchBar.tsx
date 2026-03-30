@@ -1,9 +1,13 @@
+import { useI18n } from '../i18n/I18nContext';
+
 interface SearchBarProps {
   value: string;
   onChange: (value: string) => void;
 }
 
 export function SearchBar({ value, onChange }: SearchBarProps) {
+  const { t } = useI18n();
+
   return (
     <div className="relative">
       <svg
@@ -21,7 +25,7 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
       </svg>
       <input
         type="text"
-        placeholder="Cerca autor, llibre o editorial..."
+        placeholder={t('searchPlaceholder')}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-200 bg-white text-sm focus:outline-none focus:ring-2 focus:ring-rosa focus:border-transparent"

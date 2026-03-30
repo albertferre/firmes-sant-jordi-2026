@@ -1,14 +1,16 @@
-export interface Firma {
+export interface Signing {
   id: string;
-  autor: string;
-  libro: string;
-  editorial: string;
-  ubicacion: string;
-  direccion: string;
-  coordenadas: { lat: number; lng: number };
-  horaInicio: string;
-  horaFin: string;
-  imagen?: string;
+  author: string;
+  book: string;
+  publisher: string;
+  location: string;
+  address: string;
+  coordinates: { lat: number; lng: number };
+  startTime: string;
+  endTime: string;
+  image?: string;
 }
 
-export type VistaActiva = 'lista' | 'mapa';
+export type ActiveView = 'list' | 'map';
+
+export type Locale = 'ca' | 'es';

@@ -1,9 +1,8 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
-import type { Firma } from '../types';
+import type { Signing } from '../types';
 
-// Fix default marker icon issue with bundlers
 const defaultIcon = L.icon({
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
@@ -17,10 +16,10 @@ const defaultIcon = L.icon({
 L.Marker.prototype.options.icon = defaultIcon;
 
 interface MapViewProps {
-  firmes: Firma[];
+  signings: Signing[];
 }
 
-export function MapView({ firmes }: MapViewProps) {
+export function MapView({ signings }: MapViewProps) {
   const center: [number, number] = [41.3874, 2.1686];
 
   return (
@@ -30,20 +29,20 @@ export function MapView({ firmes }: MapViewProps) {
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
-        {firmes.map((firma) => (
+        {signings.map((signing) => (
           <Marker
-            key={firma.id}
-            position={[firma.coordenadas.lat, firma.coordenadas.lng]}
+            key={signing.id}
+            position={[signing.coordinates.lat, signing.coordinates.lng]}
           >
             <Popup>
               <div className="text-sm">
-                <p className="font-bold">{firma.autor}</p>
-                <p className="text-rosa">{firma.libro}</p>
-                <p className="text-gray-500 text-xs">{firma.editorial}</p>
+                <p className="font-bold">{signing.author}</p>
+                <p className="text-rosa">{signing.book}</p>
+                <p className="text-gray-500 text-xs">{signing.publisher}</p>
                 <p className="mt-1">
-                  {firma.horaInicio} - {firma.horaFin}
+                  {signing.startTime} - {signing.endTime}
                 </p>
-                <p className="text-xs text-gray-600">{firma.ubicacion}</p>
+                <p className="text-xs text-gray-600">{signing.location}</p>
               </div>
             </Popup>
           </Marker>

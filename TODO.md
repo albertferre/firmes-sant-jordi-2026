@@ -1,48 +1,48 @@
 # TODO - Firmes Sant Jordi 2026
 
 ## Fase 1: Setup inicial
-- [x] Crear CLAUDE.md amb la documentació del projecte
-- [x] Crear TODO.md amb el pla de tasques
-- [x] Setup projecte Vite + React + TypeScript
-- [x] Configurar Tailwind CSS
-- [x] Estructura de carpetes base
+- [x] Create CLAUDE.md with project docs
+- [x] Create TODO.md with task plan
+- [x] Setup Vite + React + TypeScript
+- [x] Configure Tailwind CSS
+- [x] Base folder structure
 
-## Fase 2: Dades
-- [x] Definir tipus TypeScript (interfície Firma)
-- [x] Crear JSON amb firmes d'exemple (dades realistes de Barcelona)
+## Fase 2: Data
+- [x] Define TypeScript types (Signing interface)
+- [x] Create JSON with sample signings (realistic Barcelona data)
 
 ## Fase 3: UI Core
-- [x] Component Header amb títol i branding Sant Jordi
-- [x] Component FirmaCard (targeta individual de firma)
-- [x] Component FirmaList (llista de firmes)
-- [x] Component SearchBar (cerca en temps real)
+- [x] Header component with Sant Jordi branding
+- [x] SigningCard component (individual signing card)
+- [x] SigningList component (signing list)
+- [x] SearchBar component (real-time search)
 
-## Fase 4: Filtres
-- [x] Filtre per autor
-- [x] Filtre per ubicació (llibreria/parada)
-- [x] Filtre per franja horària
-- [x] Hook useFilters per gestionar l'estat dels filtres
+## Fase 4: Filters
+- [x] Filter by author
+- [x] Filter by location (bookshop/stand)
+- [x] Filter by time slot
+- [x] useFilters hook for filter state management
 
-## Fase 5: Mapa
-- [x] Integrar Leaflet amb OpenStreetMap
-- [x] Component MapView amb marcadors de les ubicacions
-- [x] Popups amb info de la firma al clicar un marcador
-- [x] Toggle entre vista llista i vista mapa
+## Fase 5: Map
+- [x] Integrate Leaflet with OpenStreetMap
+- [x] MapView component with location markers
+- [x] Popups with signing info on marker click
+- [x] Toggle between list and map views
 
-## Fase 6: Polish
-- [x] Disseny responsive (mobile-first)
-- [x] Favicon i meta tags
-- [ ] Animacions i transicions
-- [ ] Testejar en mòbil
+## Fase 6: i18n & Code quality
+- [x] Refactor all code to English
+- [x] Add i18n support (Catalan default + Spanish)
+- [x] Language toggle in header
 
-## Fase 7: Desplegament
-- [ ] Configurar GitHub Pages o Vercel
-- [ ] Deploy inicial
+## Fase 7: Deployment
+- [x] Configure Vercel (vercel.json)
+- [ ] Deploy to Vercel
+- [ ] Custom domain (optional)
 
-## Futures millores (backlog)
-- [ ] Afegir favorits (guardar firmes preferides al localStorage)
-- [ ] Notificacions (avisar X minuts abans d'una firma)
-- [ ] Compartir una firma per WhatsApp/Telegram
-- [ ] Mode fosc
-- [ ] PWA (instal·lable al mòbil)
-- [ ] Dades reals de Sant Jordi 2026 quan estiguin disponibles
+## Future improvements (backlog)
+- [ ] Add favorites (save preferred signings to localStorage)
+- [ ] Notifications (alert X minutes before a signing)
+- [ ] Share a signing via WhatsApp/Telegram
+- [ ] Dark mode
+- [ ] PWA (installable on mobile)
+- [ ] Real Sant Jordi 2026 data when available
