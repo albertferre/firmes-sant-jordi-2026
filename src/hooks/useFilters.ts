@@ -3,10 +3,17 @@ import type { Signing } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 
 export interface TimeSlot {
+  id: string;
   label: string;
   start: string;
   end: string;
 }
+
+const TIME_SLOT_RANGES = [
+  { id: 'morning', start: '09:00', end: '13:00' },
+  { id: 'midday', start: '13:00', end: '16:00' },
+  { id: 'afternoon', start: '16:00', end: '20:00' },
+] as const;
 
 export function useFilters(signings: Signing[]) {
   const { t } = useI18n();
@@ -20,11 +27,11 @@ export function useFilters(signings: Signing[]) {
   }, [signings]);
 
   const timeSlots: TimeSlot[] = useMemo(
-    () => [
-      { label: t('morning'), start: '09:00', end: '13:00' },
-      { label: t('midday'), start: '13:00', end: '16:00' },
-      { label: t('afternoon'), start: '16:00', end: '20:00' },
-    ],
+    () =>
+      TIME_SLOT_RANGES.map((slot) => ({
+        ...slot,
+        label: t(slot.id),
+      })),
     [t],
   );
 
@@ -42,14 +49,14 @@ export function useFilters(signings: Signing[]) {
       const matchesTimeSlot =
         !timeSlotFilter ||
         (() => {
-          const slot = timeSlots.find((ts) => ts.label === timeSlotFilter);
+          const slot = TIME_SLOT_RANGES.find((ts) => ts.id === timeSlotFilter);
           if (!slot) return true;
           return s.startTime >= slot.start && s.startTime < slot.end;
         })();
 
       return matchesSearch && matchesLocation && matchesTimeSlot;
     });
-  }, [signings, searchText, locationFilter, timeSlotFilter, timeSlots]);
+  }, [signings, searchText, locationFilter, timeSlotFilter]);
 
   return {
     searchText,

@@ -43,7 +43,7 @@ export function Filters({
       >
         <option value="">{t('allTimes')}</option>
         {timeSlots.map((slot) => (
-          <option key={slot.label} value={slot.label}>
+          <option key={slot.id} value={slot.id}>
             {slot.label}
           </option>
         ))}
