@@ -1,11 +1,29 @@
 import type { Signing } from '../types';
+import { useI18n } from '../i18n/I18nContext';
 
 interface SigningCardProps {
   signing: Signing;
+  isFavorite: boolean;
+  onToggleFavorite: (id: string) => void;
 }
 
-export function SigningCard({ signing }: SigningCardProps) {
+export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCardProps) {
+  const { t } = useI18n();
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${signing.coordinates.lat},${signing.coordinates.lng}`;
+
+  const handleShare = () => {
+    const text = t('shareText')
+      .replace('{author}', signing.author)
+      .replace('{location}', signing.location)
+      .replace('{time}', `${signing.startTime}-${signing.endTime}`);
+
+    if (navigator.share) {
+      navigator.share({ text }).catch(() => {});
+    } else {
+      const waUrl = `https://wa.me/?text=${encodeURIComponent(text)}`;
+      window.open(waUrl, '_blank');
+    }
+  };
 
   return (
     <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-4 hover:shadow-md transition-shadow">
@@ -16,8 +34,36 @@ export function SigningCard({ signing }: SigningCardProps) {
           </span>
         </div>
         <div className="flex-1 min-w-0">
-          <h3 className="font-semibold text-gray-900 truncate">{signing.author}</h3>
-          <p className="text-sm text-rosa font-medium truncate">{signing.book}</p>
+          <div className="flex items-start justify-between gap-2">
+            <div className="min-w-0">
+              <h3 className="font-semibold text-gray-900 truncate">{signing.author}</h3>
+              <p className="text-sm text-rosa font-medium truncate">{signing.book}</p>
+            </div>
+            <div className="flex shrink-0 gap-1">
+              <button
+                onClick={handleShare}
+                className="p-1.5 rounded-md hover:bg-gray-100 transition-colors"
+                title={t('share')}
+              >
+                <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                </svg>
+              </button>
+              <button
+                onClick={() => onToggleFavorite(signing.id)}
+                className="p-1.5 rounded-md hover:bg-gray-100 transition-colors"
+              >
+                <svg
+                  className={`w-4 h-4 transition-colors ${isFavorite ? 'text-vermell fill-vermell' : 'text-gray-300'}`}
+                  fill={isFavorite ? 'currentColor' : 'none'}
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                </svg>
+              </button>
+            </div>
+          </div>
           <p className="text-xs text-gray-500 mt-0.5">{signing.publisher}</p>
 
           <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2 text-xs text-gray-600">

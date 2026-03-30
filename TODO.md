@@ -36,13 +36,17 @@
 
 ## Fase 7: Deployment
 - [x] Configure Vercel (vercel.json)
-- [ ] Deploy to Vercel
+- [x] Deploy to Vercel
 - [ ] Custom domain (optional)
 
+## Fase 8: Favorites, Share & PWA
+- [x] Add favorites with localStorage persistence
+- [x] Favorites view tab in header with heart icon and counter
+- [x] Share signing via Web Share API / WhatsApp fallback
+- [x] PWA with vite-plugin-pwa (manifest, service worker, installable)
+- [x] PWA icons and theme color
+
 ## Future improvements (backlog)
-- [ ] Add favorites (save preferred signings to localStorage)
 - [ ] Notifications (alert X minutes before a signing)
-- [ ] Share a signing via WhatsApp/Telegram
 - [ ] Dark mode
-- [ ] PWA (installable on mobile)
 - [ ] Real Sant Jordi 2026 data when available

@@ -11,6 +11,6 @@ export interface Signing {
   image?: string;
 }
 
-export type ActiveView = 'list' | 'map';
+export type ActiveView = 'list' | 'favorites' | 'map';
 
 export type Locale = 'ca' | 'es';
