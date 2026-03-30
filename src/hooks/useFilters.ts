@@ -11,11 +11,14 @@ export function useFilters(firmes: Firma[]) {
     return Array.from(set).sort();
   }, [firmes]);
 
-  const franjes = [
-    { label: 'Matí (9-13h)', start: '09:00', end: '13:00' },
-    { label: 'Migdia (13-16h)', start: '13:00', end: '16:00' },
-    { label: 'Tarda (16-20h)', start: '16:00', end: '20:00' },
-  ];
+  const franjes = useMemo(
+    () => [
+      { label: 'Matí (9-13h)', start: '09:00', end: '13:00' },
+      { label: 'Migdia (13-16h)', start: '13:00', end: '16:00' },
+      { label: 'Tarda (16-20h)', start: '16:00', end: '20:00' },
+    ],
+    [],
+  );
 
   const filtered = useMemo(() => {
     return firmes.filter((f) => {
@@ -37,7 +40,7 @@ export function useFilters(firmes: Firma[]) {
 
       return matchesSearch && matchesUbicacio && matchesFranja;
     });
-  }, [firmes, searchText, ubicacionFilter, franjaFilter]);
+  }, [firmes, searchText, ubicacionFilter, franjaFilter, franjes]);
 
   return {
     searchText,
