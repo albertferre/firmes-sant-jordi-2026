@@ -7,7 +7,7 @@ interface BottomNavProps {
   favoritesCount: number;
 }
 
-const tabs: { view: ActiveView; icon: string; labelKey: 'list' | 'map' | 'favorites' }[] = [
+const tabs: { view: 'list' | 'map' | 'favorites'; icon: string; labelKey: 'list' | 'map' | 'favorites' }[] = [
   { view: 'list', icon: 'explore', labelKey: 'list' },
   { view: 'map', icon: 'map', labelKey: 'map' },
   { view: 'favorites', icon: 'auto_stories', labelKey: 'favorites' },
