@@ -179,6 +179,7 @@ export function AuthorDetail({ author, authorName, signings, isFavorite, onToggl
                         <button
                           onClick={() => onToggleFavorite(signing.id)}
                           className="w-9 h-9 rounded-full flex items-center justify-center hover:bg-primary/5 transition-colors"
+                          aria-label={isFavorite(signing.id) ? t('removeFavorite') : t('addFavorite')}
                         >
                           <span className={`material-symbols-outlined text-base ${isFavorite(signing.id) ? 'filled text-primary' : 'text-outline'}`}>
                             favorite

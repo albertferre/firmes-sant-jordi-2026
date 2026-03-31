@@ -36,7 +36,9 @@ export function SigningCard({ signing, authorInfo, isFavorite, onToggleFavorite,
       <div
         className={`relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 ${onAuthorClick ? 'cursor-pointer' : ''} ${authorInfo?.photo ? '' : 'bg-primary/8 dark:bg-primary/15'}`}
         onClick={onAuthorClick ? () => onAuthorClick(signing.author) : undefined}
+        onKeyDown={onAuthorClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onAuthorClick(signing.author); } } : undefined}
         role={onAuthorClick ? 'button' : undefined}
+        tabIndex={onAuthorClick ? 0 : undefined}
       >
         {authorInfo?.photo ? (
           <img
@@ -57,7 +59,9 @@ export function SigningCard({ signing, authorInfo, isFavorite, onToggleFavorite,
         <h3
           className={`font-headline text-lg italic text-on-surface dark:text-surface-highest truncate leading-tight ${onAuthorClick ? 'cursor-pointer hover:text-primary transition-colors' : ''}`}
           onClick={onAuthorClick ? () => onAuthorClick(signing.author) : undefined}
+          onKeyDown={onAuthorClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onAuthorClick(signing.author); } } : undefined}
           role={onAuthorClick ? 'button' : undefined}
+          tabIndex={onAuthorClick ? 0 : undefined}
         >
           {signing.author}
         </h3>

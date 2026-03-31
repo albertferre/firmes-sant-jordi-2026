@@ -69,7 +69,7 @@ function App() {
       <div className="fixed inset-0 noise-overlay z-0" />
 
       {/* Bookmark ribbon - desktop only */}
-      <div className="hidden lg:block fixed top-0 left-12 w-8 h-32 z-[60] shadow-xl bookmark-ribbon" style={{ background: 'linear-gradient(to bottom, #b10528 0%, #b10528 55%, #1a6b5a 55%, #1a6b5a 100%)' }}>
+      <div className="hidden lg:block fixed top-0 left-12 w-8 h-32 z-[60] shadow-xl bookmark-ribbon" style={{ background: 'linear-gradient(to bottom, #b10528 0%, #b10528 55%, #1a6b5a 55%, #1a6b5a 100%)' }} aria-hidden="true">
         <div className="flex flex-col items-center pt-8 text-on-primary gap-4">
           <span className="material-symbols-outlined text-sm">local_florist</span>
           <div className="w-[1px] h-12 bg-on-primary/30" />
