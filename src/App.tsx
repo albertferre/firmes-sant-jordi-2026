@@ -81,6 +81,7 @@ function App() {
         onViewChange={handleViewChange}
         totalSignings={signings.length}
         filteredCount={filtered.length}
+        favoritesCount={favoriteIds.size}
         theme={theme}
         onToggleTheme={toggleTheme}
       />

@@ -1,13 +1,17 @@
+import type { ActiveView } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 
 interface HeaderProps {
+  activeView: ActiveView;
+  onViewChange: (view: ActiveView) => void;
   totalSignings: number;
   filteredCount: number;
+  favoritesCount: number;
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
 }
 
-export function Header({ totalSignings, filteredCount, theme, onToggleTheme }: HeaderProps) {
+export function Header({ activeView, onViewChange, totalSignings, filteredCount, favoritesCount, theme, onToggleTheme }: HeaderProps) {
   const { locale, setLocale, t } = useI18n();
 
   const navItems: { view: 'list' | 'map' | 'favorites'; label: string }[] = [
