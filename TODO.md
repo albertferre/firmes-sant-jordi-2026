@@ -64,8 +64,11 @@
 - [x] 19 CASA SEAT signings with exact times
 - [x] 22 Anagrama authors (location/time TBA)
 - [x] Handle empty fields gracefully in UI
-- [ ] Update with Penguin/Planeta/FNAC/Abacus data (available ~April 13-18)
-- [ ] Monitor beteve.cat signing finder for aggregated data
+- [x] Casa del Llibre signings (3 Barcelona locations, 135 signing slots with exact times)
+- [x] Data update procedure documented (DATA_UPDATE_PROCEDURE.md)
+- [x] El Corte Inglés + Ona Llibres data via beteve.cat Flourish (187 entries)
+- [ ] Update with Penguin/FNAC/Abacus data (available ~April 13-18)
+- [ ] Fill in book titles where missing
 
 ## Future improvements (backlog)
 - [ ] Notifications (alert X minutes before a signing)
