@@ -18,6 +18,7 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
       <input
         type="text"
         placeholder={t('searchPlaceholder')}
+        aria-label={t('searchPlaceholder')}
         value={value}
         onChange={(e) => onChange(e.target.value)}
         className="w-full bg-surface-lowest dark:bg-on-surface/10 border-none py-4 pl-12 pr-4 rounded-xl shadow-sm text-sm font-body text-on-surface dark:text-surface-highest placeholder:text-tertiary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"

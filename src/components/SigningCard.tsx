@@ -68,7 +68,8 @@ export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCa
               href={mapsUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1 text-xs font-body text-on-surface-variant hover:text-primary transition-colors truncate max-w-[200px]"
+              aria-label={`${signing.location} — ${t('openInMaps')}`}
+              className="flex items-center gap-1 text-xs font-body text-on-surface-variant hover:text-primary transition-colors truncate"
             >
               <span className="material-symbols-outlined text-[14px]">location_on</span>
               {signing.location}
@@ -87,6 +88,8 @@ export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCa
         <button
           onClick={() => onToggleFavorite(signing.id)}
           className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary/5 transition-colors"
+          aria-label={isFavorite ? t('removeFavorite') : t('addFavorite')}
+          title={isFavorite ? t('removeFavorite') : t('addFavorite')}
         >
           <span
             className={`material-symbols-outlined text-lg ${
@@ -99,6 +102,7 @@ export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCa
         <button
           onClick={handleShare}
           className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-primary/5 transition-colors"
+          aria-label={t('share')}
           title={t('share')}
         >
           <span className="material-symbols-outlined text-lg text-outline">share</span>

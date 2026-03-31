@@ -30,22 +30,27 @@ export function Filters({
   return (
     <div className="flex gap-3 overflow-x-auto hide-scrollbar -mx-6 px-6 pb-1">
       {/* Time slot chips */}
-      {timeSlots.map((slot) => (
-        <button
-          key={slot.id}
-          onClick={() => onTimeSlotChange(timeSlotFilter === slot.id ? '' : slot.id)}
-          className={`${chipBase} ${timeSlotFilter === slot.id ? chipActive : chipInactive}`}
-        >
-          <span className="material-symbols-outlined text-[18px]">schedule</span>
-          {slot.label}
-        </button>
-      ))}
+      {timeSlots.map((slot) => {
+        const isActive = timeSlotFilter === slot.id;
+        return (
+          <button
+            key={slot.id}
+            onClick={() => onTimeSlotChange(isActive ? '' : slot.id)}
+            aria-pressed={isActive}
+            className={`${chipBase} ${isActive ? chipActive : chipInactive}`}
+          >
+            <span className="material-symbols-outlined text-[18px]">schedule</span>
+            {slot.label}
+          </button>
+        );
+      })}
 
-      {/* Location dropdown as a styled select */}
+      {/* Location dropdown */}
       <div className="relative flex-shrink-0">
         <select
           value={locationFilter}
           onChange={(e) => onLocationChange(e.target.value)}
+          aria-label={t('allLocations')}
           className={`${chipBase} ${locationFilter ? chipActive : chipInactive} appearance-none pr-8 border-none focus:outline-none focus:ring-0`}
         >
           <option value="">{t('allLocations')}</option>

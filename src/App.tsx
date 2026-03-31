@@ -4,6 +4,7 @@ import signingsData from './data/signings.json';
 import { useFilters } from './hooks/useFilters';
 import { useFavorites } from './hooks/useFavorites';
 import { useDarkMode } from './hooks/useDarkMode';
+import { useI18n } from './i18n/I18nContext';
 import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import { Filters } from './components/Filters';
@@ -17,6 +18,7 @@ function App() {
   const [activeView, setActiveView] = useState<ActiveView>('list');
   const { favoriteIds, toggleFavorite, isFavorite } = useFavorites();
   const { theme, toggleTheme } = useDarkMode();
+  const { t } = useI18n();
   const {
     searchText,
     setSearchText,
@@ -52,10 +54,10 @@ function App() {
         {activeView === 'favorites' && (
           <section className="mb-8 mt-4">
             <h2 className="font-headline text-4xl italic text-primary leading-tight">
-              La Meva Agenda
+              {t('myAgenda')}
             </h2>
             <p className="font-body text-sm text-tertiary mt-1 tracking-wide">
-              Les teves firmes preferides per al 23 d&apos;abril
+              {t('myAgendaHint')}
             </p>
           </section>
         )}

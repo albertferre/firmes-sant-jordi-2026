@@ -28,7 +28,8 @@ export function Header({ totalSignings, filteredCount, theme, onToggleTheme }: H
           <button
             onClick={onToggleTheme}
             className="w-9 h-9 rounded-full flex items-center justify-center text-primary hover:bg-surface-high transition-colors"
-            title={theme === 'dark' ? 'Light mode' : 'Dark mode'}
+            aria-label={theme === 'dark' ? t('lightMode') : t('darkMode')}
+            title={theme === 'dark' ? t('lightMode') : t('darkMode')}
           >
             <span className="material-symbols-outlined text-lg">
               {theme === 'dark' ? 'light_mode' : 'dark_mode'}
@@ -37,6 +38,8 @@ export function Header({ totalSignings, filteredCount, theme, onToggleTheme }: H
           <button
             onClick={() => setLocale(locale === 'ca' ? 'es' : 'ca')}
             className="px-2.5 py-1.5 rounded-full text-[11px] font-bold font-body uppercase tracking-wider bg-surface-high text-on-surface-variant hover:bg-surface-highest transition-colors"
+            aria-label={t('changeLanguage')}
+            title={t('changeLanguage')}
           >
             {locale === 'ca' ? 'ES' : 'CA'}
           </button>
