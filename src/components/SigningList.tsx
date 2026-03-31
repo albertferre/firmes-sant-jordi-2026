@@ -16,15 +16,18 @@ export function SigningList({ signings, isFavorite, onToggleFavorite, emptyState
     const title = emptyStateType === 'noFavorites' ? t('noFavorites') : t('noResults');
     const hint = emptyStateType === 'noFavorites' ? t('noFavoritesHint') : t('noResultsHint');
     return (
-      <div className="text-center py-12 text-gray-500 dark:text-gray-400">
-        <p className="text-lg">{title}</p>
-        <p className="text-sm mt-1">{hint}</p>
+      <div className="flex flex-col items-center justify-center py-20 text-center">
+        <span className="material-symbols-outlined text-5xl text-outline-variant/40 mb-4">
+          {emptyStateType === 'noFavorites' ? 'auto_stories' : 'search_off'}
+        </span>
+        <p className="font-headline text-xl italic text-on-surface-variant">{title}</p>
+        <p className="text-sm font-body text-tertiary mt-2 max-w-xs">{hint}</p>
       </div>
     );
   }
 
   return (
-    <div className="grid gap-3 sm:grid-cols-2">
+    <div className="space-y-3">
       {signings.map((signing) => (
         <SigningCard
           key={signing.id}
