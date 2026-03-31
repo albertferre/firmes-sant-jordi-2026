@@ -21,7 +21,7 @@ export function Header({ activeView, onViewChange, totalSignings, filteredCount,
   ];
 
   return (
-    <header className="fixed top-0 w-full z-50 bg-surface/80 dark:bg-on-surface/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(28,28,24,0.05)]">
+    <header className="fixed top-0 w-full z-50 bg-surface/80 dark:bg-on-surface/80 backdrop-blur-md lg:backdrop-blur-xl shadow-[0_8px_32px_rgba(28,28,24,0.05)]">
       <div className="flex justify-between items-center px-6 lg:px-12 py-4 max-w-screen-2xl mx-auto">
         <div className="flex items-center gap-8">
           <div>

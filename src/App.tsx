@@ -40,7 +40,7 @@ function App() {
   const displayedSignings = activeView === 'favorites' ? favoriteSignings : filtered;
 
   return (
-    <div className="min-h-screen transition-colors">
+    <div className="min-h-screen transition-colors overflow-x-hidden">
       {/* Noise texture */}
       <div className="fixed inset-0 noise-overlay z-0" />
 
@@ -73,7 +73,7 @@ function App() {
                   <span className="material-symbols-outlined text-sm">calendar_today</span>
                   {t('subtitle')}
                 </div>
-                <h2 className="font-headline text-6xl md:text-8xl lg:text-8xl text-on-surface dark:text-surface-highest mb-6 leading-[1.1] tracking-tight italic">
+                <h2 className="font-headline text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-on-surface dark:text-surface-highest mb-6 leading-[1.1] tracking-tight italic">
                   La Diada de <br />
                   <span className="text-primary font-bold not-italic">Sant Jordi</span>
                 </h2>
