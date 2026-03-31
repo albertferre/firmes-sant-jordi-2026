@@ -28,7 +28,7 @@ export function Filters({
     'bg-primary text-on-primary';
 
   return (
-    <div className="flex gap-3 overflow-x-auto hide-scrollbar -mx-6 px-6 pb-1">
+    <div className="flex gap-3 overflow-x-auto hide-scrollbar pb-1">
       {/* Time slot chips */}
       {timeSlots.map((slot) => {
         const isActive = timeSlotFilter === slot.id;

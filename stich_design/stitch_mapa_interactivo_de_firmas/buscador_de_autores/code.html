@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+
+<html lang="ca"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dcdad4",
+              "surface-container-low": "#f6f3ed",
+              "primary-fixed-dim": "#ffb3b2",
+              "on-tertiary-fixed": "#1b1c1c",
+              "inverse-surface": "#31312d",
+              "surface-bright": "#fcf9f3",
+              "secondary-container": "#fed488",
+              "on-error-container": "#93000a",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#ebe8e2",
+              "surface": "#fcf9f3",
+              "on-surface": "#1c1c18",
+              "on-background": "#1c1c18",
+              "tertiary-fixed": "#e4e2e1",
+              "tertiary": "#404040",
+              "primary-container": "#b10528",
+              "on-error": "#ffffff",
+              "surface-variant": "#e5e2dc",
+              "surface-tint": "#bb132e",
+              "on-primary-container": "#ffbdbc",
+              "on-tertiary": "#ffffff",
+              "on-primary": "#ffffff",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "on-secondary-fixed": "#261900",
+              "background": "#fcf9f3",
+              "tertiary-container": "#585757",
+              "secondary-fixed-dim": "#e9c176",
+              "outline-variant": "#e4bdbc",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#ffdea5",
+              "error": "#ba1a1a",
+              "secondary": "#775a19",
+              "on-surface-variant": "#5b403f",
+              "on-primary-fixed": "#410008",
+              "on-tertiary-container": "#cfcdcd",
+              "primary-fixed": "#ffdad9",
+              "surface-container": "#f0eee8",
+              "on-tertiary-fixed-variant": "#474747",
+              "outline": "#8f6f6e",
+              "on-secondary-fixed-variant": "#5d4201",
+              "error-container": "#ffdad6",
+              "surface-container-highest": "#e5e2dc",
+              "on-primary-fixed-variant": "#92001e",
+              "on-secondary-container": "#785a1a",
+              "primary": "#86001b",
+              "inverse-on-surface": "#f3f0ea",
+              "inverse-primary": "#ffb3b2"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        .grainy-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface font-body text-on-surface min-h-screen pb-32">
+<div class="fixed inset-0 grainy-overlay"></div>
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f3]/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(28,28,24,0.05)]">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-[#86001b] dark:text-[#b10528]">menu</span>
+<h1 class="text-2xl font-headline italic text-[#86001b] dark:text-[#fcf9f3]">Sant Jordi 2026</h1>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant/30">
+<img alt="Profile" class="w-full h-full object-cover" data-alt="close-up portrait of a woman with warm lighting and a soft artistic background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9frZwyUSPviEXi96gdGnzCxXOBYUzUZT-Aaa-4njhemlT5SCtT9EeoCkwHvtrIFU1n-xSl_BWcI6YSnyLAvU6iTfNApE87EH-E4QzsUef2XxdX4KxNm9rWRDmYaXUbg2sAy3qnGYLceAS4N5In42jEv1VoP7B2h-8O6AZvg5GFLt3QprJ_A6JuiFZQYC-APwK6QoOzVUHKEemEXDuaxABmITX8qG7hOOP_1ATd1_glI_yxTTwpssKUQL3KwOB4-sGlwXW8VgnpjBK"/>
+</div>
+</div>
+</header>
+<main class="pt-24 px-6">
+<section class="mb-8">
+<div class="relative group">
+<div class="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+<span class="material-symbols-outlined text-outline">search</span>
+</div>
+<input class="w-full bg-surface-container-lowest border-none border-b border-outline-variant/20 focus:border-primary focus:ring-0 py-4 pl-12 pr-4 text-lg font-headline italic shadow-sm rounded-lg transition-all" placeholder="Busca autor o libro..." type="text"/>
+</div>
+<div class="flex gap-3 mt-4 overflow-x-auto pb-2 no-scrollbar">
+<button class="flex items-center gap-2 px-5 py-2.5 bg-surface-container-highest text-on-surface-variant rounded-full text-sm font-label tracking-wide whitespace-nowrap hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+                    Por Barrio
+                </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-surface-container-highest text-on-surface-variant rounded-full text-sm font-label tracking-wide whitespace-nowrap hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+                    Por Horario
+                </button>
+<button class="flex items-center gap-2 px-5 py-2.5 bg-surface-container-highest text-on-surface-variant rounded-full text-sm font-label tracking-wide whitespace-nowrap hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[18px]">filter_list</span>
+                    Más Filtros
+                </button>
+</div>
+</section>
+<section class="space-y-6">
+<div class="flex items-center justify-between mb-2">
+<h2 class="text-xs font-label uppercase tracking-widest text-tertiary">Resultados destacados</h2>
+<span class="text-[11px] font-label text-outline uppercase tracking-wider">12 autores</span>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 relative shadow-[0_4px_20px_rgba(28,28,24,0.03)] border-l-4 border-primary">
+<div class="relative">
+<img alt="Author" class="w-20 h-28 object-cover rounded-md shadow-sm" data-alt="studio portrait of a sophisticated woman author with natural lighting and thoughtful expression" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDdMk4DgTf2xqVTw8mugk752MHc22Gv4qu5LDznGTvLuZo_zKaBtW1933mmIdNXDA5AeTGSOyljmhikCkoxiDIsjdXnf6s2ghhiDmroqCL2v_2W1PZ2ZAV5R4qnBsjplTRoosBc-_i8cFfC4OdPdNn1KGqx1-LeqN6_SWb4uOJRpeREJnAw6n-jeD6fzDrj-u_DbFFjaatB-TNSdBpzlsqawdUD_vkDi6pQZABUklJSbTp6QQTU3WY0q-r1UERViq5qh1RYjaErRnK5"/>
+<div class="absolute -bottom-2 -right-2 bg-secondary-container text-on-secondary-container p-1 rounded-full shadow-sm">
+<span class="material-symbols-outlined text-[14px]">star</span>
+</div>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="text-xl font-headline italic text-on-surface truncate">Irene Solà</h3>
+<div class="flex items-center gap-1.5 mt-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+<span class="text-xs font-label font-bold uppercase tracking-tighter">Próxima Firma</span>
+</div>
+<p class="text-sm font-body text-on-surface mt-1">11:00h — Passeig de Gràcia</p>
+<p class="text-[11px] font-label text-tertiary uppercase tracking-tight mt-0.5">Parada: Llibres de Proximitat</p>
+</div>
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-container/10 transition-colors group">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">favorite</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 relative shadow-[0_4px_20px_rgba(28,28,24,0.03)]">
+<div class="relative">
+<img alt="Author" class="w-20 h-28 object-cover rounded-md shadow-sm opacity-90" data-alt="classic black and white portrait of a male writer in a library setting with soft dramatic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCCSy3lPFcbmX44DqCrkRQ9-MY_QdClMVvlC36RmfmUAyi_h0Zq2ack1r3BW38WtkdBi5sGRETdoFEhKCJqFRlIqHboM1aGcNzxlwpxV4VtIuj_lQ2Cg_hHoN78Lmo1PZBPMocpjHh8_ww00LQd7-OSeAPNUKp8uT-lWSB5aSNA5b8yK85bqftYNJTrIUCrNP6kZUrBIPmtkY481p8qegrej0pFI7_tqQuD6TyFxQmku2WWPde7eibRqJKqxtIMDUsDG7wpFrSuS3OB"/>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="text-xl font-headline italic text-on-surface truncate">Javier Cercas</h3>
+<div class="flex items-center gap-1.5 mt-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+<span class="text-xs font-label font-bold uppercase tracking-tighter">Próxima Firma</span>
+</div>
+<p class="text-sm font-body text-on-surface mt-1">12:30h — Rambla de Catalunya</p>
+<p class="text-[11px] font-label text-tertiary uppercase tracking-tight mt-0.5">Parada: FNAC Triangle</p>
+</div>
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-container/10 transition-colors group">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">favorite</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 relative shadow-[0_4px_20px_rgba(28,28,24,0.03)] border-l-4 border-secondary-container">
+<div class="relative">
+<img alt="Author" class="w-20 h-28 object-cover rounded-md shadow-sm" data-alt="lifestyle portrait of a young smiling author outdoors in Barcelona with sunny atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4isLjKegqoz2Ngued5cwg9_csVpI_KesdIYQHBMAQV04JNBH1vy_7Gob0F64bGAclTC6NGp8FVdpJTkZ30tIkTCJEDi17bNCwZZI4bHIN5nuc06ODBbfXVW1_1yC83iTYRZAsZputosyG22CtgeWp_1KVh8DTgtDkujTQy4qSVXuYKaHSce96QJHIHDnAqhqlg8agPHr4WDLJdkYVxmlne4-ChN7yFyxqD7MQ2wE-MiKmYESirrc8QB49e9o2u1_x779Pb468GEfa"/>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="text-xl font-headline italic text-on-surface truncate">Eva Baltasar</h3>
+<div class="flex items-center gap-1.5 mt-1 text-primary">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+<span class="text-xs font-label font-bold uppercase tracking-tighter">Próxima Firma</span>
+</div>
+<p class="text-sm font-body text-on-surface mt-1">16:00h — Pl. Universitat</p>
+<p class="text-[11px] font-label text-tertiary uppercase tracking-tight mt-0.5">Parada: La Central</p>
+</div>
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-container/10 transition-colors group">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">favorite</span>
+</button>
+</div>
+<div class="bg-surface-container-lowest p-4 rounded-xl flex items-center gap-4 relative shadow-[0_4px_20px_rgba(28,28,24,0.03)]">
+<div class="relative">
+<img alt="Author" class="w-20 h-28 object-cover rounded-md shadow-sm" data-alt="atmospheric portrait of an elder author with glasses in a cozy study filled with books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjx2X0JvRRLhwcK0f4hK1rH4ppKkGycQKlZAjbhknwygMZ2zJj8QNIO3UWQRXU70PPvn-47zzYxzIOcp23DFmP7v7-DH8f9rCrPHv_I_zSsd5Gnkl79tc4OH-Ypnq6PRX6tJkrepFJGnN0MgcSVS4IWc5ZaJO94G8VNKkpdGGToSeYqZ-j_zTPp44lJNzqJmtfPK4byRi2BNLQTznBvSfbFaUPFqJBJ3z8AYFiL3FBt_rpiFaNUqv2wX5dds4sFl5YqAdVemntjxCw"/>
+</div>
+<div class="flex-1 min-w-0">
+<h3 class="text-xl font-headline italic text-on-surface truncate">Eduardo Mendoza</h3>
+<div class="flex items-center gap-1.5 mt-1 text-tertiary">
+<span class="material-symbols-outlined text-[16px]">edit_calendar</span>
+<span class="text-xs font-label font-bold uppercase tracking-tighter">Próxima Firma</span>
+</div>
+<p class="text-sm font-body text-on-surface mt-1">18:00h — Av. Diagonal</p>
+<p class="text-[11px] font-label text-tertiary uppercase tracking-tight mt-0.5">Parada: Casa del Llibre</p>
+</div>
+<button class="flex items-center justify-center w-10 h-10 rounded-full hover:bg-primary-container/10 transition-colors group">
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">favorite</span>
+</button>
+</div>
+</section>
+<section class="mt-12 mb-8 bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10">
+<h4 class="font-headline italic text-lg text-primary mb-2">¿No encuentras a tu autor?</h4>
+<p class="text-sm text-tertiary leading-relaxed mb-4">La lista se actualiza en tiempo real con las confirmaciones de las editoriales y las paradas oficiales del Gremi de Llibreters.</p>
+<button class="text-sm font-label font-bold text-primary uppercase tracking-wider flex items-center gap-2 group">
+                Explorar mapa completo
+                <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</section>
+</main>
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-[#fcf9f3]/80 dark:bg-stone-900/80 backdrop-blur-xl flex justify-around items-center px-4 pb-safe z-50 rounded-t-2xl shadow-[0_-4px_24px_rgba(28,28,24,0.03)] border-t border-stone-200/20 dark:border-stone-800/20">
+<button class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#b10528] dark:hover:text-[#fed488] transition-colors">
+<span class="material-symbols-outlined">explore</span>
+<span class="text-[11px] font-sans Manrope tracking-wide uppercase mt-1">Explore</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#b10528] dark:hover:text-[#fed488] transition-colors">
+<span class="material-symbols-outlined">map</span>
+<span class="text-[11px] font-sans Manrope tracking-wide uppercase mt-1">Map</span>
+</button>
+<button class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#b10528] dark:hover:text-[#fed488] transition-colors">
+<span class="material-symbols-outlined">auto_stories</span>
+<span class="text-[11px] font-sans Manrope tracking-wide uppercase mt-1">Schedule</span>
+</button>
+<button class="flex flex-col items-center justify-center text-[#86001b] dark:text-[#fed488] font-bold scale-90 duration-200">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">search</span>
+<span class="text-[11px] font-sans Manrope tracking-wide uppercase mt-1">Search</span>
+</button>
+</nav>
+</body></html>

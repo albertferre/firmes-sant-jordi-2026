@@ -27,7 +27,7 @@ export function SigningList({ signings, isFavorite, onToggleFavorite, emptyState
   }
 
   return (
-    <div className="space-y-3">
+    <div className="grid gap-3 grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
       {signings.map((signing) => (
         <SigningCard
           key={signing.id}

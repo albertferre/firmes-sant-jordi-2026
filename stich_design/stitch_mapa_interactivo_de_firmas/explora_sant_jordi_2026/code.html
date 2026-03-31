@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ca"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,600;0,700;1,400;1,600&amp;family=Manrope:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "surface-dim": "#dcdad4",
+              "surface-container-low": "#f6f3ed",
+              "primary-fixed-dim": "#ffb3b2",
+              "on-tertiary-fixed": "#1b1c1c",
+              "inverse-surface": "#31312d",
+              "surface-bright": "#fcf9f3",
+              "secondary-container": "#fed488",
+              "on-error-container": "#93000a",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#ebe8e2",
+              "surface": "#fcf9f3",
+              "on-surface": "#1c1c18",
+              "on-background": "#1c1c18",
+              "tertiary-fixed": "#e4e2e1",
+              "tertiary": "#404040",
+              "primary-container": "#b10528",
+              "on-error": "#ffffff",
+              "surface-variant": "#e5e2dc",
+              "surface-tint": "#bb132e",
+              "on-primary-container": "#ffbdbc",
+              "on-tertiary": "#ffffff",
+              "on-primary": "#ffffff",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "on-secondary-fixed": "#261900",
+              "background": "#fcf9f3",
+              "tertiary-container": "#585757",
+              "secondary-fixed-dim": "#e9c176",
+              "outline-variant": "#e4bdbc",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#ffdea5",
+              "error": "#ba1a1a",
+              "secondary": "#775a19",
+              "on-surface-variant": "#5b403f",
+              "on-primary-fixed": "#410008",
+              "on-tertiary-container": "#cfcdcd",
+              "primary-fixed": "#ffdad9",
+              "surface-container": "#f0eee8",
+              "on-tertiary-fixed-variant": "#474747",
+              "outline": "#8f6f6e",
+              "on-secondary-fixed-variant": "#5d4201",
+              "error-container": "#ffdad6",
+              "surface-container-highest": "#e5e2dc",
+              "on-primary-fixed-variant": "#92001e",
+              "on-secondary-container": "#785a1a",
+              "primary": "#86001b",
+              "inverse-on-surface": "#f3f0ea",
+              "inverse-primary": "#ffb3b2"
+            },
+            fontFamily: {
+              "headline": ["Newsreader", "serif"],
+              "body": ["Manrope", "sans-serif"],
+              "label": ["Manrope", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>body {
+    background-color: #fcf9f3;
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuBoe6d1yHloYzUKZSUxX4iCM2CKPC_HDUrJUwIwy7CcdjY4QAiiOSiKWEThEbglvlrzLtnRxf79QUREFyKBIHq93yPnXzb4UkXeBFf74tzaOkh60KPLf696z_Gb4fanwkaKQLoiyPuXJEhSMa9G9_6bwj_K3FRjTcEKZiH6al-yrMEA_KjCbfOsrq7uXmq_eEExzz9wVWAxLEQLakfFkb33P7Zg-T-TOLKZvRstSY_0_FQmplDId4olo1DYL3FvBhjkjXeOObvyE36r);
+    background-attachment: fixed
+    }
+.material-symbols-outlined {
+    font-variation-settings: "wght" 200, "opsz" 24
+    }
+.active-icon {
+    font-variation-settings: "FILL" 1, "wght" 400
+    }
+.hide-scrollbar::-webkit-scrollbar {
+    display: none
+    }
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+    }</style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="font-body text-on-surface selection:bg-secondary-container">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f3]/80 dark:bg-stone-900/80 backdrop-blur-xl shadow-[0_8px_32px_rgba(28,28,24,0.05)]">
+<div class="flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#86001b] dark:text-[#b10528]" data-icon="menu">menu</span>
+<h1 class="text-2xl font-headline italic text-[#86001b] dark:text-[#fcf9f3]">Sant Jordi 2026</h1>
+</div>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant/20">
+<img alt="User profile avatar" class="w-full h-full object-cover" data-alt="portrait of a professional woman with a warm smile in soft natural morning light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIfoRbrl0AchsBGjE7ykdj30P3gFBy53cJnBZ_yvuMl2uMCeGLKmtWQeTIWF4T8PTOkRd5HN5cKgeyd9IqIVm0_vGsUnKKj9WeRzOQQ89l7I60S_3Si_3PQmzQEXPcOgED7lUmperNTNbC3l_wByupWCsYHlE4m2vo7SRx88Nw0qadj6u8OT5DOSA6WcqtgWdzE6muT8m_Zq_XjiMS8Ydsrwb7oPU7IwoFOwEq8enTSsijrzuW4xs1HFQTLvAZvG9VE-dz8n7igAHb"/>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-28 px-6 max-w-md mx-auto">
+<!-- Hero Search Section -->
+<section class="mb-10">
+<div class="relative group">
+<span class="absolute left-4 top-1/2 -translate-y-1/2 material-symbols-outlined text-outline" data-icon="search">search</span>
+<input class="w-full bg-surface-container-lowest border-none border-b border-outline-variant/20 py-4 pl-12 pr-4 rounded-lg shadow-sm focus:ring-0 focus:border-primary transition-all text-sm font-label" placeholder="Buscar autores, libros o paradas..." type="text"/>
+</div>
+</section>
+<!-- Featured Section: Firmando Ahora -->
+<section class="mb-10">
+<div class="flex justify-between items-baseline mb-6">
+<h2 class="text-3xl font-headline font-semibold text-primary">Firmando Ahora</h2>
+<span class="text-xs font-label uppercase tracking-widest text-tertiary">Ver todos</span>
+</div>
+<div class="flex overflow-x-auto gap-6 hide-scrollbar -mx-6 px-6 snap-x">
+<!-- Card 1 -->
+<div class="flex-none w-64 snap-start group">
+<div class="relative mb-4 overflow-hidden rounded-lg shadow-sm aspect-[3/4]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="an acclaimed author sitting at a rustic wooden desk in a sunlit library filled with old books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADi60UxJ3u2wvvNthSvLH2tRJXOnBjXDvjjsA394eDOilVmUT7VMyavhquUXWmll4QaR8WKStA67y-ayljU2kYrlbdP_pm87wJqs1UKleFoCxf_dcg9fhaRKYAtDUWF-D3dSewOnR01MSL4QLBpFsfGqrBvVjLj73W7VM6zKZRtvvA7CwuXL6ILGy60td8MdC0zvR4Alj8dcMSLBBTVQQ-Z_WHiBABtCd4TQLtBBfC6PPKudOxg6JUpZnwiPwM8adA_k7o8mNDUwIA"/>
+<button class="absolute top-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-primary/80 to-transparent">
+<span class="text-[10px] font-label uppercase tracking-[0.2em] text-on-primary/90">Passeig de Gràcia, 42</span>
+</div>
+</div>
+<h3 class="text-xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Irene Solà</h3>
+<p class="text-sm font-label text-tertiary">Parada Casa del Llibre</p>
+</div>
+<!-- Card 2 -->
+<div class="flex-none w-64 snap-start group">
+<div class="relative mb-4 overflow-hidden rounded-lg shadow-sm aspect-[3/4]">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="close-up of a writer signing a book with an elegant fountain pen, warm wood tones and blurred background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD95SYCt4GIZXWobrZTaFRTtyWdPqnp9-bSF-IykuWUTL6bhejpCEQl7QSjm_TQeA5anzSz-9sqd0f3gNXEwm-ieZ2F48R_4x5liTBDzGeijpr1IaII8oimMMOniDK22l_eg7GMHuVkbWrDSWtjuOqmK7sdDzAGeSq8cp9_fqw9IXvgdFEQUoq_aZJ81vo82QHdYFxf3Uvuf7oHfvQGv6rLj0OQByxjldPzXaByr7CD0F42lTIb2d6Z7OgXCreRXS6UMWid7ZxdqKRC"/>
+<button class="absolute top-3 right-3 w-10 h-10 rounded-full bg-surface-container-lowest/80 backdrop-blur-md flex items-center justify-center text-primary shadow-sm active:scale-95 transition-all">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+<div class="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-primary/80 to-transparent">
+<span class="text-[10px] font-label uppercase tracking-[0.2em] text-on-primary/90">Rambla Catalunya, 12</span>
+</div>
+</div>
+<h3 class="text-xl font-headline font-bold text-on-surface group-hover:text-primary transition-colors">Quim Monzó</h3>
+<p class="text-sm font-label text-tertiary">La Central de Mallorca</p>
+</div>
+</div>
+</section>
+<!-- Main Section: Tendencias -->
+<section class="mb-10">
+<h2 class="text-2xl font-headline font-semibold text-primary mb-6">Tendencias</h2>
+<div class="space-y-4">
+<!-- Trending Author 1 -->
+<div class="flex items-center gap-4 p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(28,28,24,0.03)] group">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="aesthetic overhead shot of a hardcover book next to a single red rose on a white linen surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYfJFqfbMLmGdXlsf2KdbbEH9toTgB3rPxcV_ao_Ht5TICQJGcLTTWPb7wlyC9IvAkD8hOxFQ7HuN5vEJHlv9AFzj2dMcMxvyquKl2nbu7rP1y15Ssd1qUtcqdTn2R-KVvLoSWtjv1NS3gqf9V7lP-OjAYrGAN91QxSl5fHap8lFeCd4Xw0aG_aNs6RTXKupqqA9BZ_vIzZeAeNwm4CynpR0l8Rvvypn6_oH1tDbU85aK9hmxo4hR1XRsolj4HSloE21FzStqQ4Z2g"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-headline font-bold text-on-surface text-lg leading-tight">Eva Baltasar</h4>
+<p class="text-xs font-label text-tertiary uppercase tracking-wider">Ocàs i fascinació</p>
+</div>
+<button class="p-2 text-primary-container group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<!-- Trending Author 2 -->
+<div class="flex items-center gap-4 p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(28,28,24,0.03)] group">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="stack of vintage books with a single dried flower placed on top in soft golden light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF2iC4i7HpoSkY8EVWsBA8wh9l56yc_RCcenBvV8YPB4esyecNtYZM52VPBr3j3jp0Nt9YaarqO1z9LZNmiBRP10TyYxHluXcK8JzwZZ1NNpuJisMLPcfyyzIknA_n9uKEwipOq_r0HZq3LHLP43qceAKfYhZJhj8LM7DAgBT27RBwN_uATZDthjgq7J35YUe_ndwuf0YnMj1KvVXh0xmYWZnKmFZ9EVjrRRaljY5j6tfPXvsXTtJSxxEjaAoQZppZmwL69MPvbvvg"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-headline font-bold text-on-surface text-lg leading-tight">Enric Vila</h4>
+<p class="text-xs font-label text-tertiary uppercase tracking-wider">Barcelona històrica</p>
+</div>
+<button class="p-2 text-primary-container group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+<!-- Trending Author 3 -->
+<div class="flex items-center gap-4 p-3 bg-surface-container-lowest rounded-xl shadow-[0_4px_12px_rgba(28,28,24,0.03)] group">
+<div class="w-16 h-16 rounded-lg overflow-hidden flex-shrink-0">
+<img class="w-full h-full object-cover" data-alt="old library window with views of a garden, soft dust motes dancing in the sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMZidvexbteVb_kaNw0s-v8j8RF4iBjpMgPdN1b1KbveOlnOOsgSjcDVgnplgwDqYVdL-xx0CltmKfVsWP2CWY8Rv_ag3SFUpB08E4eflWGjNeaAMvW0wHPO4ta_zwBInU2FT0IYvx27OldUGPqgq3n9SFRE1-dML2q_2Lh9X1gQTLzPIy86algnOzKQkVKyKivD8VhsJXlAjou7HKg1xLysDgn27T8_TQ0wj6FaZVG-TychIF0lQDHoicQUJY-EdN7oKr24C2MYjm"/>
+</div>
+<div class="flex-grow">
+<h4 class="font-headline font-bold text-on-surface text-lg leading-tight">Marta Orriols</h4>
+<p class="text-xs font-label text-tertiary uppercase tracking-wider">La possibilitat de dir-ne casa</p>
+</div>
+<button class="p-2 text-primary-container group-active:scale-90 transition-transform">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Signature Bookmark Progress -->
+<div class="flex justify-center py-8">
+<div class="w-1 h-12 bg-primary relative">
+<div class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-3 h-3 bg-primary rotate-45"></div>
+</div>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full h-20 bg-[#fcf9f3]/80 dark:bg-stone-900/80 backdrop-blur-xl border-t border-stone-200/20 dark:border-stone-800/20 shadow-[0_-4px_24px_rgba(28,28,24,0.03)] z-50 flex justify-around items-center px-4 pb-safe rounded-t-2xl">
+<!-- Explore (Active) -->
+<a class="flex flex-col items-center justify-center text-[#86001b] dark:text-[#fed488] font-bold active:scale-90 duration-200" href="#">
+<span class="material-symbols-outlined active-icon" data-icon="explore">explore</span>
+<span class="text-[11px] font-sans Manrope tracking-wide uppercase mt-1">Explore</span>
+</a>
+<!-- Map -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#b10528] dark:hover:text-[#fed488] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="map">map</span>
+<span class="text-[11px] font-sans Manrope tracking-wide uppercase mt-1">Map</span>
+</a>
+<!-- Schedule -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#b10528] dark:hover:text-[#fed488] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="auto_stories">auto_stories</span>
+<span class="text-[11px] font-sans Manrope tracking-wide uppercase mt-1">Schedule</span>
+</a>
+<!-- Search -->
+<a class="flex flex-col items-center justify-center text-stone-400 dark:text-stone-500 hover:text-[#b10528] dark:hover:text-[#fed488] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="search">search</span>
+<span class="text-[11px] font-sans Manrope tracking-wide uppercase mt-1">Search</span>
+</a>
+</nav>
+<!-- Contextual FAB - Suppression Logic: Rendered here as per dashboard intent -->
+<button class="fixed right-6 bottom-24 w-14 h-14 bg-secondary-container text-on-secondary-container rounded-full shadow-lg flex items-center justify-center active:scale-95 transition-all z-40">
+<span class="material-symbols-outlined text-2xl" data-icon="add" style="font-variation-settings: 'FILL' 0, 'wght' 400;">add</span>
+</button>
+</body></html>

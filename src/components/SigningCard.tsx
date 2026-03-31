@@ -29,7 +29,7 @@ export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCa
   };
 
   return (
-    <div className={`bg-surface-lowest dark:bg-on-surface/5 p-4 rounded-xl flex items-center gap-4 relative shadow-[0_4px_20px_rgba(28,28,24,0.03)] ${hasTime ? 'border-l-4 border-primary' : 'border-l-4 border-outline-variant/30'}`}>
+    <div className={`bg-surface-lowest dark:bg-surface-highest/8 p-4 rounded-xl flex items-center gap-4 relative shadow-[0_4px_20px_rgba(28,28,24,0.03)] ${hasTime ? 'border-l-4 border-primary' : 'border-l-4 border-outline-variant/30'}`}>
       {/* Author initial */}
       <div className="relative w-14 h-14 rounded-xl bg-primary/8 dark:bg-primary/15 flex items-center justify-center flex-shrink-0">
         <span className="font-headline text-2xl text-primary font-bold italic">
