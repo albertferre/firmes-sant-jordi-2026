@@ -11,6 +11,23 @@ export interface Signing {
   image?: string;
 }
 
-export type ActiveView = 'list' | 'favorites' | 'map';
+export interface AuthorBook {
+  title: string;
+  url: string;
+}
+
+export interface AuthorInfo {
+  name: string;
+  goodreadsUrl: string;
+  photo: string;
+  bio: string;
+  bornInfo: string;
+  rating: string;
+  ratingsCount: string;
+  books: AuthorBook[];
+  genres: string[];
+}
+
+export type ActiveView = 'list' | 'favorites' | 'map' | 'author';
 
 export type Locale = 'ca' | 'es';

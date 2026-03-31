@@ -1,15 +1,17 @@
-import type { Signing } from '../types';
+import type { AuthorInfo, Signing } from '../types';
 import { SigningCard } from './SigningCard';
 import { useI18n } from '../i18n/I18nContext';
 
 interface SigningListProps {
   signings: Signing[];
+  authorsData: Record<string, AuthorInfo>;
   isFavorite: (id: string) => boolean;
   onToggleFavorite: (id: string) => void;
+  onAuthorClick?: (authorName: string) => void;
   emptyStateType?: 'noResults' | 'noFavorites';
 }
 
-export function SigningList({ signings, isFavorite, onToggleFavorite, emptyStateType = 'noResults' }: SigningListProps) {
+export function SigningList({ signings, authorsData, isFavorite, onToggleFavorite, onAuthorClick, emptyStateType = 'noResults' }: SigningListProps) {
   const { t } = useI18n();
 
   if (signings.length === 0) {
@@ -32,8 +34,10 @@ export function SigningList({ signings, isFavorite, onToggleFavorite, emptyState
         <SigningCard
           key={signing.id}
           signing={signing}
+          authorInfo={authorsData[signing.author]}
           isFavorite={isFavorite(signing.id)}
           onToggleFavorite={onToggleFavorite}
+          onAuthorClick={onAuthorClick}
         />
       ))}
     </div>
