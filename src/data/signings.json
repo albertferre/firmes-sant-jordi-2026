@@ -4,88 +4,112 @@
     "author": "Eva García Sáenz de Urturi",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
   },
   {
     "id": "planeta-02",
     "author": "María Dueñas",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
   },
   {
     "id": "planeta-03",
     "author": "Paloma Sánchez-Garnica",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
   },
   {
     "id": "planeta-04",
     "author": "Javier Sierra",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
   },
   {
     "id": "planeta-05",
     "author": "Marian Rojas",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
   },
   {
     "id": "planeta-06",
     "author": "Carmen Mola",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
   },
   {
     "id": "planeta-07",
     "author": "Alice Kellen",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
   },
   {
     "id": "planeta-08",
     "author": "Fernando Aramburu",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
   },
   {
     "id": "planeta-09",
@@ -94,7 +118,10 @@
     "publisher": "Planeta",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -105,7 +132,10 @@
     "publisher": "Planeta",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -116,7 +146,10 @@
     "publisher": "Planeta",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -125,99 +158,126 @@
     "author": "Beatriz Serrano",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
   },
   {
     "id": "planeta-13",
     "author": "Inma Rubiales",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
   },
   {
     "id": "planeta-14",
     "author": "Carlos del Amor",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
   },
   {
     "id": "planeta-15",
     "author": "Boticaria García",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
   },
   {
     "id": "planeta-16",
     "author": "Megan Maxwell",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
   },
   {
     "id": "planeta-17",
     "author": "Carolina Iglesias",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
   },
   {
     "id": "planeta-18",
     "author": "Pilar Eyre",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
   },
   {
     "id": "planeta-19",
     "author": "Vanessa Montfort",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
   },
   {
     "id": "planeta-20",
     "author": "María Reig",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
   },
   {
     "id": "planeta-21",
@@ -226,7 +286,10 @@
     "publisher": "Planeta",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -237,7 +300,10 @@
     "publisher": "Planeta",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -248,7 +314,10 @@
     "publisher": "Planeta",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -259,7 +328,10 @@
     "publisher": "Planeta",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -270,7 +342,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -281,7 +356,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -290,11 +368,14 @@
     "author": "Marina Garcés",
     "book": "",
     "publisher": "Anagrama",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
   },
   {
     "id": "anagrama-04",
@@ -303,7 +384,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -314,7 +398,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -325,7 +412,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -336,7 +426,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -347,7 +440,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -358,7 +454,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -369,7 +468,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -380,7 +482,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -391,7 +496,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -402,7 +510,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -413,7 +524,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -424,7 +538,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -435,7 +552,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -446,7 +566,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -457,7 +580,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -468,7 +594,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -479,7 +608,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -490,7 +622,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -501,7 +636,10 @@
     "publisher": "Anagrama",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -510,77 +648,70 @@
     "author": "Jordi Sierra i Fabra",
     "book": "",
     "publisher": "",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
   },
   {
     "id": "eci-01",
     "author": "Santiago Posteguillo",
     "book": "",
     "publisher": "Planeta",
-    "location": "El Corte Inglés - Plaça Catalunya",
-    "address": "Plaça de Catalunya, 14",
-    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
-    "startTime": "",
-    "endTime": ""
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
   },
   {
     "id": "eci-02",
     "author": "Pedro Baños",
     "book": "",
     "publisher": "",
-    "location": "El Corte Inglés - Plaça Catalunya",
-    "address": "Plaça de Catalunya, 14",
-    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
-    "startTime": "",
-    "endTime": ""
-  },
-  {
-    "id": "eci-03",
-    "author": "Defreds",
-    "book": "",
-    "publisher": "",
-    "location": "El Corte Inglés - Plaça Catalunya",
-    "address": "Plaça de Catalunya, 14",
-    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
-    "startTime": "",
-    "endTime": ""
-  },
-  {
-    "id": "eci-04",
-    "author": "Reyes Monforte",
-    "book": "",
-    "publisher": "",
-    "location": "El Corte Inglés - Plaça Catalunya",
-    "address": "Plaça de Catalunya, 14",
-    "coordinates": { "lat": 41.3870, "lng": 2.1700 },
-    "startTime": "",
-    "endTime": ""
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
   },
   {
     "id": "varios-01",
     "author": "Dolores Redondo",
     "book": "",
     "publisher": "Planeta",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
   },
   {
     "id": "varios-02",
     "author": "Julia Navarro",
     "book": "",
     "publisher": "",
-    "location": "Per confirmar",
-    "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
-    "startTime": "",
-    "endTime": ""
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
   },
   {
     "id": "laie-01",
@@ -589,7 +720,10 @@
     "publisher": "",
     "location": "Llibreria Laie",
     "address": "Carrer de Pau Claris, 85",
-    "coordinates": { "lat": 41.3920, "lng": 2.1690 },
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.169
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -600,7 +734,10 @@
     "publisher": "",
     "location": "Llibreria Laie",
     "address": "Carrer de Pau Claris, 85",
-    "coordinates": { "lat": 41.3920, "lng": 2.1690 },
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.169
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -611,7 +748,10 @@
     "publisher": "",
     "location": "Llibreria Laie",
     "address": "Carrer de Pau Claris, 85",
-    "coordinates": { "lat": 41.3920, "lng": 2.1690 },
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.169
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -622,7 +762,10 @@
     "publisher": "",
     "location": "Llibreria Laie",
     "address": "Carrer de Pau Claris, 85",
-    "coordinates": { "lat": 41.3920, "lng": 2.1690 },
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.169
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -633,7 +776,10 @@
     "publisher": "",
     "location": "Per confirmar",
     "address": "",
-    "coordinates": { "lat": 41.3874, "lng": 2.1686 },
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1686
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -644,7 +790,10 @@
     "publisher": "",
     "location": "CCCB",
     "address": "Carrer de Montalegre, 5",
-    "coordinates": { "lat": 41.3833, "lng": 2.1672 },
+    "coordinates": {
+      "lat": 41.3833,
+      "lng": 2.1672
+    },
     "startTime": "",
     "endTime": ""
   },
@@ -655,8 +804,4225 @@
     "publisher": "",
     "location": "Biblioteca Jaume Fuster",
     "address": "Plaça de Lesseps, 20-22",
-    "coordinates": { "lat": 41.4039, "lng": 2.1554 },
+    "coordinates": {
+      "lat": 41.4039,
+      "lng": 2.1554
+    },
     "startTime": "",
     "endTime": ""
+  },
+  {
+    "id": "cdl-11",
+    "author": "Alba Cardalda",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-12",
+    "author": "Jordi Roca i Martí Roca",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-13",
+    "author": "Josef Ajram",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-14",
+    "author": "Sonia Rico",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-15",
+    "author": "David Bueno",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-16",
+    "author": "Javier Castillo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-17",
+    "author": "María Oruña",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-18",
+    "author": "Santiago Posteguillo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-19",
+    "author": "Virginia Feito",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-20",
+    "author": "David Nicholls",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-21",
+    "author": "Ferran Torrent",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-22",
+    "author": "Javier Castillo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-23",
+    "author": "Maria Barbal",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-24",
+    "author": "Marta Millà",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-25",
+    "author": "David Uclés",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-26",
+    "author": "Dolores Redondo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-27",
+    "author": "Javier Castillo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-28",
+    "author": "José Luis Sastre",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-29",
+    "author": "Pep Coll",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-30",
+    "author": "Roc Casagran",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-31",
+    "author": "Arnau París",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-32",
+    "author": "Fer Rivas",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-33",
+    "author": "Laia Aguilar i Javier Ruiz Caldera",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-34",
+    "author": "Maria Carme Roca",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-35",
+    "author": "Tània Juste",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-36",
+    "author": "Ibon Martín",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-37",
+    "author": "Ignacio Peyró",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-38",
+    "author": "Manuel Sans Segarra i Juan Carlos Cebrián",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-39",
+    "author": "Inma Rubiales",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-40",
+    "author": "Manuel Sans Segarra i Juan Carlos Cebrián",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-41",
+    "author": "Núria Pradas",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-42",
+    "author": "Ramon Solsona",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-43",
+    "author": "Borja Vilaseca",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-44",
+    "author": "Inma Rubiales",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-45",
+    "author": "Manel Loureiro",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-46",
+    "author": "Manuel Sans Segarra i Juan Carlos Cebrián",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-47",
+    "author": "Ray Loriga",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-48",
+    "author": "Toni Cruanyes",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-49",
+    "author": "Estel Solé",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-50",
+    "author": "Ignacio Martínez de Pisón",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-51",
+    "author": "Jair Dominguez",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-52",
+    "author": "Pablo d'Ors",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Aragó-València)",
+    "address": "Pg. de Gràcia, entre Aragó i València, Barcelona",
+    "coordinates": {
+      "lat": 41.3928,
+      "lng": 2.165
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-53",
+    "author": "Albert Om i Marina Rossell",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-54",
+    "author": "Alejandro Palomas",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-55",
+    "author": "Curro Cañete",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-56",
+    "author": "Ester Invernon",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-57",
+    "author": "Martí Gironell",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-58",
+    "author": "Pedro Baños",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-59",
+    "author": "Dr. Grimalt",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-60",
+    "author": "Javier Cercas",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-61",
+    "author": "Elizabeth Clapés",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-62",
+    "author": "Eva García Sáenz de Urturi",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-63",
+    "author": "Kiko Amat",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-64",
+    "author": "María Lo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-65",
+    "author": "Ana Punset i Diana Vicedo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-66",
+    "author": "Andreu Claret",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-67",
+    "author": "Borja de Riquer",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-68",
+    "author": "Peyu i Ricardo Peregrina",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-69",
+    "author": "Rosa Montero",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-70",
+    "author": "Antònia Carré-Pons",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-71",
+    "author": "Elena Montagud",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-72",
+    "author": "Farners Pei Hong",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-73",
+    "author": "Marta Orriols",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-74",
+    "author": "Nina",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-75",
+    "author": "Rafael Vallbona",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-76",
+    "author": "Albert Pijuan",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-77",
+    "author": "Elena Montagud",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-78",
+    "author": "Ramon Gener",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-79",
+    "author": "Reyes Monforte",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-80",
+    "author": "Tamara Molina",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-81",
+    "author": "Oriol Canals",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-82",
+    "author": "Òscar Dalmau",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-83",
+    "author": "Raquel Peláez",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-84",
+    "author": "Silvia Intxaurrondo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-85",
+    "author": "Tamara Molina",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-86",
+    "author": "Xavier Bosch",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-87",
+    "author": "Albert Espinosa",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-88",
+    "author": "Luis García Montero",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-89",
+    "author": "Pierre Lemaitre",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-90",
+    "author": "Santiago Díaz",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-91",
+    "author": "Xavier Bosch",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-92",
+    "author": "Javi Royo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-93",
+    "author": "Manel Vidal",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-94",
+    "author": "Marta Salicrú",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-95",
+    "author": "Patricia Ibárcena",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Gràcia (Diputació-Consell de Cent)",
+    "address": "Pg. de Gràcia, entre Diputació i Consell de Cent, Barcelona",
+    "coordinates": {
+      "lat": 41.3908,
+      "lng": 2.1648
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-96",
+    "author": "Arya S.Winter",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-97",
+    "author": "Noemí Casquet",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-98",
+    "author": "Rocio Bonilla",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-99",
+    "author": "Sari Arponen",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "cdl-100",
+    "author": "Anna Manso",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-101",
+    "author": "Jaume Copons i Liliana Fortuny",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "cdl-102",
+    "author": "Jaume Copons i Liliana Fortuny",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-103",
+    "author": "Marian Rojas",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-104",
+    "author": "Susanna Isern",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-105",
+    "author": "Vivim del cuentu",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "cdl-106",
+    "author": "Ana Oncina",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-107",
+    "author": "Care Santos",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-108",
+    "author": "Carlota Gurt",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-109",
+    "author": "Defreds",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-110",
+    "author": "Vivim del cuentu",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "cdl-111",
+    "author": "Axel Scheffler",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-112",
+    "author": "Bego La Ordenatriz",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-113",
+    "author": "Laia López",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-114",
+    "author": "Lola Vendetta",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-115",
+    "author": "Sonia Fernández-Vidal",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "cdl-116",
+    "author": "Adriana Criado",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-117",
+    "author": "Nerea Pascual",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-118",
+    "author": "Teresa Valero",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "cdl-119",
+    "author": "Alice Kellen",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-120",
+    "author": "Isabel Rojas",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-121",
+    "author": "Nerea Pascual",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-122",
+    "author": "Pedro Mañas i David Sierra",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "cdl-123",
+    "author": "Alice Kellen",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-124",
+    "author": "Òscar Sardà",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-125",
+    "author": "Pedro Mañas i David Sierra",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "cdl-126",
+    "author": "Alejandro G.Calvo",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-127",
+    "author": "Joan Antoni Martín Piñol",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "cdl-128",
+    "author": "Marta León",
+    "book": "",
+    "publisher": "Casa del Llibre",
+    "location": "Casa del Llibre - Pg. de Sant Joan",
+    "address": "Pg. de Sant Joan, entre Ausiàs Marc i Casp, Barcelona",
+    "coordinates": {
+      "lat": 41.392,
+      "lng": 2.175
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-pgr-01",
+    "author": "Agnes Marques",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-pgr-02",
+    "author": "Agustina Guerrero",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat1-01",
+    "author": "Alba Cardalda",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-diag-01",
+    "author": "Alba Cargol",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "ona-01",
+    "author": "Albert Om",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat2-01",
+    "author": "Alberto Edjogo",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat2-02",
+    "author": "Alexandra Henríquez",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat1-02",
+    "author": "Alexandre Escrivá",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-02",
+    "author": "Alma Obregón",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-diag-03",
+    "author": "Amarna Miller",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-diag-04",
+    "author": "Ana Merino",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-cat2-03",
+    "author": "Andoni Luis Aduriz",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-cat2-04",
+    "author": "Andrea Vilallonga",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "ona-02",
+    "author": "Andreu Claret",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-pgr-03",
+    "author": "Angela Banzas",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-diag-05",
+    "author": "Antoni Pladevall",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat1-03",
+    "author": "Antonio Orozco",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat1-04",
+    "author": "Antonio Valenzuela",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat1-05",
+    "author": "Arantxa Portabales",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-03",
+    "author": "Arià Paco",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat1-06",
+    "author": "Arnau París",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-06",
+    "author": "Arturo González-Campos",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-diag-07",
+    "author": "Ascen Capel",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-07",
+    "author": "Aurelio Rojas",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-diag-08",
+    "author": "Beatriz Bena",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat2-05",
+    "author": "Blanca García-Orea",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "ona-04",
+    "author": "Blanca Llum Vidal Carrasco",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-05",
+    "author": "Borja de Riquer",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "ona-06",
+    "author": "Borja Vilallonga",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat1-08",
+    "author": "Borja Vilaseca",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-cat1-09",
+    "author": "Carla Montero",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-09",
+    "author": "Carla Traver",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-diag-10",
+    "author": "Carla Traver",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-10",
+    "author": "Carles Esquembre",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-pgr-04",
+    "author": "Carlos Zanón",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-pgr-05",
+    "author": "Carmen Domingo",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat2-06",
+    "author": "Carmen Mola",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat2-07",
+    "author": "César Pérez Gellida",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-11",
+    "author": "Cesc Cornet",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat2-08",
+    "author": "Chloé Sucrée",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "ona-07",
+    "author": "Comas Oriol",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-pgr-06",
+    "author": "Cristina Monge",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-diag-11",
+    "author": "Custodio",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "ona-08",
+    "author": "David Bueno Torrens",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-cat1-12",
+    "author": "David Trueba",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-13",
+    "author": "Eduardo Infante",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-pgr-07",
+    "author": "Eduardo Mendoza",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-diag-12",
+    "author": "Elena Montagud",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-diag-13",
+    "author": "Elisa Llurba Olivé",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat1-14",
+    "author": "Elisabet Benavent",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat1-15",
+    "author": "Elisabet Benavent",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat1-16",
+    "author": "Elisabet Benavent",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-09",
+    "author": "Elisenda Solsona",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat1-17",
+    "author": "Elsa Punset",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-pgr-08",
+    "author": "Elvira Mínguez",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-diag-14",
+    "author": "Emma Gil",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-diag-15",
+    "author": "Emma Gil",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-pgr-09",
+    "author": "Enric Sánchez",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "ona-10",
+    "author": "Estel Solé",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-diag-16",
+    "author": "Estel Solé",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat2-09",
+    "author": "Eudald Espluga",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "ona-11",
+    "author": "Eva Comas-Arnal",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "eci-cat2-10",
+    "author": "Fernando Bonete",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-12",
+    "author": "Ferran Torrent",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "ona-13",
+    "author": "Ferran Torrent",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-17",
+    "author": "Frederic Porta Vila",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-14",
+    "author": "Gemma Puig Feliu",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-15",
+    "author": "Genís Sinca",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat2-11",
+    "author": "Gutmaro Gómez Bravo",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat2-12",
+    "author": "Hermanos Torres",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-diag-18",
+    "author": "Hugo Riera",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat2-13",
+    "author": "Ingrid Pino",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-pgr-10",
+    "author": "J.D. Barker",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "ona-16",
+    "author": "Jair Dominguez",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "ona-17",
+    "author": "Jaume Asens",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat1-18",
+    "author": "Jaume Copons",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat2-14",
+    "author": "Javier Sierra",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-diag-19",
+    "author": "Joan Domínguez",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-diag-20",
+    "author": "Joan Laporta",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat2-15",
+    "author": "Joan Tubau",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat2-16",
+    "author": "Jorge Molist",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat1-19",
+    "author": "José Luis Marín",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-pgr-11",
+    "author": "José Luis Sastre",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-20",
+    "author": "Jose María Zavala",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "ona-18",
+    "author": "Josep Vicent Frechina",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat1-21",
+    "author": "Juan del Val",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat2-17",
+    "author": "Juan Gómez Jurado",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat1-22",
+    "author": "Juan Manuel García 'Pincho'",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-pgr-12",
+    "author": "Julia Navarro",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat1-23",
+    "author": "Julian Casanova",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-diag-21",
+    "author": "Julio Basulto",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat2-18",
+    "author": "Karmele Jaio",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-pgr-13",
+    "author": "Laia Bové",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "ona-19",
+    "author": "Laia Perearnau",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-22",
+    "author": "Laia Sabaté",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat1-24",
+    "author": "Laia Vilaseca",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat1-25",
+    "author": "Lana Corujo",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "ona-20",
+    "author": "Laura Fa",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-diag-23",
+    "author": "Lisha Lioz",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "ona-21",
+    "author": "Lolita Bosch i Sans",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat1-26",
+    "author": "Lucía Galán",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat1-27",
+    "author": "Lucía Galán",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat2-19",
+    "author": "Luz Gabás",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-22",
+    "author": "Manel Vidal Boix",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-28",
+    "author": "Manuel Marlasca",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-diag-24",
+    "author": "Manuel Tomás Belenguer",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-pgr-14",
+    "author": "Manuel Vilas",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-29",
+    "author": "Mar Flores",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "ona-23",
+    "author": "Maria Barbal",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "ona-24",
+    "author": "Maria Carme Roca",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-diag-25",
+    "author": "María Dueñas",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-diag-26",
+    "author": "María Leach",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "ona-25",
+    "author": "Marina Rossell",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-26",
+    "author": "Màrius Serra",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "ona-27",
+    "author": "Marta Orriols",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-28",
+    "author": "Marta Pontnou",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "ona-29",
+    "author": "Marta Vives",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "ona-30",
+    "author": "Martí Gironell",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat2-20",
+    "author": "Martí Gironell",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat2-21",
+    "author": "Maxi Iglesias",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat2-22",
+    "author": "Maxi Iglesias",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-pgr-15",
+    "author": "Máximo Huerta",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-27",
+    "author": "Mayte Uceda",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-28",
+    "author": "Megan Maxwell",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-diag-29",
+    "author": "Megan Maxwell",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat1-30",
+    "author": "Mikel Santiago",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-diag-30",
+    "author": "Miquel Bonet",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-diag-31",
+    "author": "Nerea Pascual",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-diag-32",
+    "author": "Nerea Pascual",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "ona-31",
+    "author": "Nina",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat2-23",
+    "author": "Odile Férnandez",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat1-31",
+    "author": "Oriol García Molsosa",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-32",
+    "author": "Oriol Mitjà",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat1-33",
+    "author": "Oscar Julve",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "ona-32",
+    "author": "Pablo d'Ors",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-pgr-16",
+    "author": "Pablo Rivero",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat2-24",
+    "author": "Paco Arango",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat2-25",
+    "author": "Pau Arenós",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "eci-cat2-26",
+    "author": "Paul Pen",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat2-27",
+    "author": "Paz Padilla",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat1-34",
+    "author": "Pedro Baños",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat2-28",
+    "author": "Pedro Martí",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "ona-33",
+    "author": "Pep Coll",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-cat1-35",
+    "author": "Pol Morillas",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-diag-33",
+    "author": "Rafael Tarradas",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "ona-34",
+    "author": "Ramon Gener",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "ona-35",
+    "author": "Ramon Solsona",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "eci-cat2-29",
+    "author": "Ramón Vallès",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat2-30",
+    "author": "René Ponte",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "ona-36",
+    "author": "Roc Casagran i Casañas",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat2-31",
+    "author": "Rodrigo Cortés",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-37",
+    "author": "Roser Cabré-Verdiell",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-34",
+    "author": "Sandra Miró",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-diag-35",
+    "author": "Sandra Miró",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-diag-36",
+    "author": "Sandra Miró",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat1-36",
+    "author": "Santiago Díaz",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "eci-cat2-32",
+    "author": "Santiago Posteguillo",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-cat2-33",
+    "author": "Santiago Posteguillo",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat2-34",
+    "author": "Sari Arponen",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-diag-37",
+    "author": "Sergi Ambudio",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "eci-diag-38",
+    "author": "Sergio Férnandez",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "ona-38",
+    "author": "Sílvia Soler Guasch",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-diag-39",
+    "author": "Sonia Fernández Vidal",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat1-37",
+    "author": "Sonsoles Ónega",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-pgr-17",
+    "author": "Susana Hernández",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat1-38",
+    "author": "Tamara Molina",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat1-39",
+    "author": "Tamara Molina",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "ona-39",
+    "author": "Toni Aira",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "ona-40",
+    "author": "Toni Cruanyes",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "20:00",
+    "endTime": "21:00"
+  },
+  {
+    "id": "ona-41",
+    "author": "Vicenç Lozano",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "10:00",
+    "endTime": "11:00"
+  },
+  {
+    "id": "eci-diag-40",
+    "author": "Vicent Flor",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat2-35",
+    "author": "Víctor del Árbol",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
+  },
+  {
+    "id": "eci-pgr-18",
+    "author": "Violeta Reed",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, 11, Barcelona",
+    "coordinates": {
+      "lat": 41.389,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "eci-cat2-36",
+    "author": "Wiz Problema",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat2-37",
+    "author": "Wiz Problema",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "ona-42",
+    "author": "Xavier Bosch",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "11:00",
+    "endTime": "12:00"
+  },
+  {
+    "id": "eci-cat1-40",
+    "author": "Xavier Grasset",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "13:00",
+    "endTime": "14:00"
+  },
+  {
+    "id": "ona-43",
+    "author": "Xavier Sala i Martín",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "17:00",
+    "endTime": "18:00"
+  },
+  {
+    "id": "ona-44",
+    "author": "Xavier Sala i Martín",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "18:00",
+    "endTime": "19:00"
+  },
+  {
+    "id": "ona-45",
+    "author": "Xavier Sala i Martín",
+    "book": "",
+    "publisher": "Ona Llibres",
+    "location": "Ona Llibres - Pg. de Gràcia",
+    "address": "Pg. de Gràcia, Barcelona",
+    "coordinates": {
+      "lat": 41.3915,
+      "lng": 2.165
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-cat1-41",
+    "author": "Xevi Verdaguer",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.17
+    },
+    "startTime": "19:00",
+    "endTime": "20:00"
+  },
+  {
+    "id": "eci-diag-41",
+    "author": "Yurena",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Av. Diagonal",
+    "address": "Av. Diagonal, 471, Barcelona",
+    "coordinates": {
+      "lat": 41.3945,
+      "lng": 2.1545
+    },
+    "startTime": "16:00",
+    "endTime": "17:00"
+  },
+  {
+    "id": "eci-cat2-38",
+    "author": "Zahara",
+    "book": "",
+    "publisher": "El Corte Inglés",
+    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
+    "address": "Pl. Catalunya, 14, Barcelona",
+    "coordinates": {
+      "lat": 41.3874,
+      "lng": 2.1696
+    },
+    "startTime": "12:00",
+    "endTime": "13:00"
   }
 ]

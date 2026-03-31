@@ -2,6 +2,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 import type { Signing } from '../types';
+import { useI18n } from '../i18n/I18nContext';
 
 const defaultIcon = L.icon({
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
@@ -20,10 +21,11 @@ interface MapViewProps {
 }
 
 export function MapView({ signings }: MapViewProps) {
+  const { t } = useI18n();
   const center: [number, number] = [41.3874, 2.1686];
 
   return (
-    <div className="h-[calc(100vh-220px)] min-h-[400px] rounded-xl overflow-hidden shadow-sm border border-gray-100">
+    <div className="h-[calc(100vh-180px)] min-h-[400px] overflow-hidden">
       <MapContainer center={center} zoom={14} scrollWheelZoom={true}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -35,14 +37,22 @@ export function MapView({ signings }: MapViewProps) {
             position={[signing.coordinates.lat, signing.coordinates.lng]}
           >
             <Popup>
-              <div className="text-sm">
-                <p className="font-bold">{signing.author}</p>
-                <p className="text-rosa">{signing.book}</p>
-                <p className="text-gray-500 text-xs">{signing.publisher}</p>
-                <p className="mt-1">
-                  {signing.startTime} - {signing.endTime}
-                </p>
-                <p className="text-xs text-gray-600">{signing.location}</p>
+              <div className="font-body text-sm min-w-[180px]">
+                <p className="font-headline text-base font-bold italic text-on-surface">{signing.author}</p>
+                {signing.book && <p className="text-primary text-xs font-semibold mt-0.5">{signing.book}</p>}
+                {signing.publisher && <p className="text-tertiary text-[11px] uppercase tracking-wider">{signing.publisher}</p>}
+                <div className="mt-2 pt-2 border-t border-outline-variant/20 space-y-1">
+                  <p className="flex items-center gap-1 text-xs text-on-surface-variant">
+                    <span className="material-symbols-outlined text-[14px]">schedule</span>
+                    {signing.startTime && signing.endTime
+                      ? `${signing.startTime} - ${signing.endTime}`
+                      : t('tbaTime')}
+                  </p>
+                  <p className="flex items-center gap-1 text-xs text-on-surface-variant">
+                    <span className="material-symbols-outlined text-[14px]">location_on</span>
+                    {signing.location || t('tbaLocation')}
+                  </p>
+                </div>
               </div>
             </Popup>
           </Marker>

@@ -9,26 +9,19 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
   const { t } = useI18n();
 
   return (
-    <div className="relative">
-      <svg
-        className="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-        />
-      </svg>
+    <div className="relative group">
+      <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+        <span className="material-symbols-outlined text-outline group-focus-within:text-primary transition-colors">
+          search
+        </span>
+      </div>
       <input
         type="text"
         placeholder={t('searchPlaceholder')}
+        aria-label={t('searchPlaceholder')}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full pl-10 pr-4 py-2.5 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-rosa focus:border-transparent"
+        className="w-full bg-surface-lowest dark:bg-on-surface/10 border-none py-4 pl-12 pr-4 rounded-xl shadow-sm text-sm font-body text-on-surface dark:text-surface-highest placeholder:text-tertiary/40 focus:outline-none focus:ring-2 focus:ring-primary/20 transition-all"
       />
     </div>
   );

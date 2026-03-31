@@ -19,35 +19,51 @@ export function Filters({
   onTimeSlotChange,
 }: FiltersProps) {
   const { t } = useI18n();
-  const selectClass =
-    'px-3 py-2 rounded-lg border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 dark:text-gray-100 text-sm focus:outline-none focus:ring-2 focus:ring-rosa focus:border-transparent';
+
+  const chipBase =
+    'flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-body tracking-wide whitespace-nowrap transition-colors cursor-pointer';
+  const chipInactive =
+    'bg-surface-highest dark:bg-on-surface/10 text-on-surface-variant hover:bg-secondary-container';
+  const chipActive =
+    'bg-primary text-on-primary';
 
   return (
-    <div className="flex flex-wrap gap-3">
-      <select
-        value={locationFilter}
-        onChange={(e) => onLocationChange(e.target.value)}
-        className={selectClass}
-      >
-        <option value="">{t('allLocations')}</option>
-        {locations.map((loc) => (
-          <option key={loc} value={loc}>
-            {loc}
-          </option>
-        ))}
-      </select>
-      <select
-        value={timeSlotFilter}
-        onChange={(e) => onTimeSlotChange(e.target.value)}
-        className={selectClass}
-      >
-        <option value="">{t('allTimes')}</option>
-        {timeSlots.map((slot) => (
-          <option key={slot.id} value={slot.id}>
+    <div className="flex gap-3 overflow-x-auto hide-scrollbar -mx-6 px-6 pb-1">
+      {/* Time slot chips */}
+      {timeSlots.map((slot) => {
+        const isActive = timeSlotFilter === slot.id;
+        return (
+          <button
+            key={slot.id}
+            onClick={() => onTimeSlotChange(isActive ? '' : slot.id)}
+            aria-pressed={isActive}
+            className={`${chipBase} ${isActive ? chipActive : chipInactive}`}
+          >
+            <span className="material-symbols-outlined text-[18px]">schedule</span>
             {slot.label}
-          </option>
-        ))}
-      </select>
+          </button>
+        );
+      })}
+
+      {/* Location dropdown */}
+      <div className="relative flex-shrink-0">
+        <select
+          value={locationFilter}
+          onChange={(e) => onLocationChange(e.target.value)}
+          aria-label={t('allLocations')}
+          className={`${chipBase} ${locationFilter ? chipActive : chipInactive} appearance-none pr-8 border-none focus:outline-none focus:ring-0`}
+        >
+          <option value="">{t('allLocations')}</option>
+          {locations.map((loc) => (
+            <option key={loc} value={loc}>
+              {loc}
+            </option>
+          ))}
+        </select>
+        <span className="material-symbols-outlined text-[16px] absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none">
+          expand_more
+        </span>
+      </div>
     </div>
   );
 }

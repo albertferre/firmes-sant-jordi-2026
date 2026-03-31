@@ -13,8 +13,8 @@ export default defineConfig({
         name: 'Firmes Sant Jordi 2026',
         short_name: 'Sant Jordi',
         description: 'Consulta les firmes de llibres de Sant Jordi 2026 a Barcelona',
-        theme_color: '#e8457c',
-        background_color: '#faf5f0',
+        theme_color: '#86001b',
+        background_color: '#fcf9f3',
         display: 'standalone',
         start_url: '/',
         icons: [
