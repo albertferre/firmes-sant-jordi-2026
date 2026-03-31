@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ca"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,300;0,400;0,700;1,300;1,400&amp;family=Manrope:wght@300;400;600;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>.material-symbols-outlined {
+    font-variation-settings: "wght" 300, "opsz" 24
+    }
+.paper-texture {
+    background-image: url(https://lh3.googleusercontent.com/aida-public/AB6AXuAbsvcV8oqtLdqwaMrAuoIecwvY204DnRQ6o6APoEhNbeFJB7d-ghw6VFiIX6Upmg7Kjy9_5UPoFcOZrO1FRAiwn-hjlOZiD36vOGqJ_DAOHig5T-FPovJar7MNJDqqEIgLu-oiB-8b2UCCpWxHn9UlZEyLler5T7LP7Z8Xo4Ijr9Jr3wZQ2CjVZSll3Iq4sVyWo0MHQLBY0B6YBwwyQsAablVbG-KmyYXb1gin-dSwy48lSjZfNiS9HqvG6X7SsR5EboNnBwcJ3A_p);
+    background-repeat: repeat
+    }
+.no-scrollbar::-webkit-scrollbar {
+    display: none
+    }
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+    }</style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-tertiary-fixed": "#1b1c1c",
+              "inverse-surface": "#31312d",
+              "surface-dim": "#dcdad4",
+              "primary-fixed-dim": "#ffb3b2",
+              "surface-container-low": "#f6f3ed",
+              "secondary-container": "#fed488",
+              "on-error-container": "#93000a",
+              "surface-bright": "#fcf9f3",
+              "on-background": "#1c1c18",
+              "tertiary": "#404040",
+              "tertiary-fixed": "#e4e2e1",
+              "primary-container": "#b10528",
+              "on-error": "#ffffff",
+              "surface-container-lowest": "#ffffff",
+              "surface-container-high": "#ebe8e2",
+              "on-surface": "#1c1c18",
+              "surface": "#fcf9f3",
+              "surface-variant": "#e5e2dc",
+              "surface-tint": "#bb132e",
+              "on-primary-container": "#ffbdbc",
+              "on-tertiary": "#ffffff",
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "secondary-fixed": "#ffdea5",
+              "on-secondary-fixed": "#261900",
+              "tertiary-fixed-dim": "#c8c6c5",
+              "background": "#fcf9f3",
+              "tertiary-container": "#585757",
+              "outline-variant": "#e4bdbc",
+              "secondary-fixed-dim": "#e9c176",
+              "on-tertiary-container": "#cfcdcd",
+              "primary-fixed": "#ffdad9",
+              "error": "#ba1a1a",
+              "secondary": "#775a19",
+              "on-surface-variant": "#5b403f",
+              "on-primary-fixed": "#410008",
+              "on-secondary-fixed-variant": "#5d4201",
+              "error-container": "#ffdad6",
+              "surface-container": "#f0eee8",
+              "on-tertiary-fixed-variant": "#474747",
+              "outline": "#8f6f6e",
+              "on-secondary-container": "#785a1a",
+              "primary": "#86001b",
+              "inverse-on-surface": "#f3f0ea",
+              "inverse-primary": "#ffb3b2",
+              "surface-container-highest": "#e5e2dc",
+              "on-primary-fixed-variant": "#92001e"
+            },
+            fontFamily: {
+              "headline": ["Newsreader"],
+              "body": ["Manrope"],
+              "label": ["Manrope"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body paper-texture">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fcf9f3]/80 backdrop-blur-md dark:bg-[#1c1c18]/80 shadow-[0_8px_32px_rgba(28,28,24,0.05)]">
+<div class="flex justify-between items-center w-full px-8 py-4 max-w-screen-2xl mx-auto">
+<div class="text-2xl font-serif italic text-[#86001b] dark:text-[#b10528] font-['Newsreader'] font-light tracking-wide">
+                Sant Jordi 2026
+            </div>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="text-[#86001b] dark:text-[#b10528] border-b-2 border-[#86001b] pb-1 font-['Newsreader'] font-light tracking-wide hover:opacity-80 transition-opacity duration-300" href="#">Authors</a>
+<a class="text-[#404040] dark:text-[#fcf9f3]/70 hover:text-[#86001b] font-['Newsreader'] font-light tracking-wide transition-opacity duration-300" href="#">Map</a>
+<a class="text-[#404040] dark:text-[#fcf9f3]/70 hover:text-[#86001b] font-['Newsreader'] font-light tracking-wide transition-opacity duration-300" href="#">Events</a>
+<a class="text-[#404040] dark:text-[#fcf9f3]/70 hover:text-[#86001b] font-['Newsreader'] font-light tracking-wide transition-opacity duration-300" href="#">Schedule</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-[#86001b] hover:opacity-80 transition-opacity duration-300">menu</button>
+</div>
+</div>
+</header>
+<main class="pt-24 pb-20 max-w-screen-2xl mx-auto px-6 md:px-12">
+<!-- Hero Section -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-20 items-center">
+<div class="md:col-span-5 relative">
+<div class="absolute -top-4 -left-4 w-full h-full bg-secondary-container/20 rounded-lg -z-10"></div>
+<img alt="Elena Vila-Matas" class="w-full h-[600px] object-cover rounded-lg shadow-xl grayscale-[20%] sepia-[10%] transition-transform hover:scale-[1.01] duration-500" data-alt="elegant portrait of a middle-aged female author with thoughtful expression sitting in a sunlit library surrounded by antique books" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxqzMQKJTQfpT3DDKei8xyOu902qzDKbTRBhQA4Fv8kT-hvqBs9Ya6jQSgDXLhElYz21JIe-yPlPxTq7M_x9eybTq17E2D_0WqdJsJbETxRAcPUp4Sn-9I1QalgVmV3YsJiHPXC8tF8Qv-aGA3yDg1E3Nf3CzLFS9n7dTjw4y02S0umq0bgVilTHmo4aYQtIP0Ug-pLAS1utRR_eQ2T-I5paKRN4g__C9uCoqIJp9kDKwGiLFkuRhWus-cqQ5f3o5v1xPqEzJytgkz"/>
+</div>
+<div class="md:col-span-7 space-y-8">
+<div>
+<span class="font-label text-primary uppercase tracking-[0.2em] text-xs font-semibold mb-4 block">Featured Author</span>
+<h1 class="font-headline text-7xl md:text-8xl text-on-background font-light leading-none">Elena Vila-Matas</h1>
+</div>
+<div class="space-y-4 max-w-2xl">
+<h2 class="font-headline italic text-3xl text-primary-container">"The Rose in the Labyrinth"</h2>
+<p class="text-xl text-tertiary leading-relaxed font-light">
+                        Exploring the ethereal boundaries between Barcelona's gothic history and the contemporary pulse of the city, Vila-Matas has become the definitive voice of the new Catalan literary renaissance. Her prose, both sharp and melodic, captures the ephemeral beauty of Sant Jordi like no other.
+                    </p>
+</div>
+<div class="flex gap-4">
+<button class="bg-primary-container text-on-primary px-8 py-4 rounded-lg font-semibold flex items-center gap-2 hover:opacity-90 transition-all active:scale-95">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">auto_stories</span>
+                        Read Bio
+                    </button>
+<button class="border border-outline-variant text-primary px-8 py-4 rounded-lg font-semibold hover:bg-surface-container-low transition-all active:scale-95">
+                        Latest Interviews
+                    </button>
+</div>
+</div>
+</section>
+<!-- Interactive Schedule & Map Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-24">
+<!-- Schedule Timeline -->
+<div class="lg:col-span-7 bg-surface-container-low p-8 md:p-12 rounded-xl">
+<div class="flex items-center justify-between mb-12">
+<h3 class="font-headline text-4xl font-light">Schedule</h3>
+<div class="bg-secondary-container/30 px-4 py-1 rounded-full text-on-secondary-container text-sm font-bold uppercase tracking-widest">Today · 23 April</div>
+</div>
+<div class="space-y-0">
+<!-- Timeline Item 1 -->
+<div class="relative pl-12 pb-12 group">
+<div class="absolute left-0 top-0 w-[2px] h-full bg-outline-variant group-last:h-0"></div>
+<div class="absolute left-[-5px] top-1 w-3 h-3 rounded-full bg-outline-variant"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="text-tertiary text-sm font-bold block mb-1">10:00 — 12:00</span>
+<h4 class="text-2xl font-headline font-normal">La Central del Raval</h4>
+<p class="text-tertiary/70 text-sm">Carrer d'Elisabets, 6</p>
+</div>
+<div class="bg-surface-container-highest text-tertiary/60 px-4 py-1.5 rounded-full text-xs font-bold uppercase self-start">Completed</div>
+</div>
+</div>
+<!-- Timeline Item 2 - Active -->
+<div class="relative pl-12 pb-12 group">
+<div class="absolute left-0 top-0 w-[2px] h-full bg-outline-variant group-last:h-0"></div>
+<div class="absolute left-[-8px] top-1 w-4 h-4 rounded-full bg-primary ring-4 ring-primary/20"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="text-primary text-sm font-bold block mb-1">13:00 — 15:00</span>
+<h4 class="text-2xl font-headline font-normal text-primary">Passeig de Gràcia (Stand 42)</h4>
+<p class="text-tertiary/70 text-sm">Near Casa Batlló</p>
+</div>
+<div class="bg-primary-container text-on-primary px-4 py-1.5 rounded-full text-xs font-bold uppercase flex items-center gap-1.5 self-start shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-white"></span> Signing Now
+                            </div>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="relative pl-12 group">
+<div class="absolute left-0 top-0 w-[2px] h-full bg-outline-variant group-last:h-0"></div>
+<div class="absolute left-[-5px] top-1 w-3 h-3 rounded-full bg-outline-variant"></div>
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<div>
+<span class="text-tertiary text-sm font-bold block mb-1">17:00 — 19:00</span>
+<h4 class="text-2xl font-headline font-normal">Casa del Llibre</h4>
+<p class="text-tertiary/70 text-sm">Rambla de Catalunya, 37</p>
+</div>
+<div class="bg-surface-container-highest text-tertiary/60 px-4 py-1.5 rounded-full text-xs font-bold uppercase self-start">Upcoming</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Map Integration -->
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div class="bg-surface-container-lowest rounded-xl overflow-hidden shadow-sm flex-1 relative min-h-[400px]">
+<img alt="Barcelona Map Location" class="w-full h-full object-cover grayscale-[30%]" data-alt="abstract stylized map of Barcelona Eixample district with soft vintage paper textures and elegant typography" data-location="Barcelona" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBg5Bs3d0TptVlHrGzddZ8_Wit_rEoEyDxYtO1nJk6ca8BlZyzxXL9y_4HSE1fASWlTVXFXit_3pxtkHPX4lUCy8N5L1aon7GDGRFaVSKLWyAi8I0RBWjd7f_9GNr3VbFmffErVI7JnzoncIGolFBVQYyd3nQrealfiC5rJpp5o5ktAyJhNmim_Lyb7S3z2mrBQpEzSEqj5RvXCBI7E2VzCWNQOLFxl4tF8OGjBgfHuaVEik14LKIf_OaU4xVakbgisyfNIQk_R5thw"/>
+<div class="absolute inset-0 bg-primary/5 pointer-events-none"></div>
+<!-- Map Pin -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="bg-primary text-white p-3 rounded-full shadow-lg ring-8 ring-primary/10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+<div class="mt-2 bg-white px-4 py-2 rounded-lg shadow-xl text-xs font-bold uppercase tracking-wider text-primary whitespace-nowrap border border-primary/10">
+                            Current: Stand 42
+                        </div>
+</div>
+</div>
+<button class="w-full bg-on-background text-surface py-5 rounded-xl font-bold uppercase tracking-widest flex items-center justify-center gap-3 hover:opacity-90 transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined">directions_walk</span>
+                    Cómo llegar
+                </button>
+</div>
+</section>
+<!-- Bibliography Section -->
+<section class="mb-12">
+<div class="flex items-end justify-between mb-10">
+<div>
+<h3 class="font-headline text-5xl font-light mb-2">Bibliography</h3>
+<p class="text-tertiary/60 font-label uppercase tracking-widest text-xs">Essential Works</p>
+</div>
+<div class="flex gap-2">
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary-container hover:text-white transition-colors">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center text-primary hover:bg-primary-container hover:text-white transition-colors">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+<div class="flex gap-8 overflow-x-auto no-scrollbar pb-8 -mx-4 px-4 snap-x">
+<!-- Book Card 1 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-surface-container-lowest p-6 rounded-xl shadow-sm snap-start group border border-transparent hover:border-primary/10 transition-all">
+<div class="relative h-[480px] mb-6 overflow-hidden rounded-lg">
+<img alt="The Rose in the Labyrinth" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="vintage book cover with an intricate rose illustration and golden gothic typography on deep burgundy background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUQC6krRWGDzsQHYaG0Uac7TlmMEFEduyuw08ZZWs-PXwEyz9P-Mi27L1s9w9-CBL4-WUf69tFoX7WQnJnVn5vtw209E4VeEPT3r5vl1oz0KhaxukU4iKsksT6mrjoQXLhrfZ5wZ8LSbA2pBecHB-MQr7SHyrfF9_2ktTcSifWKWVPu8xxmCpsMq4rw0M9LG2shWySrra38hUCisYWlSXLP936xrVwnITkvQv9QBKDTQZt9_ohbweUAU5Om7NCQeiKcK9tXFyMyrqH"/>
+<div class="absolute top-4 right-4 bg-secondary-container text-on-secondary-container px-3 py-1 rounded text-[10px] font-black uppercase tracking-tighter">Bestseller</div>
+</div>
+<h4 class="font-headline text-2xl mb-2 group-hover:text-primary transition-colors">The Rose in the Labyrinth</h4>
+<p class="text-tertiary/70 text-sm leading-relaxed line-clamp-2">A mystery set during the construction of Santa Maria del Mar, where a young architect discovers a secret guild.</p>
+</div>
+<!-- Book Card 2 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-surface-container-lowest p-6 rounded-xl shadow-sm snap-start group border border-transparent hover:border-primary/10 transition-all">
+<div class="relative h-[480px] mb-6 overflow-hidden rounded-lg">
+<img alt="Shadows of the Eixample" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="modern minimalist book cover featuring an architectural sketch of a Barcelona balcony with long dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2eq9wbyKrMXuc-l9Hlq5CCKGWey70fQBgF6EEvE_HnQT24zUEIkbpJodpNUNAAWnio8orpa9rrv7qQenTMJGm0jgZt0KQunnTtIz7vAziXSB6gAlQk8ixfAzW1dyDmCDma67wexO0oXmKpGNPR0p-ZaDedqByQzlqyV_ue7OreFzZAGkyQ6qLu84w67R318FgknScsh3ubGBqm-cXvLyBB0hKIE8YRZ7QVXNt4F2EiF5JBWRdvra2dYa47dNaX4577bCNTay36-xl"/>
+</div>
+<h4 class="font-headline text-2xl mb-2 group-hover:text-primary transition-colors">Shadows of the Eixample</h4>
+<p class="text-tertiary/70 text-sm leading-relaxed line-clamp-2">Intertwined stories of residents in a single octagonal block, exploring solitude and connection in the modern city.</p>
+</div>
+<!-- Book Card 3 -->
+<div class="min-w-[320px] md:min-w-[400px] bg-surface-container-lowest p-6 rounded-xl shadow-sm snap-start group border border-transparent hover:border-primary/10 transition-all">
+<div class="relative h-[480px] mb-6 overflow-hidden rounded-lg">
+<img alt="The Ink of Memory" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="atmospheric book cover with an antique fountain pen spilling ink that turns into birds, soft sepia tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1x4OXcG3trPMPVj7KsG3n1LYtoQp9oZgxfB9FfOog07YrxmCv2ryE3ZnRy8MtbcO_-BzmI_i0mkUlrS-f1dRHC-VM5rh5sD2tg5CAG7O0yCVCFdapnun9cIOsruDK1cmiaZYBpbk9Mpu_sqY6IMCqJod1-nNyUMPF19TNmN9LPv9YpJULIJzQ76Yum7i9qRtVfAF_R07wuTsOPKtPJBu3kjMOIUZP5ZUGpuga_DIzGjGijFzGirXju8gXJokx2AtjObtIIeBWDuN-"/>
+</div>
+<h4 class="font-headline text-2xl mb-2 group-hover:text-primary transition-colors">The Ink of Memory</h4>
+<p class="text-tertiary/70 text-sm leading-relaxed line-clamp-2">A collection of essays reflecting on the power of literature to reshape our personal past.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 border-t-[0.5px] border-[#86001b]/10 bg-[#fcf9f3] dark:bg-[#1c1c18]">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-12 gap-6 max-w-screen-2xl mx-auto">
+<div class="text-[#86001b] opacity-40 font-['Newsreader'] italic text-xl">
+                Sant Jordi 2026
+            </div>
+<div class="flex flex-wrap justify-center gap-8">
+<a class="text-[#404040]/60 dark:text-[#fcf9f3]/40 hover:text-[#86001b] dark:hover:text-[#b10528] transition-colors font-['Manrope'] text-sm tracking-tight uppercase" href="#">Generalitat de Catalunya</a>
+<a class="text-[#404040]/60 dark:text-[#fcf9f3]/40 hover:text-[#86001b] dark:hover:text-[#b10528] transition-colors font-['Manrope'] text-sm tracking-tight uppercase" href="#">UNESCO City of Literature</a>
+<a class="text-[#404040]/60 dark:text-[#fcf9f3]/40 hover:text-[#86001b] dark:hover:text-[#b10528] transition-colors font-['Manrope'] text-sm tracking-tight uppercase" href="#">Privacy Policy</a>
+</div>
+<p class="text-[#404040]/60 dark:text-[#fcf9f3]/40 font-['Manrope'] text-[10px] tracking-tight uppercase text-center md:text-right">
+                © 2026 Ajuntament de Barcelona - Cultura. Digital Ephemera Series.
+            </p>
+</div>
+</footer>
+</body></html>

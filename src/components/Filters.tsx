@@ -28,7 +28,7 @@ export function Filters({
     'bg-primary text-on-primary';
 
   return (
-    <div className="flex gap-3 overflow-x-auto hide-scrollbar -mx-6 px-6 pb-1">
+    <div className="flex gap-3 overflow-x-auto hide-scrollbar pb-1">
       {/* Time slot chips */}
       {timeSlots.map((slot) => {
         const isActive = timeSlotFilter === slot.id;
@@ -51,7 +51,7 @@ export function Filters({
           value={locationFilter}
           onChange={(e) => onLocationChange(e.target.value)}
           aria-label={t('allLocations')}
-          className={`${chipBase} ${locationFilter ? chipActive : chipInactive} appearance-none pr-8 border-none focus:outline-none focus:ring-0`}
+          className={`${chipBase} ${locationFilter ? 'bg-jordi-green text-on-primary' : chipInactive} appearance-none pr-8 border-none focus:outline-none focus:ring-0`}
         >
           <option value="">{t('allLocations')}</option>
           {locations.map((loc) => (

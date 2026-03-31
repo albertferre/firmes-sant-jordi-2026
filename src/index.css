@@ -15,6 +15,12 @@
   --color-secondary-container: #fed488;
   --color-on-secondary-container: #785a1a;
 
+  /* Sant Jordi Green (dragon / stem) */
+  --color-jordi-green: #1a6b5a;
+  --color-jordi-green-light: #2a9d85;
+  --color-jordi-green-dim: #145548;
+  --color-jordi-green-surface: #e8f5f0;
+
   /* Tertiary */
   --color-tertiary: #404040;
   --color-tertiary-container: #585757;
@@ -47,14 +53,43 @@
 body {
   font-family: "Manrope", sans-serif;
   background-color: #fcf9f3;
+  background-image:
+    radial-gradient(ellipse 120% 60% at 20% 0%, rgba(186,100,130,0.28) 0%, transparent 55%),
+    radial-gradient(ellipse 100% 50% at 85% 5%, rgba(26,107,90,0.18) 0%, transparent 45%),
+    radial-gradient(ellipse 80% 50% at 10% 80%, rgba(42,157,133,0.12) 0%, transparent 40%),
+    radial-gradient(ellipse 80% 40% at 50% 100%, rgba(130,170,165,0.12) 0%, transparent 50%);
   color: #1c1c18;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
 
+@media (min-width: 1024px) {
+  body { background-attachment: fixed; }
+}
+
 .dark body {
   background-color: #1c1c18;
+  background-image:
+    radial-gradient(ellipse 120% 60% at 20% 0%, rgba(134,0,27,0.25) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 50% at 80% 0%, rgba(20,85,72,0.20) 0%, transparent 50%),
+    radial-gradient(ellipse 80% 40% at 10% 70%, rgba(26,107,90,0.12) 0%, transparent 40%);
   color: #e5e2dc;
+}
+
+/* Hero gradient - rose + green Sant Jordi palette */
+.hero-gradient {
+  background:
+    radial-gradient(ellipse 90% 80% at 70% 30%, rgba(186,100,120,0.20) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 60% at 10% 40%, rgba(26,107,90,0.18) 0%, transparent 45%),
+    radial-gradient(ellipse 50% 50% at 90% 80%, rgba(42,157,133,0.10) 0%, transparent 40%),
+    linear-gradient(180deg, rgba(252,249,243,0) 0%, rgba(252,249,243,0.9) 100%);
+}
+
+.dark .hero-gradient {
+  background:
+    radial-gradient(ellipse 90% 80% at 70% 30%, rgba(134,0,27,0.15) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 60% at 10% 40%, rgba(20,85,72,0.15) 0%, transparent 45%),
+    linear-gradient(180deg, rgba(28,28,24,0) 0%, rgba(28,28,24,0.9) 100%);
 }
 
 /* Noise texture overlay */
@@ -88,6 +123,11 @@ body {
 .hide-scrollbar {
   -ms-overflow-style: none;
   scrollbar-width: none;
+}
+
+/* Bookmark ribbon (desktop) */
+.bookmark-ribbon {
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
 }
 
 /* Selection color */

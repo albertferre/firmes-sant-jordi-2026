@@ -7,7 +7,7 @@ interface BottomNavProps {
   favoritesCount: number;
 }
 
-const tabs: { view: ActiveView; icon: string; labelKey: 'list' | 'map' | 'favorites' }[] = [
+const tabs: { view: 'list' | 'map' | 'favorites'; icon: string; labelKey: 'list' | 'map' | 'favorites' }[] = [
   { view: 'list', icon: 'explore', labelKey: 'list' },
   { view: 'map', icon: 'map', labelKey: 'map' },
   { view: 'favorites', icon: 'auto_stories', labelKey: 'favorites' },
@@ -17,7 +17,7 @@ export function BottomNav({ activeView, onViewChange, favoritesCount }: BottomNa
   const { t } = useI18n();
 
   return (
-    <nav className="fixed bottom-0 left-0 w-full h-20 bg-surface/80 dark:bg-on-surface/80 backdrop-blur-xl border-t border-outline-variant/10 shadow-[0_-4px_24px_rgba(28,28,24,0.03)] z-50 flex justify-around items-center px-4 rounded-t-2xl" aria-label="Main navigation">
+    <nav className="fixed bottom-0 left-0 w-full h-20 bg-surface/90 dark:bg-on-surface/90 backdrop-blur-md border-t border-outline-variant/10 shadow-[0_-4px_24px_rgba(28,28,24,0.03)] z-50 flex justify-around items-center px-4 rounded-t-2xl lg:hidden" aria-label="Main navigation">
       {tabs.map(({ view, icon, labelKey }) => {
         const isActive = activeView === view;
         return (
