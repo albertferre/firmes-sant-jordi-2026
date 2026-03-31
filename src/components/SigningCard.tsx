@@ -1,13 +1,15 @@
-import type { Signing } from '../types';
+import type { AuthorInfo, Signing } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 
 interface SigningCardProps {
   signing: Signing;
+  authorInfo?: AuthorInfo;
   isFavorite: boolean;
   onToggleFavorite: (id: string) => void;
+  onAuthorClick?: (authorName: string) => void;
 }
 
-export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCardProps) {
+export function SigningCard({ signing, authorInfo, isFavorite, onToggleFavorite, onAuthorClick }: SigningCardProps) {
   const { t } = useI18n();
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${signing.coordinates.lat},${signing.coordinates.lng}`;
   const hasTime = signing.startTime && signing.endTime;
@@ -30,16 +32,37 @@ export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCa
 
   return (
     <div className={`bg-surface-lowest dark:bg-surface-highest/8 p-4 rounded-xl flex items-center gap-4 relative shadow-[0_4px_20px_rgba(28,28,24,0.03)] ${hasTime ? 'border-l-4 border-primary' : 'border-l-4 border-outline-variant/30'}`}>
-      {/* Author initial */}
-      <div className="relative w-14 h-14 rounded-xl bg-primary/8 dark:bg-primary/15 flex items-center justify-center flex-shrink-0">
-        <span className="font-headline text-2xl text-primary font-bold italic">
-          {signing.author.charAt(0)}
-        </span>
+      {/* Author photo */}
+      <div
+        className={`relative w-14 h-14 rounded-xl overflow-hidden flex-shrink-0 ${onAuthorClick ? 'cursor-pointer' : ''} ${authorInfo?.photo ? '' : 'bg-primary/8 dark:bg-primary/15'}`}
+        onClick={onAuthorClick ? () => onAuthorClick(signing.author) : undefined}
+        onKeyDown={onAuthorClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onAuthorClick(signing.author); } } : undefined}
+        role={onAuthorClick ? 'button' : undefined}
+        tabIndex={onAuthorClick ? 0 : undefined}
+      >
+        {authorInfo?.photo ? (
+          <img
+            src={authorInfo.photo}
+            alt={signing.author}
+            className="w-full h-full object-cover object-top"
+            loading="lazy"
+          />
+        ) : (
+          <span className="font-headline text-2xl text-primary font-bold italic flex items-center justify-center w-full h-full">
+            {signing.author.charAt(0)}
+          </span>
+        )}
       </div>
 
       {/* Content */}
       <div className="flex-1 min-w-0">
-        <h3 className="font-headline text-lg italic text-on-surface dark:text-surface-highest truncate leading-tight">
+        <h3
+          className={`font-headline text-lg italic text-on-surface dark:text-surface-highest truncate leading-tight ${onAuthorClick ? 'cursor-pointer hover:text-primary transition-colors' : ''}`}
+          onClick={onAuthorClick ? () => onAuthorClick(signing.author) : undefined}
+          onKeyDown={onAuthorClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onAuthorClick(signing.author); } } : undefined}
+          role={onAuthorClick ? 'button' : undefined}
+          tabIndex={onAuthorClick ? 0 : undefined}
+        >
           {signing.author}
         </h3>
 
@@ -69,9 +92,9 @@ export function SigningCard({ signing, isFavorite, onToggleFavorite }: SigningCa
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`${signing.location} — ${t('openInMaps')}`}
-              className="flex items-center gap-1 text-xs font-body text-on-surface-variant hover:text-primary transition-colors truncate"
+              className="flex items-center gap-1 text-xs font-body text-on-surface-variant hover:text-jordi-green transition-colors truncate"
             >
-              <span className="material-symbols-outlined text-[14px]">location_on</span>
+              <span className="material-symbols-outlined text-[14px] text-jordi-green-light">location_on</span>
               {signing.location}
             </a>
           ) : (
