@@ -30,6 +30,10 @@ export const translations = {
     removeFavorite: 'Treure de preferides',
     openInMaps: 'Obrir al mapa (nova pestanya)',
     changeLanguage: 'Canviar idioma',
+    signingNow: 'Firmant Ara',
+    liveNow: 'En directe',
+    upcomingSignings: 'Pr\u00f2ximes Firmes',
+    viewAll: 'Veure totes',
   },
   es: {
     title: 'Firmas Sant Jordi 2026',
@@ -62,6 +66,10 @@ export const translations = {
     removeFavorite: 'Quitar de favoritos',
     openInMaps: 'Abrir en el mapa (nueva pesta\u00f1a)',
     changeLanguage: 'Cambiar idioma',
+    signingNow: 'Firmando Ahora',
+    liveNow: 'En directo',
+    upcomingSignings: 'Pr\u00f3ximas Firmas',
+    viewAll: 'Ver todas',
   },
 } as const;
 

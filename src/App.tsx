@@ -11,6 +11,7 @@ import { Filters } from './components/Filters';
 import { SigningList } from './components/SigningList';
 import { MapView } from './components/MapView';
 import { BottomNav } from './components/BottomNav';
+import { FeaturedCards } from './components/FeaturedCards';
 
 const signings: Signing[] = signingsData as Signing[];
 
@@ -64,14 +65,15 @@ function App() {
       <main className="relative z-10 pt-[72px] pb-24 lg:pb-8">
         {/* Hero Section - only on list view */}
         {activeView === 'list' && (
-          <section className="hero-gradient relative overflow-hidden mb-8 lg:mb-12">
-            <div className="px-6 lg:px-12 py-10 lg:py-20 max-w-screen-2xl mx-auto">
+          <section className="relative overflow-hidden mb-8 lg:mb-12">
+            <div className="absolute inset-0 hero-gradient" />
+            <div className="relative px-6 lg:px-12 py-10 lg:py-20 max-w-screen-2xl mx-auto">
               <div className="max-w-3xl">
                 <div className="mb-3 inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full text-xs font-body font-medium tracking-tight uppercase">
                   <span className="material-symbols-outlined text-sm">calendar_today</span>
                   {t('subtitle')}
                 </div>
-                <h2 className="font-headline text-5xl md:text-7xl lg:text-8xl text-on-surface dark:text-surface-highest mb-6 leading-[1.1] tracking-tight italic">
+                <h2 className="font-headline text-6xl md:text-8xl lg:text-8xl text-on-surface dark:text-surface-highest mb-6 leading-[1.1] tracking-tight italic">
                   La Diada de <br />
                   <span className="text-primary font-bold not-italic">Sant Jordi</span>
                 </h2>
@@ -114,12 +116,30 @@ function App() {
           {activeView === 'map' ? (
             <MapView signings={displayedSignings} />
           ) : (
-            <SigningList
-              signings={displayedSignings}
-              isFavorite={isFavorite}
-              onToggleFavorite={toggleFavorite}
-              emptyStateType={activeView === 'favorites' ? 'noFavorites' : 'noResults'}
-            />
+            <>
+              {/* Featured cards - only on list view without active filters */}
+              {activeView === 'list' && !searchText && !locationFilter && !timeSlotFilter && (
+                <FeaturedCards
+                  signings={filtered}
+                  onToggleFavorite={toggleFavorite}
+                  isFavorite={isFavorite}
+                />
+              )}
+
+              {/* Section header for upcoming signings */}
+              {activeView === 'list' && !searchText && !locationFilter && !timeSlotFilter && (
+                <h2 className="font-headline text-3xl lg:text-4xl text-on-surface dark:text-surface-highest mb-6">
+                  {t('upcomingSignings')}
+                </h2>
+              )}
+
+              <SigningList
+                signings={displayedSignings}
+                isFavorite={isFavorite}
+                onToggleFavorite={toggleFavorite}
+                emptyStateType={activeView === 'favorites' ? 'noFavorites' : 'noResults'}
+              />
+            </>
           )}
         </div>
       </main>
