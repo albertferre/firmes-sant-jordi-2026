@@ -159,7 +159,7 @@ function App() {
               <div className="h-[calc(100vh-180px)] min-h-[400px] bg-surface-low dark:bg-on-surface/5 rounded-xl flex items-center justify-center">
                 <div className="flex flex-col items-center gap-3 text-tertiary">
                   <span className="material-symbols-outlined text-4xl animate-pulse">map</span>
-                  <span className="text-sm font-body">Carregant mapa...</span>
+                  <span className="text-sm font-body">{t('loadingMap')}</span>
                 </div>
               </div>
             }>

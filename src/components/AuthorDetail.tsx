@@ -1,15 +1,14 @@
 import { useRef, useCallback } from 'react';
 import type { AuthorBook, AuthorInfo, Signing } from '../types';
+import type { TranslationKey } from '../i18n/translations';
 import { useI18n } from '../i18n/I18nContext';
 import { isEventDay, isSigningLive } from '../hooks/useEventDay';
 
-function useAuthorBio(author: AuthorInfo | null, locale: string): string {
+function getAuthorBio(author: AuthorInfo | null, locale: string): string {
   if (!author) return '';
   if (locale === 'ca') return author.generatedBioCa || author.bioCa || author.bioEs || '';
   return author.generatedBioEs || author.bioEs || author.bioCa || '';
 }
-
-import type { TranslationKey } from '../i18n/translations';
 
 function BibliographyCarousel({ books, t }: { books: AuthorBook[]; t: (key: TranslationKey) => string }) {
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -32,14 +31,14 @@ function BibliographyCarousel({ books, t }: { books: AuthorBook[]; t: (key: Tran
             <button
               onClick={() => scroll('left')}
               className="w-10 h-10 rounded-full bg-surface-highest dark:bg-on-surface/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors"
-              aria-label="Anterior"
+              aria-label={t('previous')}
             >
               <span className="material-symbols-outlined">chevron_left</span>
             </button>
             <button
               onClick={() => scroll('right')}
               className="w-10 h-10 rounded-full bg-surface-highest dark:bg-on-surface/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors"
-              aria-label="Següent"
+              aria-label={t('next')}
             >
               <span className="material-symbols-outlined">chevron_right</span>
             </button>
@@ -97,7 +96,7 @@ interface AuthorDetailProps {
 
 export function AuthorDetail({ author, authorName, signings, favoriteIds, onToggleFavorite, onBack }: AuthorDetailProps) {
   const { t, locale } = useI18n();
-  const bio = useAuthorBio(author, locale);
+  const bio = getAuthorBio(author, locale);
   const authorSignings = signings.filter((s) => s.author === authorName);
 
   return (

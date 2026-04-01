@@ -27,7 +27,7 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
         <button
           onClick={() => onChange('')}
           className="absolute inset-y-0 right-3 flex items-center"
-          aria-label="Esborrar cerca"
+          aria-label={t('clearSearch')}
         >
           <span className="material-symbols-outlined text-lg text-tertiary/50 hover:text-primary transition-colors">close</span>
         </button>

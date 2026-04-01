@@ -33,7 +33,11 @@ export function SigningCard({ signing, extraSignings, authorInfo, favoriteIds, o
   };
 
   const handleFavoriteAll = () => {
-    for (const s of allSignings) onToggleFavorite(s.id);
+    // If any is favorited, unfavorite all; otherwise favorite all
+    const allFav = allSignings.every((s) => favoriteIds.has(s.id));
+    for (const s of allSignings) {
+      if (allFav || !favoriteIds.has(s.id)) onToggleFavorite(s.id);
+    }
   };
 
   return (
