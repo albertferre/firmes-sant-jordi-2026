@@ -167,8 +167,8 @@ function App() {
             </Suspense>
           ) : activeView !== 'author' ? (
             <>
-              {/* Featured cards - only on list view without active filters */}
-              {activeView === 'list' && !searchText && !locationFilter && !timeSlotFilter && (
+              {/* Featured cards - on list view, dynamic with filters */}
+              {activeView === 'list' && !searchText && (
                 <FeaturedCards
                   signings={filtered}
                   authorsData={authorsData}
@@ -179,7 +179,7 @@ function App() {
               )}
 
               {/* Section header for upcoming signings */}
-              {activeView === 'list' && !searchText && !locationFilter && !timeSlotFilter && (
+              {activeView === 'list' && (
                 <h2 className="font-headline text-3xl lg:text-4xl text-on-surface dark:text-surface-highest mb-6">
                   <span className="text-jordi-green mr-1">&mdash;</span> {t('upcomingSignings')}
                 </h2>

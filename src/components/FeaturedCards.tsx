@@ -24,14 +24,20 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, favorit
   const { t } = useI18n();
   const live = isEventDay();
 
-  // Pick first signings that have confirmed time + location, one per author
+  // Pick most popular authors with confirmed time + location, one per author
   const seen = new Set<string>();
-  const featured = signings
-    .filter((s) => {
-      if (!s.startTime || !s.endTime || s.location === 'Per confirmar') return false;
-      if (seen.has(s.author)) return false;
-      seen.add(s.author);
-      return true;
+  const candidates = signings.filter((s) => {
+    if (!s.startTime || !s.endTime || s.location === 'Per confirmar') return false;
+    if (seen.has(s.author)) return false;
+    seen.add(s.author);
+    return true;
+  });
+  // Sort by Goodreads popularity (ratingsCount as proxy — more ratings = more popular)
+  const featured = candidates
+    .sort((a, b) => {
+      const countA = parseInt(authorsData[a.author]?.ratingsCount || '0') || 0;
+      const countB = parseInt(authorsData[b.author]?.ratingsCount || '0') || 0;
+      return countB - countA;
     })
     .slice(0, 6);
 
