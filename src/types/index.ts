@@ -13,19 +13,27 @@ export interface Signing {
 
 export interface AuthorBook {
   title: string;
-  url: string;
+  cover: string;
+  description: string;
+  publishedDate: string;
+  publisher: string;
+  isbn: string;
 }
 
 export interface AuthorInfo {
   name: string;
-  goodreadsUrl: string;
   photo: string;
-  bio: string;
-  bornInfo: string;
+  bioEs: string;
+  bioCa: string;
+  generatedBioEs: string;
+  generatedBioCa: string;
+  presentingBook: string;
+  books: AuthorBook[];
+  goodreadsUrl: string;
   rating: string;
   ratingsCount: string;
-  books: AuthorBook[];
-  genres: string[];
+  wikiUrl: string;
+  planetaUrl: string;
 }
 
 export type ActiveView = 'list' | 'favorites' | 'map' | 'author';

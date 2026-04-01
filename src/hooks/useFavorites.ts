@@ -30,10 +30,5 @@ export function useFavorites() {
     });
   }, []);
 
-  const isFavorite = useCallback(
-    (id: string) => favoriteIds.has(id),
-    [favoriteIds],
-  );
-
-  return { favoriteIds, toggleFavorite, isFavorite };
+  return { favoriteIds, toggleFavorite };
 }

@@ -51,6 +51,10 @@ export const translations = {
     noAuthorInfo: 'Informaci\u00f3 de l\'autor no disponible',
     todayDate: 'Avui \u00b7 23 abril',
     eventDate: '23 d\'abril',
+    loadingMap: 'Carregant mapa...',
+    clearSearch: 'Esborrar cerca',
+    previous: 'Anterior',
+    next: 'Seg\u00fcent',
   },
   es: {
     title: 'Firmas Sant Jordi 2026',
@@ -104,6 +108,10 @@ export const translations = {
     noAuthorInfo: 'Informaci\u00f3n del autor no disponible',
     todayDate: 'Hoy \u00b7 23 abril',
     eventDate: '23 de abril',
+    loadingMap: 'Cargando mapa...',
+    clearSearch: 'Borrar b\u00fasqueda',
+    previous: 'Anterior',
+    next: 'Siguiente',
   },
 } as const;
 

@@ -1,4 +1,5 @@
-import { useMemo, useState, useCallback } from 'react';
+import { useMemo, useState, useCallback, lazy, Suspense } from 'react';
+import { Analytics } from '@vercel/analytics/react';
 import type { ActiveView, AuthorInfo, Signing } from './types';
 import signingsData from './data/signings.json';
 import { useFilters } from './hooks/useFilters';
@@ -9,11 +10,12 @@ import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import { Filters } from './components/Filters';
 import { SigningList } from './components/SigningList';
-import { MapView } from './components/MapView';
 import { BottomNav } from './components/BottomNav';
 import { FeaturedCards } from './components/FeaturedCards';
 import { AuthorDetail } from './components/AuthorDetail';
 import authorsDataRaw from './data/authors.json';
+
+const MapView = lazy(() => import('./components/MapView').then((m) => ({ default: m.MapView })));
 
 const signings: Signing[] = signingsData as Signing[];
 const authorsData: Record<string, AuthorInfo> = authorsDataRaw as unknown as Record<string, AuthorInfo>;
@@ -21,9 +23,20 @@ const authorsData: Record<string, AuthorInfo> = authorsDataRaw as unknown as Rec
 function App() {
   const [activeView, setActiveView] = useState<ActiveView>('list');
   const [selectedAuthor, setSelectedAuthor] = useState<string | null>(null);
-  const { favoriteIds, toggleFavorite, isFavorite } = useFavorites();
+  const { favoriteIds, toggleFavorite } = useFavorites();
   const { theme, toggleTheme } = useDarkMode();
   const { t } = useI18n();
+  const {
+    searchText,
+    setSearchText,
+    locationFilter,
+    setLocationFilter,
+    timeSlotFilter,
+    setTimeSlotFilter,
+    locations,
+    timeSlots,
+    filtered,
+  } = useFilters(signings);
 
   const handleAuthorClick = useCallback((authorName: string) => {
     setSelectedAuthor(authorName);
@@ -40,19 +53,11 @@ function App() {
     if (view !== 'author') {
       setSelectedAuthor(null);
     }
+    if (view !== 'list') {
+      setSearchText('');
+    }
     setActiveView(view);
-  }, []);
-  const {
-    searchText,
-    setSearchText,
-    locationFilter,
-    setLocationFilter,
-    timeSlotFilter,
-    setTimeSlotFilter,
-    locations,
-    timeSlots,
-    filtered,
-  } = useFilters(signings);
+  }, [setSearchText]);
 
   const favoriteSignings = useMemo(
     () => signings.filter((s) => favoriteIds.has(s.id)),
@@ -69,7 +74,7 @@ function App() {
       <div className="fixed inset-0 noise-overlay z-0" />
 
       {/* Bookmark ribbon - desktop only */}
-      <div className="hidden lg:block fixed top-0 left-12 w-8 h-32 z-[60] shadow-xl bookmark-ribbon" style={{ background: 'linear-gradient(to bottom, #b10528 0%, #b10528 55%, #1a6b5a 55%, #1a6b5a 100%)' }} aria-hidden="true">
+      <div className="hidden lg:block fixed top-0 left-12 w-8 h-32 z-[60] shadow-xl bookmark-ribbon" aria-hidden="true">
         <div className="flex flex-col items-center pt-8 text-on-primary gap-4">
           <span className="material-symbols-outlined text-sm">local_florist</span>
           <div className="w-[1px] h-12 bg-on-primary/30" />
@@ -116,7 +121,7 @@ function App() {
               author={authorInfo}
               authorName={selectedAuthor}
               signings={signings}
-              isFavorite={isFavorite}
+              favoriteIds={favoriteIds}
               onToggleFavorite={toggleFavorite}
               onBack={handleBackFromAuthor}
             />
@@ -150,7 +155,16 @@ function App() {
 
           {/* Content */}
           {activeView === 'map' ? (
-            <MapView signings={displayedSignings} />
+            <Suspense fallback={
+              <div className="h-[calc(100vh-180px)] min-h-[400px] bg-surface-low dark:bg-on-surface/5 rounded-xl flex items-center justify-center">
+                <div className="flex flex-col items-center gap-3 text-tertiary">
+                  <span className="material-symbols-outlined text-4xl animate-pulse">map</span>
+                  <span className="text-sm font-body">{t('loadingMap')}</span>
+                </div>
+              </div>
+            }>
+              <MapView signings={displayedSignings} />
+            </Suspense>
           ) : activeView !== 'author' ? (
             <>
               {/* Featured cards - only on list view without active filters */}
@@ -159,7 +173,7 @@ function App() {
                   signings={filtered}
                   authorsData={authorsData}
                   onToggleFavorite={toggleFavorite}
-                  isFavorite={isFavorite}
+                  favoriteIds={favoriteIds}
                   onAuthorClick={handleAuthorClick}
                 />
               )}
@@ -174,7 +188,7 @@ function App() {
               <SigningList
                 signings={displayedSignings}
                 authorsData={authorsData}
-                isFavorite={isFavorite}
+                favoriteIds={favoriteIds}
                 onToggleFavorite={toggleFavorite}
                 onAuthorClick={handleAuthorClick}
                 emptyStateType={activeView === 'favorites' ? 'noFavorites' : 'noResults'}
@@ -202,6 +216,7 @@ function App() {
         onViewChange={handleViewChange}
         favoritesCount={favoriteIds.size}
       />
+      <Analytics />
     </div>
   );
 }

@@ -6,7 +6,7 @@ interface FeaturedCardsProps {
   signings: Signing[];
   authorsData: Record<string, AuthorInfo>;
   onToggleFavorite: (id: string) => void;
-  isFavorite: (id: string) => boolean;
+  favoriteIds: Set<string>;
   onAuthorClick?: (authorName: string) => void;
 }
 
@@ -20,13 +20,19 @@ const bgColors = [
   'bg-jordi-green-surface',
 ];
 
-export function FeaturedCards({ signings, authorsData, onToggleFavorite, isFavorite, onAuthorClick }: FeaturedCardsProps) {
+export function FeaturedCards({ signings, authorsData, onToggleFavorite, favoriteIds, onAuthorClick }: FeaturedCardsProps) {
   const { t } = useI18n();
   const live = isEventDay();
 
-  // Pick first signings that have confirmed time + location
+  // Pick first signings that have confirmed time + location, one per author
+  const seen = new Set<string>();
   const featured = signings
-    .filter((s) => s.startTime && s.endTime && s.location !== 'Per confirmar')
+    .filter((s) => {
+      if (!s.startTime || !s.endTime || s.location === 'Per confirmar') return false;
+      if (seen.has(s.author)) return false;
+      seen.add(s.author);
+      return true;
+    })
     .slice(0, 6);
 
   if (featured.length === 0) return null;
@@ -50,11 +56,11 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, isFavor
       {/* Mobile: horizontal scroll / Desktop: 3-column grid */}
       <div className="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-auto lg:overflow-visible hide-scrollbar -mx-6 px-6 lg:mx-0 lg:px-0 snap-x lg:snap-none">
         {featured.map((signing, i) => {
-          const fav = isFavorite(signing.id);
+          const fav = favoriteIds.has(signing.id);
           const bgColor = bgColors[i % bgColors.length];
           const authorInfo = authorsData[signing.author];
           const authorPhoto = authorInfo?.photo;
-          const bookTitle = signing.book || authorInfo?.books?.[0]?.title || '';
+          const bookTitle = signing.book || authorInfo?.presentingBook || authorInfo?.books?.[0]?.title || '';
           return (
             <div
               key={signing.id}
@@ -65,6 +71,9 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, isFavor
                 <div
                   className={`w-24 h-28 lg:w-28 lg:h-32 rounded-lg ${bgColor} flex-shrink-0 relative overflow-hidden ${onAuthorClick ? 'cursor-pointer' : ''}`}
                   onClick={onAuthorClick ? () => onAuthorClick(signing.author) : undefined}
+                  onKeyDown={onAuthorClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onAuthorClick(signing.author); } } : undefined}
+                  role={onAuthorClick ? 'button' : undefined}
+                  tabIndex={onAuthorClick ? 0 : undefined}
                 >
                   {authorPhoto ? (
                     <img
@@ -86,6 +95,9 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, isFavor
                     <h3
                       className={`font-headline text-xl lg:text-2xl text-on-surface dark:text-surface-highest leading-tight mb-1 ${onAuthorClick ? 'cursor-pointer hover:text-primary transition-colors' : ''}`}
                       onClick={onAuthorClick ? () => onAuthorClick(signing.author) : undefined}
+                      onKeyDown={onAuthorClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onAuthorClick(signing.author); } } : undefined}
+                      role={onAuthorClick ? 'button' : undefined}
+                      tabIndex={onAuthorClick ? 0 : undefined}
                     >
                       {signing.author}
                     </h3>
