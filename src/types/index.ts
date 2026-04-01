@@ -20,6 +20,20 @@ export interface AuthorBook {
   isbn: string;
 }
 
+export interface AuthorLinks {
+  goodreads?: string;
+  wikipediaEs?: string;
+  wikipediaCa?: string;
+  planeta?: string;
+  googleBooks?: string;
+  twitter?: string;
+  instagram?: string;
+  youtube?: string;
+  tiktok?: string;
+  facebook?: string;
+  website?: string;
+}
+
 export interface AuthorInfo {
   name: string;
   photo: string;
@@ -34,6 +48,7 @@ export interface AuthorInfo {
   ratingsCount: string;
   wikiUrl: string;
   planetaUrl: string;
+  links: AuthorLinks;
 }
 
 export type ActiveView = 'list' | 'favorites' | 'map' | 'author';
