@@ -37,7 +37,7 @@ export function Header({ activeView, onViewChange, totalSignings, filteredCount,
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
+          <nav className="hidden lg:flex items-center gap-6" aria-label="Desktop navigation">
             {navItems.map(({ view, label }) => (
               <button
                 key={view}

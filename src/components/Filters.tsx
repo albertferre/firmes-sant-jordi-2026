@@ -51,7 +51,7 @@ export function Filters({
           value={locationFilter}
           onChange={(e) => onLocationChange(e.target.value)}
           aria-label={t('allLocations')}
-          className={`${chipBase} ${locationFilter ? 'bg-jordi-green text-on-primary' : chipInactive} appearance-none pr-8 border-none focus:outline-none focus:ring-0`}
+          className={`${chipBase} ${locationFilter ? 'bg-jordi-green text-on-primary' : chipInactive} appearance-none pr-8 border-none`}
         >
           <option value="">{t('allLocations')}</option>
           {locations.map((loc) => (

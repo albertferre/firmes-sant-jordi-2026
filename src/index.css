@@ -63,9 +63,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-@media (min-width: 1024px) {
-  body { background-attachment: fixed; }
-}
+body { background-attachment: fixed; }
 
 .dark body {
   background-color: #1c1c18;
@@ -106,7 +104,7 @@ body {
 }
 
 .material-symbols-outlined.filled {
-  font-variation-settings: "FILL" 1, "wght" 400;
+  font-variation-settings: "FILL" 1, "wght" 300;
 }
 
 /* Leaflet overrides */
@@ -128,6 +126,22 @@ body {
 /* Bookmark ribbon (desktop) */
 .bookmark-ribbon {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 85%, 0% 100%);
+  background: linear-gradient(to bottom, #b10528 0%, #b10528 55%, #1a6b5a 55%, #1a6b5a 100%);
+}
+
+.dark .bookmark-ribbon {
+  background: linear-gradient(to bottom, #86001b 0%, #86001b 55%, #145548 55%, #145548 100%);
+}
+
+/* Global focus indicator — WCAG 2.4.7 */
+:focus-visible {
+  outline: 2px solid #86001b;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+.dark :focus-visible {
+  outline-color: #ffb3b2;
 }
 
 /* Selection color */

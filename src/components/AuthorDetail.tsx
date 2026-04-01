@@ -1,18 +1,103 @@
-import type { AuthorInfo, Signing } from '../types';
+import { useRef, useCallback } from 'react';
+import type { AuthorBook, AuthorInfo, Signing } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 import { isEventDay, isSigningLive } from '../hooks/useEventDay';
+
+function useAuthorBio(author: AuthorInfo | null, locale: string): string {
+  if (!author) return '';
+  if (locale === 'ca') return author.generatedBioCa || author.bioCa || author.bioEs || '';
+  return author.generatedBioEs || author.bioEs || author.bioCa || '';
+}
+
+import type { TranslationKey } from '../i18n/translations';
+
+function BibliographyCarousel({ books, t }: { books: AuthorBook[]; t: (key: TranslationKey) => string }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const scroll = useCallback((dir: 'left' | 'right') => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const amount = dir === 'left' ? -260 : 260;
+    el.scrollBy({ left: amount, behavior: 'smooth' });
+  }, []);
+
+  return (
+    <section className="mb-12">
+      <div className="flex items-end justify-between mb-8 lg:mb-10">
+        <div>
+          <h3 className="font-headline text-4xl lg:text-5xl font-light mb-1">{t('bibliography')}</h3>
+          <p className="text-tertiary/60 font-body uppercase tracking-widest text-xs">{t('essentialWorks')}</p>
+        </div>
+        {books.length > 2 && (
+          <div className="flex gap-2">
+            <button
+              onClick={() => scroll('left')}
+              className="w-10 h-10 rounded-full bg-surface-highest dark:bg-on-surface/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors"
+              aria-label="Anterior"
+            >
+              <span className="material-symbols-outlined">chevron_left</span>
+            </button>
+            <button
+              onClick={() => scroll('right')}
+              className="w-10 h-10 rounded-full bg-surface-highest dark:bg-on-surface/10 flex items-center justify-center text-primary hover:bg-primary hover:text-on-primary transition-colors"
+              aria-label="Següent"
+            >
+              <span className="material-symbols-outlined">chevron_right</span>
+            </button>
+          </div>
+        )}
+      </div>
+
+      <div ref={scrollRef} className="flex gap-5 lg:gap-8 overflow-x-auto hide-scrollbar pb-6 -mx-6 px-6 lg:mx-0 lg:px-0 snap-x scroll-smooth">
+        {books.map((book, i) => {
+          const bookUrl = book.isbn ? `https://www.goodreads.com/search?q=${book.isbn}` : '';
+          const Tag = bookUrl ? 'a' : 'div';
+          const linkProps = bookUrl ? { href: bookUrl, target: '_blank' as const, rel: 'noopener noreferrer' } : {};
+          return (
+            <Tag
+              key={i}
+              {...linkProps}
+              className="w-[220px] lg:w-[280px] flex-none bg-surface-lowest dark:bg-on-surface/5 p-5 rounded-xl shadow-sm snap-start group border border-transparent hover:border-jordi-green/15 transition-all"
+            >
+              <div className="relative aspect-[2/3] mb-4 overflow-hidden rounded-lg">
+                {book.cover ? (
+                  <img src={book.cover} alt={book.title} className="w-full h-full object-cover" loading="lazy" />
+                ) : (
+                  <div className={`w-full h-full flex items-center justify-center ${
+                    i % 3 === 0 ? 'bg-primary/8' : i % 3 === 1 ? 'bg-jordi-green/8' : 'bg-secondary-container/20'
+                  }`}>
+                    <span className="material-symbols-outlined text-6xl text-on-surface/10">menu_book</span>
+                  </div>
+                )}
+              </div>
+              <h4 className="font-headline text-lg lg:text-xl mb-1 group-hover:text-jordi-green transition-colors leading-tight">
+                {book.title}
+              </h4>
+              {book.publisher && (
+                <p className="text-[11px] font-body text-tertiary uppercase tracking-wider">{book.publisher}</p>
+              )}
+              {book.description && (
+                <p className="text-xs font-body text-tertiary/70 mt-2 line-clamp-3">{book.description}</p>
+              )}
+            </Tag>
+          );
+        })}
+      </div>
+    </section>
+  );
+}
 
 interface AuthorDetailProps {
   author: AuthorInfo | null;
   authorName: string;
   signings: Signing[];
-  isFavorite: (id: string) => boolean;
+  favoriteIds: Set<string>;
   onToggleFavorite: (id: string) => void;
   onBack: () => void;
 }
 
-export function AuthorDetail({ author, authorName, signings, isFavorite, onToggleFavorite, onBack }: AuthorDetailProps) {
-  const { t } = useI18n();
+export function AuthorDetail({ author, authorName, signings, favoriteIds, onToggleFavorite, onBack }: AuthorDetailProps) {
+  const { t, locale } = useI18n();
+  const bio = useAuthorBio(author, locale);
   const authorSignings = signings.filter((s) => s.author === authorName);
 
   return (
@@ -81,9 +166,9 @@ export function AuthorDetail({ author, authorName, signings, isFavorite, onToggl
           )}
 
           {/* Bio */}
-          {author?.bio && (
+          {bio && (
             <p className="text-lg text-tertiary leading-relaxed font-light max-w-2xl">
-              {author.bio}
+              {bio}
             </p>
           )}
 
@@ -104,20 +189,31 @@ export function AuthorDetail({ author, authorName, signings, isFavorite, onToggl
                 className="bg-jordi-green text-on-primary px-6 py-3 rounded-lg font-semibold flex items-center gap-2 hover:bg-jordi-green-dim transition-colors active:scale-95 text-sm"
               >
                 <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>auto_stories</span>
-                {t('viewOnGoodreads')}
+                Goodreads
+              </a>
+            )}
+            {author?.wikiUrl && (
+              <a
+                href={author.wikiUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-surface-highest dark:bg-on-surface/10 text-on-surface px-6 py-3 rounded-lg font-semibold flex items-center gap-2 hover:bg-surface-high transition-colors active:scale-95 text-sm"
+              >
+                <span className="material-symbols-outlined">public</span>
+                Wikipedia
               </a>
             )}
             {authorSignings.length > 0 && (
               <button
                 onClick={() => onToggleFavorite(authorSignings[0].id)}
                 className={`px-6 py-3 rounded-lg font-semibold flex items-center gap-2 transition-colors active:scale-95 text-sm ${
-                  isFavorite(authorSignings[0].id)
+                  favoriteIds.has(authorSignings[0].id)
                     ? 'bg-primary text-on-primary'
                     : 'bg-surface-highest dark:bg-on-surface/10 text-primary hover:bg-primary-fixed'
                 }`}
               >
-                <span className={`material-symbols-outlined ${isFavorite(authorSignings[0].id) ? 'filled' : ''}`}>favorite</span>
-                {isFavorite(authorSignings[0].id) ? t('removeFavorite') : t('addFavorite')}
+                <span className={`material-symbols-outlined ${favoriteIds.has(authorSignings[0].id) ? 'filled' : ''}`}>favorite</span>
+                {favoriteIds.has(authorSignings[0].id) ? t('removeFavorite') : t('addFavorite')}
               </button>
             )}
           </div>
@@ -179,9 +275,9 @@ export function AuthorDetail({ author, authorName, signings, isFavorite, onToggl
                         <button
                           onClick={() => onToggleFavorite(signing.id)}
                           className="w-9 h-9 rounded-full flex items-center justify-center hover:bg-primary/5 transition-colors"
-                          aria-label={isFavorite(signing.id) ? t('removeFavorite') : t('addFavorite')}
+                          aria-label={favoriteIds.has(signing.id) ? t('removeFavorite') : t('addFavorite')}
                         >
-                          <span className={`material-symbols-outlined text-base ${isFavorite(signing.id) ? 'filled text-primary' : 'text-outline'}`}>
+                          <span className={`material-symbols-outlined text-base ${favoriteIds.has(signing.id) ? 'filled text-primary' : 'text-outline'}`}>
                             favorite
                           </span>
                         </button>
@@ -193,68 +289,36 @@ export function AuthorDetail({ author, authorName, signings, isFavorite, onToggl
             </div>
           </div>
 
-          {/* Map + Directions */}
+          {/* Locations & Directions */}
           <div className="lg:col-span-5 flex flex-col gap-4">
-            <div className="bg-surface-lowest dark:bg-on-surface/5 rounded-xl overflow-hidden shadow-sm flex-1 relative min-h-[300px] lg:min-h-[400px]">
-              {/* Simple map placeholder with first signing location */}
-              <div className="absolute inset-0 bg-jordi-green/5 flex items-center justify-center">
-                <div className="flex flex-col items-center">
-                  <div className="bg-primary text-white p-3 rounded-full shadow-lg ring-8 ring-primary/10">
-                    <span className="material-symbols-outlined" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
-                  </div>
-                  <div className="mt-3 bg-surface-lowest dark:bg-on-surface/10 px-4 py-2 rounded-lg shadow-xl text-xs font-bold uppercase tracking-wider text-primary whitespace-nowrap">
-                    {authorSignings[0].location}
-                  </div>
+            {/* Unique locations as direction cards */}
+            {[...new Map(authorSignings.map((s) => [s.location, s])).values()].map((signing) => (
+              <a
+                key={signing.id}
+                href={`https://www.google.com/maps/search/?api=1&query=${signing.coordinates.lat},${signing.coordinates.lng}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-surface-lowest dark:bg-on-surface/5 rounded-xl p-5 flex items-center gap-4 hover:shadow-lg transition-all group"
+              >
+                <div className="w-12 h-12 rounded-full bg-jordi-green/10 flex items-center justify-center flex-shrink-0 group-hover:bg-jordi-green/20 transition-colors">
+                  <span className="material-symbols-outlined text-jordi-green text-xl" style={{ fontVariationSettings: "'FILL' 1" }}>location_on</span>
                 </div>
-              </div>
-            </div>
-            <a
-              href={`https://www.google.com/maps/search/?api=1&query=${authorSignings[0].coordinates.lat},${authorSignings[0].coordinates.lng}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full bg-on-surface dark:bg-surface-highest text-surface dark:text-on-surface py-4 rounded-xl font-bold uppercase tracking-widest flex items-center justify-center gap-3 hover:opacity-90 transition-all active:scale-[0.98] text-sm"
-            >
-              <span className="material-symbols-outlined">directions_walk</span>
-              {t('howToGet')}
-            </a>
+                <div className="flex-1 min-w-0">
+                  <p className="font-headline text-lg text-on-surface dark:text-surface-highest leading-tight">{signing.location}</p>
+                  {signing.address && (
+                    <p className="text-xs font-body text-tertiary mt-0.5 truncate">{signing.address}</p>
+                  )}
+                </div>
+                <span className="material-symbols-outlined text-tertiary/40 group-hover:text-jordi-green transition-colors">open_in_new</span>
+              </a>
+            ))}
           </div>
         </section>
       )}
 
       {/* Bibliography Section */}
       {author?.books && author.books.length > 0 && (
-        <section className="mb-12">
-          <div className="flex items-end justify-between mb-8 lg:mb-10">
-            <div>
-              <h3 className="font-headline text-4xl lg:text-5xl font-light mb-1">{t('bibliography')}</h3>
-              <p className="text-tertiary/60 font-body uppercase tracking-widest text-xs">{t('essentialWorks')}</p>
-            </div>
-          </div>
-
-          <div className="flex gap-5 lg:gap-8 overflow-x-auto hide-scrollbar pb-6 -mx-6 px-6 lg:mx-0 lg:px-0 snap-x">
-            {author.books.map((book, i) => (
-              <a
-                key={i}
-                href={book.url || '#'}
-                target={book.url ? '_blank' : undefined}
-                rel="noopener noreferrer"
-                className="min-w-[220px] lg:min-w-[280px] bg-surface-lowest dark:bg-on-surface/5 p-5 rounded-xl shadow-sm snap-start group border border-transparent hover:border-jordi-green/15 transition-all"
-              >
-                {/* Book cover placeholder */}
-                <div className="relative aspect-[2/3] mb-4 overflow-hidden rounded-lg">
-                  <div className={`w-full h-full flex items-center justify-center ${
-                    i % 3 === 0 ? 'bg-primary/8' : i % 3 === 1 ? 'bg-jordi-green/8' : 'bg-secondary-container/20'
-                  }`}>
-                    <span className="material-symbols-outlined text-6xl text-on-surface/10">menu_book</span>
-                  </div>
-                </div>
-                <h4 className="font-headline text-lg lg:text-xl mb-1 group-hover:text-jordi-green transition-colors leading-tight">
-                  {book.title}
-                </h4>
-              </a>
-            ))}
-          </div>
-        </section>
+        <BibliographyCarousel books={author.books} t={t} />
       )}
     </div>
   );
