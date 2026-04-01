@@ -4424,20 +4424,6 @@
     "endTime": "19:00"
   },
   {
-    "id": "eci-cat1-34",
-    "author": "Pedro Baños",
-    "book": "",
-    "publisher": "El Corte Inglés",
-    "location": "El Corte Inglés - Pl. Catalunya (Carpa 1)",
-    "address": "Pl. Catalunya, 14, Barcelona",
-    "coordinates": {
-      "lat": 41.3874,
-      "lng": 2.17
-    },
-    "startTime": "19:00",
-    "endTime": "20:00"
-  },
-  {
     "id": "eci-cat2-28",
     "author": "Pedro Martí",
     "book": "",
@@ -4646,20 +4632,6 @@
     },
     "startTime": "17:00",
     "endTime": "18:00"
-  },
-  {
-    "id": "eci-cat2-32",
-    "author": "Santiago Posteguillo",
-    "book": "",
-    "publisher": "El Corte Inglés",
-    "location": "El Corte Inglés - Pl. Catalunya (Carpa 2)",
-    "address": "Pl. Catalunya, 14, Barcelona",
-    "coordinates": {
-      "lat": 41.3874,
-      "lng": 2.1696
-    },
-    "startTime": "18:00",
-    "endTime": "19:00"
   },
   {
     "id": "eci-cat2-33",

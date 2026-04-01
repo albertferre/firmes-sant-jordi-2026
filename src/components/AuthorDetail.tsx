@@ -104,7 +104,7 @@ export function AuthorDetail({ author, authorName, signings, favoriteIds, onTogg
       {/* Back button */}
       <button
         onClick={onBack}
-        className="inline-flex items-center gap-2 text-jordi-green hover:text-jordi-green-dim font-body text-sm font-semibold mb-8 transition-colors group"
+        className="inline-flex items-center gap-2 text-jordi-green hover:text-jordi-green-dim font-body text-sm font-semibold mt-4 mb-8 transition-colors group"
       >
         <span className="material-symbols-outlined text-lg group-hover:-translate-x-1 transition-transform">arrow_back</span>
         {t('back')}
