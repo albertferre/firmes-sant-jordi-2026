@@ -14,9 +14,8 @@ interface HeaderProps {
 export function Header({ activeView, onViewChange, totalSignings, filteredCount, favoritesCount, theme, onToggleTheme }: HeaderProps) {
   const { locale, setLocale, t } = useI18n();
 
-  const navItems: { view: 'list' | 'map' | 'favorites'; label: string }[] = [
+  const navItems: { view: 'list' | 'favorites'; label: string }[] = [
     { view: 'list', label: t('list') },
-    { view: 'map', label: t('map') },
     { view: 'favorites', label: `${t('favorites')}${favoritesCount > 0 ? ` (${favoritesCount})` : ''}` },
   ];
 
