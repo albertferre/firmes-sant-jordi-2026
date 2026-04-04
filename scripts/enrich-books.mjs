@@ -1,11 +1,10 @@
 #!/usr/bin/env node
 /**
- * Enriches book data from Goodreads search results:
+ * Enriches book data from Open Library (API) + Goodreads (scraping fallback):
  *   - Proper title (with accents)
  *   - Publication year
- *   - ISBN
  *   - Cover image (large)
- *   - Goodreads book URL
+ *   - Book URL (Open Library or Goodreads)
  *
  * Usage: node scripts/enrich-books.mjs [--limit N] [--resume]
  */
@@ -24,13 +23,17 @@ const limit = limitIdx !== -1 ? parseInt(args[limitIdx + 1], 10) : Infinity;
 
 function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
 
-const HEADERS = {
+const OL_HEADERS = {
+  'User-Agent': 'FirmesSantJordi2026/1.0 (https://firmes-sant-jordi-2026.vercel.app; educational project)',
+  'Accept': 'application/json',
+};
+
+const GR_HEADERS = {
   'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36',
   'Accept': 'text/html',
 };
 
 async function searchBookOnGoodreads(bookTitle, authorName) {
-  // Clean Planeta slug-style titles
   const cleanTitle = bookTitle
     .replace(/\s*Edicion\s+\w+/gi, '')
     .replace(/\s*Ed\s+\w+/gi, '')
@@ -42,48 +45,71 @@ async function searchBookOnGoodreads(bookTitle, authorName) {
   const url = `https://www.goodreads.com/search?q=${encodeURIComponent(q)}`;
 
   try {
-    const res = await fetch(url, { headers: HEADERS, redirect: 'follow' });
+    const res = await fetch(url, { headers: GR_HEADERS, redirect: 'follow' });
     if (!res.ok) return null;
     const html = await res.text();
 
-    // Extract first book result: title + URL
     const bookMatch = html.match(/<a class="bookTitle"[^>]*href="([^"]+)"[^>]*>\s*<span[^>]*>([^<]+)<\/span>/i);
     if (!bookMatch) return null;
 
     const grBookUrl = `https://www.goodreads.com${bookMatch[1]}`;
     const realTitle = bookMatch[2].trim();
 
-    // Find the table row containing this result for year/rating
     const rowStart = html.indexOf(bookMatch[0]);
     const rowEnd = html.indexOf('</tr>', rowStart);
     const row = html.slice(Math.max(0, rowStart - 500), rowEnd > 0 ? rowEnd + 5 : rowStart + 3000);
 
-    // Year
-    const yearMatch = row.match(/published\s+(\d{4})/i)
-      || row.match(/>(\d{4})<\/span>/);
+    const yearMatch = row.match(/published\s+(\d{4})/i) || row.match(/>(\d{4})<\/span>/);
     const year = yearMatch?.[1] || '';
 
-    // Cover image from the search results
     const imgPattern = /<img[^>]*src="(https:\/\/i\.gr-assets\.com\/images\/[^"]+)"[^>]*>/gi;
     const imgs = [...row.matchAll(imgPattern)];
     let cover = '';
     for (const img of imgs) {
       const src = img[1];
       if (src.includes('._S') || src.includes('/books/')) {
-        // Upgrade to larger size
         cover = src.replace(/_S[XY]\d+_/g, '_SY475_').replace(/_S\d+_/g, '_SY475_');
         break;
       }
     }
-
-    // Also check for nophoto - skip those
     if (cover.includes('nophoto')) cover = '';
 
-    // ISBN - fetch the book page for this
-    let isbn = '';
-    // Don't fetch individual pages to save time - will get from existing data or Google Books
+    return { realTitle, year, cover, bookUrl: grBookUrl };
+  } catch {
+    return null;
+  }
+}
 
-    return { realTitle, year, cover, grBookUrl };
+async function searchBookOnOpenLibrary(bookTitle, authorName) {
+  // Clean Planeta slug-style titles
+  const cleanTitle = bookTitle
+    .replace(/\s*Edicion\s+\w+/gi, '')
+    .replace(/\s*Ed\s+\w+/gi, '')
+    .replace(/\s*\(.*?\)/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const url = `https://openlibrary.org/search.json?title=${encodeURIComponent(cleanTitle)}&author=${encodeURIComponent(authorName)}&limit=3`;
+
+  try {
+    const res = await fetch(url, { headers: OL_HEADERS });
+    if (!res.ok) return null;
+    const json = await res.json();
+
+    if (!json.docs?.length) return null;
+
+    const best = json.docs[0];
+
+    const realTitle = best.title || '';
+    const year = best.first_publish_year ? String(best.first_publish_year) : '';
+    const cover = best.cover_i
+      ? `https://covers.openlibrary.org/b/id/${best.cover_i}-L.jpg`
+      : '';
+    const olBookUrl = best.key
+      ? `https://openlibrary.org${best.key}`
+      : '';
+
+    return { realTitle, year, cover, bookUrl: olBookUrl };
   } catch {
     return null;
   }
@@ -110,10 +136,30 @@ async function main() {
 
     let fixed = 0;
     for (const book of author.books) {
-      const result = await searchBookOnGoodreads(book.title, author.name);
-      if (!result) { await sleep(1500); continue; }
+      // Try Open Library first (API), then Goodreads (scraping) for gaps
+      let result = await searchBookOnOpenLibrary(book.title, author.name);
+      await sleep(1000);
 
-      // Update title if the Goodreads one is better (has accents, proper casing)
+      const needsMore = !result || !result.cover || !result.year;
+      if (needsMore) {
+        const gr = await searchBookOnGoodreads(book.title, author.name);
+        if (gr) {
+          if (!result) {
+            result = gr;
+          } else {
+            // Merge: fill gaps from Goodreads
+            if (!result.cover && gr.cover) result.cover = gr.cover;
+            if (!result.year && gr.year) result.year = gr.year;
+            if (!result.realTitle && gr.realTitle) result.realTitle = gr.realTitle;
+            if (!result.bookUrl && gr.bookUrl) result.bookUrl = gr.bookUrl;
+          }
+        }
+        await sleep(1500);
+      }
+
+      if (!result) { await sleep(500); continue; }
+
+      // Update title if the enriched one is better (has accents, proper casing)
       const isPlanetaSlug = /^[A-Z][a-z]+ [A-Z][a-z]+/.test(book.title) && !/[áéíóúàèòüïçñ]/i.test(book.title);
       if (isPlanetaSlug && result.realTitle) {
         book.title = result.realTitle;
@@ -122,10 +168,10 @@ async function main() {
       // Fill missing data
       if (!book.publishedDate && result.year) book.publishedDate = result.year;
       if (!book.cover && result.cover) book.cover = result.cover;
-      if (result.grBookUrl) book.url = result.grBookUrl;
+      if (result.bookUrl) book.url = result.bookUrl;
 
       fixed++;
-      await sleep(2000);
+      await sleep(1000);
     }
 
     if (fixed > 0) {

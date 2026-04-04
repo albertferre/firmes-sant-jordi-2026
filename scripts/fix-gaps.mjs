@@ -159,8 +159,6 @@ async function main() {
       }
       if (photo) {
         a.photo = photo;
-        a.sources = a.sources || {};
-        a.sources.photo = 'wikidata';
         photosFixed++;
       }
       await sleep(500);

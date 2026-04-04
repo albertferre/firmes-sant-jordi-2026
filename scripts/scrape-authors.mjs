@@ -4,9 +4,9 @@
  *   1. Planeta de Libros — photo (HD) + bio (ES) + books with covers
  *   2. Wikipedia ES + CA — photo (HD) + bilingual bio
  *   3. Google Books API — books with covers, descriptions, ISBNs
- *   4. Goodreads — author link, rating, fallback photo
+ *   4. Open Library — author link, photo fallback, work count for ranking
  *
- * Usage: node scripts/scrape-authors.mjs [--resume] [--limit N] [--skip-goodreads]
+ * Usage: node scripts/scrape-authors.mjs [--resume] [--limit N] [--skip-openlibrary]
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
@@ -20,12 +20,12 @@ const OUTPUT_PATH = resolve(ROOT, 'src/data/authors.json');
 
 const args = process.argv.slice(2);
 const resume = args.includes('--resume');
-const skipGoodreads = args.includes('--skip-goodreads');
+const skipOpenLibrary = args.includes('--skip-openlibrary');
 const limitIdx = args.indexOf('--limit');
 const limit = limitIdx !== -1 ? parseInt(args[limitIdx + 1], 10) : Infinity;
 
 const SCRAPE_HEADERS = {
-  'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+  'User-Agent': 'FirmesSantJordi2026/1.0 (https://firmes-sant-jordi-2026.vercel.app; educational project)',
   'Accept': 'text/html,application/xhtml+xml',
   'Accept-Language': 'es-ES,es;q=0.9,ca;q=0.8',
 };
@@ -213,7 +213,66 @@ async function fetchGoogleBooks(authorName) {
   }
 }
 
-// ─── Goodreads ──────────────────────────────────────────────────────
+// ─── Open Library ───────────────────────────────────────────────────
+
+async function searchOpenLibrary(name) {
+  const url = `https://openlibrary.org/search/authors.json?q=${encodeURIComponent(name)}`;
+  try {
+    const res = await fetch(url, { headers: SCRAPE_HEADERS });
+    if (!res.ok) return null;
+    const data = await res.json();
+    if (!data.docs || data.docs.length === 0) return null;
+
+    // Find best match: compare normalized names
+    const nameNorm = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    for (const doc of data.docs) {
+      const docName = (doc.name || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+      if (docName === nameNorm) return doc.key; // e.g. "/authors/OL123A"
+    }
+    // Fallback: return first result if it has a reasonable work count
+    if (data.docs[0].work_count > 0) return data.docs[0].key;
+    return null;
+  } catch {
+    return null;
+  }
+}
+
+async function fetchOpenLibraryAuthor(authorKey) {
+  // authorKey is e.g. "/authors/OL123A" — extract the OLID
+  const olid = authorKey.replace('/authors/', '');
+  const url = `https://openlibrary.org/authors/${olid}.json`;
+  try {
+    const res = await fetch(url, { headers: SCRAPE_HEADERS });
+    if (!res.ok) return null;
+    const data = await res.json();
+
+    // Photo: use covers API with OLID
+    const photo = `https://covers.openlibrary.org/a/olid/${olid}-L.jpg`;
+
+    // Verify photo exists (Open Library returns a 1x1 pixel for missing photos)
+    let photoValid = false;
+    try {
+      const photoRes = await fetch(photo, { method: 'HEAD', headers: SCRAPE_HEADERS });
+      const contentLength = parseInt(photoRes.headers.get('content-length') || '0', 10);
+      // A real photo is much larger than the 1x1 placeholder (~43 bytes)
+      photoValid = photoRes.ok && contentLength > 1000;
+    } catch { /* ignore */ }
+
+    const workCount = data.work_count || 0;
+    const rating = data.ratings?.summary?.average?.toFixed(2) || '';
+
+    return {
+      olPhoto: photoValid ? photo : '',
+      rating,
+      ratingsCount: String(workCount),
+      openLibraryUrl: `https://openlibrary.org/authors/${olid}`,
+    };
+  } catch {
+    return null;
+  }
+}
+
+// ─── Goodreads (scraping) ───────────────────────────────────────────
 
 async function searchGoodreads(name) {
   const url = `https://www.goodreads.com/search?q=${encodeURIComponent(name)}&search_type=books`;
@@ -263,15 +322,16 @@ async function main() {
     if (s.book && !presentingBooks[s.author]) presentingBooks[s.author] = s.book;
   }
 
+  // Always load existing data to reuse known URLs (skip redundant searches)
   let existing = {};
-  if (resume && existsSync(OUTPUT_PATH)) {
+  if (existsSync(OUTPUT_PATH)) {
     existing = JSON.parse(readFileSync(OUTPUT_PATH, 'utf-8'));
-    console.log(`Resuming — ${Object.keys(existing).length} authors already scraped`);
+    console.log(`Loaded ${Object.keys(existing).length} existing authors (reusing known URLs)`);
   }
 
   const results = { ...existing };
   let processed = 0;
-  const stats = { planeta: 0, wiki: 0, gbooks: 0, gr: 0 };
+  const stats = { planeta: 0, wiki: 0, gbooks: 0, ol: 0, gr: 0 };
 
   for (const author of authors) {
     if (processed >= limit) break;
@@ -298,25 +358,48 @@ async function main() {
     const gbooks = await fetchGoogleBooks(author);
     if (gbooks.length > 0) stats.gbooks++;
 
-    // 4. Goodreads (slow)
-    let gr = null;
-    let grUrl = '';
-    if (!skipGoodreads) {
-      grUrl = await searchGoodreads(author) || '';
-      if (grUrl) {
-        await sleep(1200);
-        gr = await fetchGoodreadsPage(grUrl);
-        if (gr) stats.gr++;
-        await sleep(1500);
+    // 4. Open Library (JSON API, fast) — reuse existing URL if available
+    let ol = null;
+    if (!skipOpenLibrary) {
+      const existingOlUrl = existing[author]?.openLibraryUrl;
+      const olid = existingOlUrl?.match(/\/authors\/(OL\w+)/)?.[1];
+      if (olid) {
+        // Already have URL — fetch directly, skip search
+        ol = await fetchOpenLibraryAuthor(`/authors/${olid}`);
+        if (ol) stats.ol++;
+        await sleep(300);
       } else {
-        await sleep(600);
+        const olKey = await searchOpenLibrary(author) || '';
+        if (olKey) {
+          await sleep(500);
+          ol = await fetchOpenLibraryAuthor(olKey);
+          if (ol) stats.ol++;
+          await sleep(500);
+        } else {
+          await sleep(300);
+        }
       }
     }
 
+    // 5. Goodreads (HTML scraping, slow) — reuse existing URL if available
+    let gr = null;
+    let grUrl = existing[author]?.goodreadsUrl || '';
+    if (!grUrl) {
+      // No existing URL — search
+      grUrl = await searchGoodreads(author) || '';
+      await sleep(600);
+    }
+    if (grUrl) {
+      await sleep(1200);
+      gr = await fetchGoodreadsPage(grUrl);
+      if (gr) stats.gr++;
+      await sleep(1500);
+    }
+
     // ─── Merge with priority ───
-    // Photo: Planeta > Wikipedia > Goodreads
-    const photo = planeta?.photo || wiki.wikiPhoto || gr?.grPhoto || '';
-    const photoSource = planeta?.photo ? 'planeta' : wiki.wikiPhoto ? 'wikipedia' : gr?.grPhoto ? 'goodreads' : 'none';
+    // Photo: Planeta > Wikipedia > Goodreads > Open Library
+    const photo = planeta?.photo || wiki.wikiPhoto || gr?.grPhoto || ol?.olPhoto || '';
+    const photoSource = planeta?.photo ? 'planeta' : wiki.wikiPhoto ? 'wikipedia' : gr?.grPhoto ? 'goodreads' : ol?.olPhoto ? 'openlibrary' : 'none';
 
     // Bio: Wikipedia > Planeta (Planeta often has generic "Encuentra los últimos libros..." text)
     const planetaBioUsable = planeta?.bio && !planeta.bio.startsWith('Encuentra los') && planeta.bio.length > 50;
@@ -340,8 +423,9 @@ async function main() {
       presentingBook: presentingBooks[author] || '',
       books,
       goodreadsUrl: grUrl,
-      rating: gr?.rating || '',
-      ratingsCount: gr?.ratingsCount || '',
+      openLibraryUrl: ol?.openLibraryUrl || '',
+      rating: gr?.rating || ol?.rating || '',
+      ratingsCount: gr?.ratingsCount || ol?.ratingsCount || '',
       wikiUrl: wiki.wikiUrl || '',
       planetaUrl: planeta?.planetaUrl || '',
       sources: {
@@ -351,7 +435,7 @@ async function main() {
       },
     };
 
-    console.log(` ✓ foto:${photoSource} · bio:${bioEs ? 'es' : ''}${bioCa ? '+ca' : ''} · ${books.length} books · gr:${gr?.rating || '-'}`);
+    console.log(` ✓ foto:${photoSource} · bio:${bioEs ? 'es' : ''}${bioCa ? '+ca' : ''} · ${books.length} books · gr:${gr?.rating || '-'} · ol:${ol?.rating || '-'}`);
     writeFileSync(OUTPUT_PATH, JSON.stringify(results, null, 2));
   }
 
@@ -362,7 +446,7 @@ async function main() {
 
   console.log(`\n─── Results ───`);
   console.log(`Total: ${total} | Photo: ${withPhoto} (${Math.round(withPhoto * 100 / total)}%) | Bio: ${withBio} (${Math.round(withBio * 100 / total)}%) | Books: ${withBooks} (${Math.round(withBooks * 100 / total)}%)`);
-  console.log(`Sources — Planeta: ${stats.planeta} | Wiki: ${stats.wiki} | GBooks: ${stats.gbooks} | GR: ${stats.gr}`);
+  console.log(`Sources — Planeta: ${stats.planeta} | Wiki: ${stats.wiki} | GBooks: ${stats.gbooks} | OL: ${stats.ol} | GR: ${stats.gr}`);
   console.log(`Output: ${OUTPUT_PATH}`);
 }
 

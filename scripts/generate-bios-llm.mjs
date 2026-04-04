@@ -99,8 +99,9 @@ function collectMaterial(author, signings) {
     parts.push(`[Llibre que presenta] "${author.presentingBook}"`);
   }
 
-  if (author.rating) {
-    parts.push(`[Goodreads] Valoració mitjana: ${author.rating}/5`);
+  const bestRated = author.books?.find(b => b.rating);
+  if (bestRated) {
+    parts.push(`[Goodreads] Llibre més valorat: "${bestRated.title}" (${bestRated.rating}/5)`);
   }
 
   return parts.join('\n\n');
@@ -109,6 +110,8 @@ function collectMaterial(author, signings) {
 // ─── Generate bio with Claude ───────────────────────────────────────
 
 async function generateBio(authorName, material) {
+  const hasSubstantialMaterial = material && material.length > 100;
+
   const prompt = `Ets un redactor cultural expert per a una app de firmes de llibres de Sant Jordi 2026 a Barcelona.
 
 Escriu dues biografies ORIGINALS sobre "${authorName}" — una en CATALÀ i una en CASTELLÀ.
@@ -119,11 +122,16 @@ INSTRUCCIONS:
 - Llargada: 2-4 frases (50-150 paraules). Prou per conèixer l'autor/a.
 - Inclou: qui és (professió), d'on és, obres rellevants, premis si en té.
 - Si presenta un llibre a Sant Jordi 2026, menciona-ho de manera natural.
-- Si hi ha poca informació, fes el millor possible amb el que hi hagi. Mai inventis dades.
 - Les dues bios han de dir el mateix però amb estil natural en cada idioma (no traducció literal).
 
+REGLES ESTRICTES CONTRA AL·LUCINACIONS:
+- Usa NOMÉS fets que apareguin al material de referència. Si una dada no hi és, no la incloguis.
+- NO inventis premis, nacionalitats, dates, professions ni títols de llibres que no apareguin al material.
+- Si el material és escàs o inexistent, escriu una bio BREU i genèrica (1-2 frases): nom, que és autor/a, i que participa a Sant Jordi 2026. Res més.
+- Preferible una bio curta i correcta que una llarga amb dades inventades.
+
 MATERIAL DE REFERÈNCIA (usa com a context, no copiïs):
-${material || `Només sabem el nom: "${authorName}". Escriu una bio mínima indicant que participa a Sant Jordi 2026.`}
+${hasSubstantialMaterial ? material : `Informació limitada sobre "${authorName}". Només sabem que participa en firmes de Sant Jordi 2026 a Barcelona.`}
 
 Respon NOMÉS amb JSON vàlid, sense cap altre text:
 {"ca": "bio en català aquí", "es": "bio en castellano aquí"}`;

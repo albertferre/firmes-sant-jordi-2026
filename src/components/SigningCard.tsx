@@ -1,10 +1,10 @@
-import type { AuthorInfo, Signing } from '../types';
+import type { AuthorIndex, Signing } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 
 interface SigningCardProps {
   signing: Signing;
   extraSignings?: Signing[];
-  authorInfo?: AuthorInfo;
+  authorInfo?: AuthorIndex;
   favoriteIds: Set<string>;
   onToggleFavorite: (id: string) => void;
   onAuthorClick?: (authorName: string) => void;

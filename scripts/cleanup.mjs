@@ -33,6 +33,12 @@ function norm(t) {
 const data = JSON.parse(readFileSync(AUTHORS_PATH, 'utf-8'));
 const stats = { publisherLinks: 0, placeholderCovers: 0, dupBooks: 0, reordered: 0, planetaJson: 0 };
 
+// Authors with confirmed wrong book attributions (homonyms in Google Books)
+const WRONG_BOOKS_BLOCKLIST = ['Arnau París', 'Dr. Segarra', 'Joan Laporta', 'José Luis Marín', 'Vicent Flor'];
+for (const name of WRONG_BOOKS_BLOCKLIST) {
+  if (data[name]?.books?.length) { data[name].books = []; data[name].presentingBook = ''; }
+}
+
 const badDomains = ['planetadelibros', 'planetacomic', 'destino_', 'diana_editorial'];
 const unwantedLinkKeys = ['facebook', 'youtube', 'tiktok', 'wikimediaCommons'];
 const packPattern = /\b(estuche|pack|cofre|box set)\b/i;
@@ -157,6 +163,15 @@ try {
   }
   stats.dupSignings = dupSignings;
 } catch { stats.dupSignings = 0; }
+
+// Remove pipeline-internal fields from final output
+for (const a of Object.values(data)) {
+  delete a.rating;
+  delete a.ratingsCount;
+  delete a.sources;
+  delete a.rawBios;
+  if (typeof a.goodreadsFollowers !== 'number') a.goodreadsFollowers = 0;
+}
 
 writeFileSync(AUTHORS_PATH, JSON.stringify(data, null, 2));
 

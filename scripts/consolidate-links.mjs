@@ -14,21 +14,26 @@ const AUTHORS_PATH = resolve(__dirname, '..', 'src/data/authors.json');
 const data = JSON.parse(readFileSync(AUTHORS_PATH, 'utf-8'));
 
 for (const a of Object.values(data)) {
+  // Preserve existing social links (from fetch-social-links.mjs)
+  const existing = a.links || {};
   const links = {};
-  const nameSlug = a.name.replace(/ /g, '_');
-
-  // Wikipedia — both languages if we have rawBios
-  const rb = a.rawBios || {};
-  if (rb.wikiEs) links.wikipediaEs = `https://es.wikipedia.org/wiki/${encodeURIComponent(nameSlug)}`;
-  if (rb.wikiCa) links.wikipediaCa = `https://ca.wikipedia.org/wiki/${encodeURIComponent(nameSlug)}`;
-  // Fallback from existing wikiUrl
-  if (!links.wikipediaEs && !links.wikipediaCa && a.wikiUrl) {
+  if (existing.twitter) links.twitter = existing.twitter;
+  if (existing.instagram) links.instagram = existing.instagram;
+  if (existing.website) links.website = existing.website;
+  if (existing.facebook) links.facebook = existing.facebook;
+  if (existing.youtube) links.youtube = existing.youtube;
+  if (existing.tiktok) links.tiktok = existing.tiktok;
+  // Wikipedia — use discovered URL
+  if (a.wikiUrl) {
     if (a.wikiUrl.includes('ca.wikipedia')) links.wikipediaCa = a.wikiUrl;
     else links.wikipediaEs = a.wikiUrl;
   }
 
   // Goodreads
   if (a.goodreadsUrl) links.goodreads = a.goodreadsUrl;
+
+  // Open Library
+  if (a.openLibraryUrl) links.openLibrary = a.openLibraryUrl;
 
   // Planeta
   if (a.planetaUrl) links.planeta = a.planetaUrl;

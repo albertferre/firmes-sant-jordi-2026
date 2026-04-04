@@ -48,9 +48,8 @@ function BibliographyCarousel({ books, t }: { books: AuthorBook[]; t: (key: Tran
 
       <div ref={scrollRef} className="flex gap-5 lg:gap-8 overflow-x-auto hide-scrollbar pb-6 -mx-6 px-6 lg:mx-0 lg:px-0 snap-x scroll-smooth">
         {books.map((book, i) => {
-          const bookUrl = book.isbn
-            ? `https://www.goodreads.com/search?q=${book.isbn}`
-            : `https://www.goodreads.com/search?q=${encodeURIComponent(book.title)}`;
+          const bookUrl = book.url
+            || (book.isbn ? `https://openlibrary.org/isbn/${book.isbn}` : '');
           const Tag = bookUrl ? 'a' : 'div';
           const linkProps = bookUrl ? { href: bookUrl, target: '_blank' as const, rel: 'noopener noreferrer' } : {};
           return (
@@ -136,20 +135,6 @@ export function AuthorDetail({ author, authorName, signings, favoriteIds, onTogg
             </div>
           )}
 
-          {/* Rating badge */}
-          {author?.rating && (
-            <div className="absolute -bottom-4 -right-4 bg-surface-lowest dark:bg-on-surface/10 rounded-xl px-5 py-3 shadow-lg">
-              <div className="flex items-center gap-2">
-                <span className="material-symbols-outlined filled text-secondary-container text-xl">star</span>
-                <span className="font-headline text-2xl text-on-surface dark:text-surface-highest font-bold">{author.rating}</span>
-              </div>
-              {author.ratingsCount && (
-                <p className="text-[10px] font-body text-tertiary uppercase tracking-wider mt-0.5">
-                  {Number(author.ratingsCount).toLocaleString()} {t('ratings')}
-                </p>
-              )}
-            </div>
-          )}
         </div>
 
         {/* Author info */}

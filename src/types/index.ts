@@ -18,6 +18,20 @@ export interface AuthorBook {
   publishedDate: string;
   publisher: string;
   isbn: string;
+  rating: string;
+  ratingsCount: string;
+  url: string;
+}
+
+export interface AuthorIndex {
+  name: string;
+  photo: string;
+  presentingBook: string;
+  goodreadsFollowers: number;
+  goodreadsUrl: string;
+  openLibraryUrl: string;
+  wikiUrl: string;
+  planetaUrl: string;
 }
 
 export interface AuthorLinks {
@@ -44,8 +58,8 @@ export interface AuthorInfo {
   presentingBook: string;
   books: AuthorBook[];
   goodreadsUrl: string;
-  rating: string;
-  ratingsCount: string;
+  openLibraryUrl: string;
+  goodreadsFollowers: number;
   wikiUrl: string;
   planetaUrl: string;
   links: AuthorLinks;

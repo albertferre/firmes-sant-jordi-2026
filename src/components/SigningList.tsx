@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect, useRef, useCallback } from 'react';
-import type { AuthorInfo, Signing } from '../types';
+import type { AuthorIndex, Signing } from '../types';
 import { SigningCard } from './SigningCard';
 import { useI18n } from '../i18n/I18nContext';
 
@@ -8,7 +8,7 @@ const LOAD_MORE = 20;
 
 interface SigningListProps {
   signings: Signing[];
-  authorsData: Record<string, AuthorInfo>;
+  authorsData: Record<string, AuthorIndex>;
   favoriteIds: Set<string>;
   onToggleFavorite: (id: string) => void;
   onAuthorClick?: (authorName: string) => void;

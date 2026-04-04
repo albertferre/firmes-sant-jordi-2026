@@ -136,7 +136,7 @@ async function main() {
 
   for (const author of authors) {
     if (processed >= limit) break;
-    if (resume && author.links?.twitter) continue;
+    if (resume && author.links && (author.links.twitter || author.links.instagram || author.links.website)) continue;
 
     processed++;
     process.stdout.write(`[${processed}/${Math.min(authors.length, limit)}] ${author.name}...`);

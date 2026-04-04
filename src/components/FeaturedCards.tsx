@@ -1,10 +1,10 @@
-import type { AuthorInfo, Signing } from '../types';
+import type { AuthorIndex, Signing } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 import { isEventDay } from '../hooks/useEventDay';
 
 interface FeaturedCardsProps {
   signings: Signing[];
-  authorsData: Record<string, AuthorInfo>;
+  authorsData: Record<string, AuthorIndex>;
   onToggleFavorite: (id: string) => void;
   favoriteIds: Set<string>;
   onAuthorClick?: (authorName: string) => void;
@@ -32,12 +32,12 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, favorit
     seen.add(s.author);
     return true;
   });
-  // Sort by Goodreads popularity (ratingsCount as proxy — more ratings = more popular)
+  // Sort by Goodreads followers (best popularity proxy)
   const featured = candidates
     .sort((a, b) => {
-      const countA = parseInt(authorsData[a.author]?.ratingsCount || '0') || 0;
-      const countB = parseInt(authorsData[b.author]?.ratingsCount || '0') || 0;
-      return countB - countA;
+      const fA = authorsData[a.author]?.goodreadsFollowers || 0;
+      const fB = authorsData[b.author]?.goodreadsFollowers || 0;
+      return fB - fA;
     })
     .slice(0, 6);
 
@@ -66,7 +66,7 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, favorit
           const bgColor = bgColors[i % bgColors.length];
           const authorInfo = authorsData[signing.author];
           const authorPhoto = authorInfo?.photo;
-          const bookTitle = signing.book || authorInfo?.presentingBook || authorInfo?.books?.[0]?.title || '';
+          const bookTitle = signing.book || authorInfo?.presentingBook || '';
           return (
             <div
               key={signing.id}
