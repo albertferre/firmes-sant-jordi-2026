@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react';
 import type { AuthorIndex, Signing } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 
@@ -20,11 +20,32 @@ export function LocationPanel({
   const { t } = useI18n();
   const [isVisible, setIsVisible] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
+  const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Touch drag-to-dismiss state
+  const touchStartYRef = useRef<number | null>(null);
+  const touchDeltaRef = useRef(0);
+  const [dragOffset, setDragOffset] = useState(0);
+
+  // Animated close helper
+  const handleClose = useCallback(() => {
+    setIsVisible(false);
+    closeTimeoutRef.current = setTimeout(onClose, 250);
+  }, [onClose]);
 
   // Trigger enter animation on mount
   useEffect(() => {
     const frame = requestAnimationFrame(() => setIsVisible(true));
     return () => cancelAnimationFrame(frame);
+  }, []);
+
+  // Cleanup timeout on unmount
+  useEffect(() => {
+    return () => {
+      if (closeTimeoutRef.current) {
+        clearTimeout(closeTimeoutRef.current);
+      }
+    };
   }, []);
 
   // Close on Escape key
@@ -34,14 +55,34 @@ export function LocationPanel({
     };
     document.addEventListener('keydown', handleKeyDown);
     return () => document.removeEventListener('keydown', handleKeyDown);
+  }, [handleClose]);
+
+  // Touch drag-to-dismiss handlers (mobile bottom sheet)
+  const handleTouchStart = useCallback((e: React.TouchEvent) => {
+    touchStartYRef.current = e.touches[0].clientY;
+    touchDeltaRef.current = 0;
   }, []);
 
-  const handleClose = () => {
-    setIsVisible(false);
-    // Wait for exit animation before unmounting
-    setTimeout(onClose, 200);
-  };
+  const handleTouchMove = useCallback((e: React.TouchEvent) => {
+    if (touchStartYRef.current === null) return;
+    const delta = e.touches[0].clientY - touchStartYRef.current;
+    // Only allow dragging downward
+    const clampedDelta = Math.max(0, delta);
+    touchDeltaRef.current = clampedDelta;
+    setDragOffset(clampedDelta);
+  }, []);
 
+  const handleTouchEnd = useCallback(() => {
+    if (touchDeltaRef.current > 100) {
+      handleClose();
+    } else {
+      setDragOffset(0);
+    }
+    touchStartYRef.current = null;
+    touchDeltaRef.current = 0;
+  }, [handleClose]);
+
+  // Sort signings by startTime
   const sorted = [...signings].sort((a, b) => {
     if (a.startTime && b.startTime) return a.startTime.localeCompare(b.startTime);
     if (a.startTime) return -1;
@@ -51,9 +92,9 @@ export function LocationPanel({
 
   return (
     <>
-      {/* Backdrop - mobile only */}
+      {/* Backdrop -- fixed inset-0 covers everything including TimeSlider */}
       <div
-        className={`absolute inset-0 bg-on-surface/20 dark:bg-on-surface/40 z-10 transition-opacity duration-200 lg:hidden ${
+        className={`fixed inset-0 bg-on-surface/30 dark:bg-on-surface/50 z-[600] transition-opacity duration-250 ${
           isVisible ? 'opacity-100' : 'opacity-0'
         }`}
         onClick={handleClose}
@@ -65,12 +106,16 @@ export function LocationPanel({
         ref={panelRef}
         role="dialog"
         aria-label={location}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
         className={`
-          absolute z-20 bg-surface dark:bg-on-surface/95 backdrop-blur-xl shadow-2xl overflow-hidden
-          transition-transform duration-200 ease-out
+          fixed z-[601] bg-surface dark:bg-on-surface/95 backdrop-blur-xl shadow-2xl
+          flex flex-col overflow-hidden
+          transition-transform duration-250 ease-out
 
-          bottom-0 left-0 right-0 max-h-[60vh] rounded-t-2xl
-          lg:bottom-auto lg:top-0 lg:left-auto lg:right-0 lg:w-[380px] lg:h-full lg:max-h-none lg:rounded-t-none lg:rounded-l-2xl
+          bottom-0 left-0 right-0 max-h-[70vh] rounded-t-2xl
+          lg:bottom-0 lg:top-0 lg:left-auto lg:right-0 lg:w-[380px] lg:max-h-none lg:rounded-t-none lg:rounded-l-2xl
           lg:border-l lg:border-outline-variant/10
 
           ${isVisible
@@ -78,14 +123,15 @@ export function LocationPanel({
             : 'translate-y-full lg:translate-y-0 lg:translate-x-full'
           }
         `}
+        style={dragOffset > 0 ? { transform: `translateY(${dragOffset}px)`, transition: 'none' } : undefined}
       >
         {/* Drag handle - mobile only */}
-        <div className="flex justify-center pt-3 pb-1 lg:hidden" aria-hidden="true">
+        <div className="flex justify-center pt-3 pb-1 lg:hidden flex-shrink-0" aria-hidden="true">
           <div className="w-10 h-1 rounded-full bg-outline-variant/30" />
         </div>
 
         {/* Header */}
-        <div className="flex items-center gap-3 px-5 py-3 border-b border-outline-variant/10">
+        <div className="flex items-center gap-3 px-5 py-3 border-b border-outline-variant/10 flex-shrink-0">
           <div className="flex-1 min-w-0">
             <h2 className="font-headline text-lg italic text-on-surface dark:text-surface-highest truncate leading-tight">
               {location}
@@ -96,7 +142,7 @@ export function LocationPanel({
           </div>
           <button
             onClick={handleClose}
-            className="w-9 h-9 rounded-full flex items-center justify-center hover:bg-surface-highest/30 dark:hover:bg-surface-highest/10 transition-colors flex-shrink-0"
+            className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-surface-highest/30 dark:hover:bg-surface-highest/10 transition-colors flex-shrink-0"
             aria-label={t('back')}
           >
             <span className="material-symbols-outlined text-lg text-on-surface-variant dark:text-surface-highest/60">
@@ -105,11 +151,13 @@ export function LocationPanel({
           </button>
         </div>
 
-        {/* Signing list */}
-        <div className="overflow-y-auto overscroll-contain" style={{ maxHeight: 'calc(60vh - 100px)' }}>
+        {/* Signing list -- flex-1 + overflow-y-auto for proper height management */}
+        <div className="flex-1 overflow-y-auto overscroll-contain min-h-0">
           {sorted.length === 0 ? (
             <div className="px-5 py-10 text-center">
-              <span className="material-symbols-outlined text-3xl text-outline/30 mb-2">menu_book</span>
+              <span className="material-symbols-outlined text-3xl text-outline/30 mb-2 block">
+                menu_book
+              </span>
               <p className="font-body text-sm text-on-surface-variant/60">
                 {t('noResults')}
               </p>
@@ -119,22 +167,20 @@ export function LocationPanel({
               {sorted.map((signing) => {
                 const author = authorsData[signing.author];
                 const hasTime = signing.startTime && signing.endTime;
+                const initial = signing.author.charAt(0).toUpperCase();
+
                 return (
                   <li key={signing.id}>
                     <button
                       onClick={() => onAuthorClick(signing.author)}
-                      className="w-full flex items-center gap-3 px-5 py-3.5 text-left hover:bg-surface-highest/20 dark:hover:bg-surface-highest/5 transition-colors"
+                      className="w-full flex items-center gap-3 px-5 py-3 min-h-[48px] text-left hover:bg-surface-highest/20 dark:hover:bg-surface-highest/5 transition-colors"
                     >
-                      {/* Author photo */}
-                      <div
-                        className={`w-10 h-10 rounded-full overflow-hidden flex-shrink-0 ${
-                          author?.photo ? '' : 'bg-primary/8 dark:bg-primary/15'
-                        }`}
-                      >
+                      {/* Author photo (40px circle with initial fallback) */}
+                      <div className="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 bg-primary/8 dark:bg-primary/15">
                         {author?.photo ? (
                           <img
                             src={author.photo}
-                            alt={signing.author}
+                            alt=""
                             className="w-full h-full object-cover object-top"
                             loading="lazy"
                             width={40}
@@ -142,7 +188,7 @@ export function LocationPanel({
                           />
                         ) : (
                           <span className="font-headline text-lg text-primary font-bold italic flex items-center justify-center w-full h-full">
-                            {signing.author.charAt(0)}
+                            {initial}
                           </span>
                         )}
                       </div>

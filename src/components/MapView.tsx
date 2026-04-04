@@ -1,5 +1,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import type { AuthorIndex, Signing } from '../types';
+import { useI18n } from '../i18n/I18nContext';
 import { BarcelonaMap } from './BarcelonaMap';
 import { TimeSlider } from './TimeSlider';
 import { LocationPanel } from './LocationPanel';
@@ -19,7 +20,6 @@ interface MapViewProps {
 }
 
 function extractHour(time: string): string {
-  // "10:30" -> "10:00", "14:00" -> "14:00"
   const [h] = time.split(':');
   return `${h}:00`;
 }
@@ -32,6 +32,7 @@ function isEventDay(): boolean {
 export function MapView({ signings, authorsData, onAuthorClick }: MapViewProps) {
   const [selectedHour, setSelectedHour] = useState<string | null>(null);
   const [selectedLocation, setSelectedLocation] = useState<string | null>(null);
+  const { t } = useI18n();
 
   const eventDay = isEventDay();
 
@@ -59,16 +60,18 @@ export function MapView({ signings, authorsData, onAuthorClick }: MapViewProps) 
     return counts;
   }, [signings, hours]);
 
-  // Filter signings by selected hour (on event day only)
+  // Filter signings by selected hour -- ALWAYS enabled, not just on event day
   const filteredSignings = useMemo(() => {
-    if (!eventDay || selectedHour === null) return signings;
+    if (selectedHour === null) return signings;
     return signings.filter((s) => {
       if (!s.startTime) return false;
       return extractHour(s.startTime) === selectedHour;
     });
-  }, [signings, selectedHour, eventDay]);
+  }, [signings, selectedHour]);
 
   // Group filtered signings by location to build markers
+  // Filter out "Per confirmar" locations
+  // Sort ascending by signingCount so small markers render on top (higher z-index)
   const locationMarkers = useMemo(() => {
     const grouped = new Map<string, Signing[]>();
     for (const s of filteredSignings) {
@@ -89,8 +92,8 @@ export function MapView({ signings, authorsData, onAuthorClick }: MapViewProps) 
       });
     }
 
-    // Sort by signing count descending so the busiest locations are prominent
-    markers.sort((a, b) => b.signingCount - a.signingCount);
+    // Sort ascending by signingCount -- small markers on top in z-order
+    markers.sort((a, b) => a.signingCount - b.signingCount);
     return markers;
   }, [filteredSignings]);
 
@@ -102,7 +105,6 @@ export function MapView({ signings, authorsData, onAuthorClick }: MapViewProps) 
 
   const handleHourChange = useCallback((hour: string | null) => {
     setSelectedHour(hour);
-    // Clear location selection when changing time to avoid stale data
     setSelectedLocation(null);
   }, []);
 
@@ -114,8 +116,10 @@ export function MapView({ signings, authorsData, onAuthorClick }: MapViewProps) 
     setSelectedLocation(null);
   }, []);
 
+  const hasNoResults = selectedHour !== null && filteredSignings.length === 0;
+
   return (
-    <div className="flex flex-col h-[calc(100vh-72px-64px)] lg:h-[calc(100vh-72px)]">
+    <div className="flex flex-col h-[calc(100dvh-72px-64px)] lg:h-[calc(100dvh-72px)]">
       <TimeSlider
         hours={hours}
         selectedHour={selectedHour}
@@ -129,6 +133,24 @@ export function MapView({ signings, authorsData, onAuthorClick }: MapViewProps) 
           onLocationClick={handleLocationSelect}
           selectedLocation={selectedLocation}
         />
+
+        {/* Empty state overlay when time filter yields no results */}
+        {hasNoResults && (
+          <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-[500]">
+            <div className="bg-surface/90 dark:bg-on-surface/90 backdrop-blur-md rounded-2xl px-8 py-6 text-center shadow-xl pointer-events-auto max-w-xs">
+              <span className="material-symbols-outlined text-4xl text-outline/30 mb-3 block">
+                schedule
+              </span>
+              <p className="font-headline text-base italic text-on-surface dark:text-surface-highest">
+                {t('noResults')}
+              </p>
+              <p className="font-body text-xs text-on-surface-variant dark:text-surface-highest/50 mt-1">
+                {t('noResultsHint')}
+              </p>
+            </div>
+          </div>
+        )}
+
         {selectedLocation && (
           <LocationPanel
             location={selectedLocation}
