@@ -1171,112 +1171,12 @@
     "bioEs": "",
     "bioCa": "",
     "presentingBook": "El dia que vaig marxar",
-    "books": [
-      {
-        "title": "El dia que vaig marxar",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.74",
-        "ratingsCount": "171",
-        "url": "https://www.goodreads.com/book/show/57588893-el-dia-que-vaig-marxar"
-      },
-      {
-        "title": "Els veïns de dalt. La volta a Europa en 88 dies",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.81",
-        "ratingsCount": "27",
-        "url": "https://www.goodreads.com/book/show/11305283-els-ve-ns-de-dalt-la-volta-a-europa-en-88-dies"
-      },
-      {
-        "title": "No faré cap més llibre: Retrat íntim de Marina Rossell",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.29",
-        "ratingsCount": "14",
-        "url": "https://www.goodreads.com/book/show/223868040-no-far-cap-m-s-llibre"
-      },
-      {
-        "title": "El nom del porc (Humor i sàtira)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.00",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/106662660-el-nom-del-porc-humor-i-s-tira"
-      },
-      {
-        "title": "Aaaaahhh... DOTZE CONTES EROTICS",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "5.00",
-        "ratingsCount": "2",
-        "url": "https://www.goodreads.com/book/show/15498216-aaaaahhh-dotze-contes-erotics"
-      },
-      {
-        "title": "El dia que plegui Jordi Pujol: 100 catalans pronostiquen què passarà l'endemà",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/15152329-el-dia-que-plegui-jordi-pujol"
-      },
-      {
-        "title": "A la cara: Retrats que ens retraten",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/28007028-a-la-cara"
-      },
-      {
-        "title": "Coses meves",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/39680492-coses-meves"
-      },
-      {
-        "title": "Ada, la rebel·lió democràtica",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/52364116-ada-la-rebel-li-democr-tica"
-      }
-    ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/5581009.Albert_Om?from_search=true&amp;from_srp=true",
+    "books": [],
+    "goodreadsUrl": "",
     "openLibraryUrl": "",
     "wikiUrl": "",
     "planetaUrl": "",
-    "goodreadsFollowers": 3,
+    "goodreadsFollowers": 0,
     "links": {
       "goodreads": "https://www.goodreads.com/author/show/5581009.Albert_Om?from_search=true&amp;from_srp=true"
     },
@@ -1775,17 +1675,6 @@
         "url": "https://openlibrary.org/works/OL2886717W"
       },
       {
-        "title": "A Pesar De Todo (Literaria)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2002",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL2886716W"
-      },
-      {
         "title": "Aguamarina",
         "cover": "",
         "description": "",
@@ -2070,17 +1959,6 @@
         "url": ""
       },
       {
-        "title": "The first person and other stories",
-        "cover": "https://covers.openlibrary.org/b/id/10037647-L.jpg",
-        "description": "",
-        "publishedDate": "2008",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL2412074W"
-      },
-      {
         "title": "The Accidental",
         "cover": "https://covers.openlibrary.org/b/id/8490569-L.jpg",
         "description": "",
@@ -2090,17 +1968,6 @@
         "rating": "3.37",
         "ratingsCount": "13859",
         "url": "https://www.goodreads.com/book/show/127630.The_Accidental"
-      },
-      {
-        "title": "The whole story and other stories",
-        "cover": "https://covers.openlibrary.org/b/id/8346767-L.jpg",
-        "description": "",
-        "publishedDate": "2003",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL2412073W"
       },
       {
         "title": "Hotel World",
@@ -2321,17 +2188,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL20038360W"
-      },
-      {
-        "title": "The book lover",
-        "cover": "https://covers.openlibrary.org/b/id/14351814-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL18568966W"
       },
       {
         "title": "Shorts 3",
@@ -3524,17 +3380,6 @@
         "url": ""
       },
       {
-        "title": "La Metamorfosis de Álvarez Rabo: con prólogos de los mejores cocineros del Mundo, Juan Mari Arzak, Martín Berasategui, Andoni Luis Aduriz",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.33",
-        "ratingsCount": "3",
-        "url": "https://www.goodreads.com/book/show/13011619-la-metamorfosis-de-lvarez-rabo"
-      },
-      {
         "title": "De la alta cocina a tu casa",
         "cover": "",
         "description": "",
@@ -3546,7 +3391,7 @@
         "url": ""
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/38566351.A_lvarez_Rabo?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL4234987A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Andoni_Luis_Aduriz",
     "planetaUrl": "https://www.planetadelibros.com/autor/andoni-luis-aduriz/000026465",
@@ -6098,108 +5943,9 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
-      },
-      {
-        "title": "Código de procedimiento penal de la Provincia de Buenos Aires: Legislación, acordadas y resoluciones complementarias",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/2027488.C_digo_de_procedimiento_penal_de_la_Provincia_de_Buenos_Aires"
-      },
-      {
-        "title": "Legislación procesal administrativa, Provincia de Buenos Aires: Ley de procedimiento 7.647 [et] Código de lo contencioso administrativo (Textos legales Provincia de Buenos Aires) (Spanish Edition)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/3085055-legislaci-n-procesal-administrativa-provincia-de-buenos-aires"
-      },
-      {
-        "title": "Procedimiento administrativo laboral de la Provincia de Buenos Aires: Ley 10.149 (decreto 6409",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/3832472-procedimiento-administrativo-laboral-de-la-provincia-de-buenos-aires"
-      },
-      {
-        "title": "Código procesal penal de la provincia de Buenos Aires: Ley 11,922",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/15602122-c-digo-procesal-penal-de-la-provincia-de-buenos-aires"
-      },
-      {
-        "title": "Registro Oficial, Volume 14...",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/78740790-registro-oficial-volume-14"
-      },
-      {
-        "title": "Proyecto De Código Rural É Industrial Para La Provincia De Buenos Aires. 1889...",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/78740923-proyecto-de-c-digo-rural-industrial-para-la-provincia-de-buenos-aires"
-      },
-      {
-        "title": "Decreto Del Gobierno De La Provincia: Reglamentario De La Ley Que Establece La División De Los Partidos De Campaña Al Interior Del Salado...",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/78742764-decreto-del-gobierno-de-la-provincia"
-      },
-      {
-        "title": "Registro Oficial, Volume 21...",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/78750020-registro-oficial-volume-21"
-      },
-      {
-        "title": "Código De Procedimientos En Materia Civil Y Comercial De La Provincia De Buenos Aires...",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/78855033-c-digo-de-procedimientos-en-materia-civil-y-comercial-de-la-provincia-de"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/922256.Buenos_Aires_Argentina_Province_?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL5772265A",
     "wikiUrl": "",
     "planetaUrl": "https://www.planetadelibros.com/autor/dr-aurelio-rojas/000066530",
@@ -6241,17 +5987,6 @@
         "rating": "4.02",
         "ratingsCount": "121",
         "url": "https://www.goodreads.com/book/show/6523557-the-christmas-bear"
-      },
-      {
-        "title": "The Amazing Adventures of Idle Jack",
-        "cover": "https://covers.openlibrary.org/b/id/2581380-L.jpg",
-        "description": "",
-        "publishedDate": "1995",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL2790074W"
       },
       {
         "title": "Ensemble",
@@ -6725,17 +6460,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL38122052W"
-      },
-      {
-        "title": "The Train Mouse ",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL43378988W"
       },
       {
         "title": "Kati das K�tzchen",
@@ -8099,116 +7823,6 @@
         "url": ""
       },
       {
-        "title": "Buddha in Blue Jeans: An Extremely Short Simple Zen Guide to Sitting Quietly and Being Buddha",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.93",
-        "ratingsCount": "7880",
-        "url": "https://www.goodreads.com/book/show/13139782-buddha-in-blue-jeans"
-      },
-      {
-        "title": "Relax, You're Going to Die",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.81",
-        "ratingsCount": "748",
-        "url": "https://www.goodreads.com/book/show/13572355-relax-you-re-going-to-die"
-      },
-      {
-        "title": "Zen Prayers For Repairing Your Life",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "548",
-        "url": "https://www.goodreads.com/book/show/17234212-zen-prayers-for-repairing-your-life"
-      },
-      {
-        "title": "Secrets of True Happiness",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.90",
-        "ratingsCount": "508",
-        "url": "https://www.goodreads.com/book/show/13424635-secrets-of-true-happiness"
-      },
-      {
-        "title": "A One Hour Short Sweet Zen Retreat",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.99",
-        "ratingsCount": "159",
-        "url": "https://www.goodreads.com/book/show/17925661-a-one-hour-short-sweet-zen-retreat"
-      },
-      {
-        "title": "The Zen Wheel of Life Mantra: A Song of Luminous Wisdom and Love",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.87",
-        "ratingsCount": "103",
-        "url": "https://www.goodreads.com/book/show/10970906-the-zen-wheel-of-life-mantra"
-      },
-      {
-        "title": "The Bare Bones Dhammapada: Buddha's Wisdom in Modern Verse",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.60",
-        "ratingsCount": "92",
-        "url": "https://www.goodreads.com/book/show/12864371-the-bare-bones-dhammapada"
-      },
-      {
-        "title": "Celestial Music: Sutras of Emptiness",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.99",
-        "ratingsCount": "75",
-        "url": "https://www.goodreads.com/book/show/10970904-celestial-music"
-      },
-      {
-        "title": "The Light of the Ancient Buddhas - Ballads of Emptiness and Awakening",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.60",
-        "ratingsCount": "57",
-        "url": "https://www.goodreads.com/book/show/10970905-the-light-of-the-ancient-buddhas---ballads-of-emptiness-and-awakening"
-      },
-      {
-        "title": "Warm Zen Practice: Dogen's Bendowa in Verse",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.98",
-        "ratingsCount": "46",
-        "url": "https://www.goodreads.com/book/show/10970903-warm-zen-practice"
-      },
-      {
         "title": "La Chica Invisible Novela Grafica",
         "cover": "",
         "description": "",
@@ -8220,11 +7834,11 @@
         "url": ""
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/4742874.Tai_Sheridan?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL7169357A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Blue_Jeans",
     "planetaUrl": "https://www.planetadelibros.com/autor/blue-jeans/000028018",
-    "goodreadsFollowers": 31,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Blue_Jeans",
       "goodreads": "https://www.goodreads.com/author/show/4742874.Tai_Sheridan?from_search=true&amp;from_srp=true",
@@ -9777,17 +9391,6 @@
         "rating": "4.00",
         "ratingsCount": "3",
         "url": "https://www.goodreads.com/book/show/35714314-visiones-del-fin"
-      },
-      {
-        "title": "The Lincoln Brigade - Newsreel Edition",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL29312199W"
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/16286813.Carles_Esquembre?from_search=true&amp;from_srp=true",
@@ -9988,17 +9591,6 @@
         "url": "https://openlibrary.org/works/OL32747143W"
       },
       {
-        "title": "The Barcelona brothers",
-        "cover": "https://covers.openlibrary.org/b/id/11593423-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL16489789W"
-      },
-      {
         "title": "Willy DeVille",
         "cover": "",
         "description": "En los tiempos que corren Willy DeVille es de una especie en extinción; la del intérprete de rock'n'roll (si entendemos como tal tanto a Billie Holiday o a Edith Piaff como a Ben E. King). Alguien que se supo diferente y quiso y pudo construirse un mundo a su antojo, a base de música pasional, direc",
@@ -10030,17 +9622,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
-      },
-      {
-        "title": "The Bee Gees",
-        "cover": "",
-        "description": "",
-        "publishedDate": "1998",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL12813162W"
       },
       {
         "title": "El sabor de tu boca borracha",
@@ -10990,17 +10571,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL25738799W"
-      },
-      {
-        "title": "In the Last Blue",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL25652858W"
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/51809.Carme_Riera?from_search=true&amp;from_srp=true",
@@ -12541,123 +12111,13 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
-      },
-      {
-        "title": "Highlander tenías que ser (Aigantaigh #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.87",
-        "ratingsCount": "864",
-        "url": "https://www.goodreads.com/book/show/25308230-highlander-ten-as-que-ser"
-      },
-      {
-        "title": "Mi custodio (Los ocultos, #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.90",
-        "ratingsCount": "291",
-        "url": "https://www.goodreads.com/book/show/18220947-mi-custodio"
-      },
-      {
-        "title": "Mi bestia (Los ocultos, #2)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.21",
-        "ratingsCount": "210",
-        "url": "https://www.goodreads.com/book/show/19547580-mi-bestia"
-      },
-      {
-        "title": "Al otro lado de la pared",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.75",
-        "ratingsCount": "205",
-        "url": "https://www.goodreads.com/book/show/21844028-al-otro-lado-de-la-pared"
-      },
-      {
-        "title": "Anda y que te den, Highlander (Aigantaigh #2)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.82",
-        "ratingsCount": "201",
-        "url": "https://www.goodreads.com/book/show/53335118-anda-y-que-te-den-highlander"
-      },
-      {
-        "title": "Clarita y su mundo de Yupi",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.78",
-        "ratingsCount": "156",
-        "url": "https://www.goodreads.com/book/show/17972464-clarita-y-su-mundo-de-yupi"
-      },
-      {
-        "title": "Y llenarte el muro de flores",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.66",
-        "ratingsCount": "154",
-        "url": "https://www.goodreads.com/book/show/21797691-y-llenarte-el-muro-de-flores"
-      },
-      {
-        "title": "Entre dos bandos",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.89",
-        "ratingsCount": "120",
-        "url": "https://www.goodreads.com/book/show/22827040-entre-dos-bandos"
-      },
-      {
-        "title": "No siempre llueve en Asturias (Asturianos, #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.18",
-        "ratingsCount": "107",
-        "url": "https://www.goodreads.com/book/show/58016422-no-siempre-llueve-en-asturias"
-      },
-      {
-        "title": "Mi druida (Los ocultos #3)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.24",
-        "ratingsCount": "103",
-        "url": "https://www.goodreads.com/book/show/40487621-mi-druida"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/7103193.Laura_Nu_o?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL3977791A",
     "wikiUrl": "",
     "planetaUrl": "https://www.planetadelibros.com/autor/fernando-custodio/000036610",
-    "goodreadsFollowers": 166,
+    "goodreadsFollowers": 0,
     "links": {
       "goodreads": "https://www.goodreads.com/author/show/7103193.Laura_Nu_o?from_search=true&amp;from_srp=true",
       "openLibrary": "https://openlibrary.org/authors/OL3977791A",
@@ -12859,17 +12319,6 @@
         "rating": "4.00",
         "ratingsCount": "4178",
         "url": "https://www.goodreads.com/book/show/17384199-memento-mori"
-      },
-      {
-        "title": "A grandes males",
-        "cover": "https://covers.openlibrary.org/b/id/10517079-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL23612292W"
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/6941847.C_sar_P_rez_Gellida?from_search=true&amp;from_srp=true",
@@ -14810,17 +14259,6 @@
         "url": "https://openlibrary.org/works/OL36678689W"
       },
       {
-        "title": "Todo esto te daré (novela gráfica): Basado en la novela de Dolores Redondo",
-        "cover": "https://covers.openlibrary.org/b/id/7881423-L.jpg",
-        "description": "En el escenario majestuoso de la Ribeira Sacra, Álvaro sufre un accidente que acabará con su vida. Cuando Manuel, su marido, llega a Galicia para reconocer el cadáver, descubre que la investigación sobre el caso se ha cerrado con demasiada rapidez. El rechazo de su poderosa familia política, los Muñ",
-        "publishedDate": "2016-11-03",
-        "publisher": "Editorial Planeta",
-        "isbn": "9788408163473",
-        "rating": "4.28",
-        "ratingsCount": "528",
-        "url": "https://www.goodreads.com/book/show/59350124-todo-esto-te-dar-novela-gr-fica"
-      },
-      {
         "title": "Estoig trilogia de Baztan",
         "cover": "https://covers.openlibrary.org/b/id/13718667-L.jpg",
         "description": "",
@@ -14885,17 +14323,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL34789848W"
-      },
-      {
-        "title": "A cara norte do corazón",
-        "cover": "https://covers.openlibrary.org/b/id/13539923-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL34789762W"
       },
       {
         "title": "El llegat dels ossos",
@@ -14986,17 +14413,6 @@
         "url": "https://openlibrary.org/works/OL24836356W"
       },
       {
-        "title": "No mires a los ojos de la gente",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.33",
-        "ratingsCount": "3",
-        "url": "https://www.goodreads.com/book/show/43727390-no-mires-a-los-ojos-de-la-gente"
-      },
-      {
         "title": "Zaindari ikusezina",
         "cover": "",
         "description": "",
@@ -15074,11 +14490,11 @@
         "url": "https://openlibrary.org/works/OL28796323W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/18826303.I_L_Escudero?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL7173107A",
     "wikiUrl": "",
     "planetaUrl": "https://www.planetadelibros.com/autor/dolores-redondo/000028850",
-    "goodreadsFollowers": 1,
+    "goodreadsFollowers": 0,
     "links": {
       "goodreads": "https://www.goodreads.com/author/show/18826303.I_L_Escudero?from_search=true&amp;from_srp=true",
       "openLibrary": "https://openlibrary.org/authors/OL7173107A",
@@ -19594,17 +19010,6 @@
         "url": "https://openlibrary.org/works/OL34784789W"
       },
       {
-        "title": "A vida o muerte",
-        "cover": "https://covers.openlibrary.org/b/id/10859945-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL24338046W"
-      },
-      {
         "title": "La redención de penas",
         "cover": "",
         "description": "",
@@ -20000,112 +19405,12 @@
     "bioEs": "",
     "bioCa": "",
     "presentingBook": "Yo, y mi hermana Clara",
-    "books": [
-      {
-        "title": "Yo, y mi hermana Clara",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.21",
-        "ratingsCount": "217",
-        "url": "https://www.goodreads.com/book/show/2939417-yo-y-mi-hermana-clara"
-      },
-      {
-        "title": "Matrioska (El Barco De Vapor)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.17",
-        "ratingsCount": "124",
-        "url": "https://www.goodreads.com/book/show/2256730.Matrioska_El_Barco_De_Vapor_"
-      },
-      {
-        "title": "Griechische Sagen: Von Sisyphos bis Tantalos",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.39",
-        "ratingsCount": "140",
-        "url": "https://www.goodreads.com/book/show/60908495-griechische-sagen"
-      },
-      {
-        "title": "De Como Decidi Convertirme En Hermano (Spanish Edition)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.80",
-        "ratingsCount": "114",
-        "url": "https://www.goodreads.com/book/show/10782079-de-como-decidi-convertirme-en-hermano-spanish-edition"
-      },
-      {
-        "title": "Hurra! Susanita Ya Tiene Dientes (Spanish Edition)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.04",
-        "ratingsCount": "77",
-        "url": "https://www.goodreads.com/book/show/1590670.Hurra_Susanita_Ya_Tiene_Dientes_Spanish_Edition_"
-      },
-      {
-        "title": "Als Zeus der Kragen platzte: Griechische Sagen",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.85",
-        "ratingsCount": "72",
-        "url": "https://www.goodreads.com/book/show/32890462-als-zeus-der-kragen-platzte"
-      },
-      {
-        "title": "Die Abenteuer des Odysseus",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.69",
-        "ratingsCount": "68",
-        "url": "https://www.goodreads.com/book/show/10672298-die-abenteuer-des-odysseus"
-      },
-      {
-        "title": "Die schönsten griechischen Sagen: Neu erzählt von Dimiter Inkiow (Griechische Mythologie für Kinder)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.15",
-        "ratingsCount": "55",
-        "url": "https://www.goodreads.com/book/show/41154416-die-sch-nsten-griechischen-sagen"
-      },
-      {
-        "title": "Me and Clara and Casimir the Cat",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.98",
-        "ratingsCount": "56",
-        "url": "https://www.goodreads.com/book/show/2988926-me-and-clara-and-casimir-the-cat"
-      }
-    ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/609312.Dimiter_Inkiow?from_search=true&amp;from_srp=true",
+    "books": [],
+    "goodreadsUrl": "",
     "openLibraryUrl": "",
     "wikiUrl": "",
     "planetaUrl": "",
-    "goodreadsFollowers": 15,
+    "goodreadsFollowers": 0,
     "links": {
       "goodreads": "https://www.goodreads.com/author/show/609312.Dimiter_Inkiow?from_search=true&amp;from_srp=true"
     },
@@ -20129,17 +19434,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL34950644W"
-      },
-      {
-        "title": "A lo lejos",
-        "cover": "https://covers.openlibrary.org/b/id/10226020-L.jpg",
-        "description": "Håkan Söderström, conocido como \"el Halcón\", un joven inmigrante sueco que llega a California en plena Fiebre del Oro, emprende una peregrinación imposible en dirección a Nueva York, sin hablar el idioma, en busca de su hermano Linus, a quien perdió cuando embarcaron en Europa. En su extraño viaje, ",
-        "publishedDate": "2020-02-03",
-        "publisher": "Editorial Impedimenta SL",
-        "isbn": "9788417553616",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL20893503W"
       },
       {
         "title": "Alfabetización en salud.",
@@ -20316,17 +19610,6 @@
         "rating": "4.23",
         "ratingsCount": "39",
         "url": "https://www.goodreads.com/book/show/14619945-borges-between-history-and-eternity"
-      },
-      {
-        "title": "A l'horitzó",
-        "cover": "https://covers.openlibrary.org/b/id/14012503-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL35044188W"
       },
       {
         "title": "El ahogado más hermoso del mundo",
@@ -20976,116 +20259,6 @@
         "url": "https://openlibrary.org/works/OL2144036W"
       },
       {
-        "title": "Réquiem por un campesino español",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.95",
-        "ratingsCount": "10812",
-        "url": "https://www.goodreads.com/book/show/754353.R_quiem_por_un_campesino_espa_ol"
-      },
-      {
-        "title": "La tesis de Nancy",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.39",
-        "ratingsCount": "1561",
-        "url": "https://www.goodreads.com/book/show/66279.La_tesis_de_Nancy"
-      },
-      {
-        "title": "La aventura equinoccial de Lope de Aguirre",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.85",
-        "ratingsCount": "311",
-        "url": "https://www.goodreads.com/book/show/3517626-la-aventura-equinoccial-de-lope-de-aguirre"
-      },
-      {
-        "title": "Imán",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.85",
-        "ratingsCount": "234",
-        "url": "https://www.goodreads.com/book/show/4752482-im-n"
-      },
-      {
-        "title": "Viaje a la aldea del crimen",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.03",
-        "ratingsCount": "196",
-        "url": "https://www.goodreads.com/book/show/29371634-viaje-a-la-aldea-del-crimen"
-      },
-      {
-        "title": "El bandido adolescente",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.57",
-        "ratingsCount": "167",
-        "url": "https://www.goodreads.com/book/show/2661251-el-bandido-adolescente"
-      },
-      {
-        "title": "Crónica del alba, 1",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.99",
-        "ratingsCount": "132",
-        "url": "https://www.goodreads.com/book/show/1175544.Cr_nica_del_alba_1"
-      },
-      {
-        "title": "Mr. Witt en el Cantón",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.46",
-        "ratingsCount": "112",
-        "url": "https://www.goodreads.com/book/show/3517635-mr-witt-en-el-cant-n"
-      },
-      {
-        "title": "El lugar de un hombre",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.83",
-        "ratingsCount": "98",
-        "url": "https://www.goodreads.com/book/show/3409675-el-lugar-de-un-hombre"
-      },
-      {
-        "title": "Mosén Millán: novela",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.73",
-        "ratingsCount": "91",
-        "url": "https://www.goodreads.com/book/show/155123.Mos_n_Mill_n"
-      },
-      {
         "title": "Somos lo que leemos",
         "cover": "",
         "description": "",
@@ -21141,11 +20314,11 @@
         "url": "https://openlibrary.org/works/OL17316286W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/1251024.Ram_n_J_Sender?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL268647A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Ignacio_Mart%C3%ADnez_de_Pis%C3%B3n",
     "planetaUrl": "https://www.planetadelibros.com/autor/ignacio-martinez-de-pison/000023191",
-    "goodreadsFollowers": 104,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Ignacio_Mart%C3%ADnez_de_Pis%C3%B3n",
       "goodreads": "https://www.goodreads.com/author/show/1251024.Ram_n_J_Sender?from_search=true&amp;from_srp=true",
@@ -22106,101 +21279,13 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL35057252W"
-      },
-      {
-        "title": "A Soul at Work",
-        "cover": "https://covers.openlibrary.org/b/id/1807680-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL8778462W"
-      },
-      {
-        "title": "Isabel, la Reina: Las hijas de la luna roja (Isabel, la Reina, #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.76",
-        "ratingsCount": "151",
-        "url": "https://www.goodreads.com/book/show/73786.Isabel_la_Reina"
-      },
-      {
-        "title": "Romance de ciego",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.03",
-        "ratingsCount": "78",
-        "url": "https://www.goodreads.com/book/show/3189709-romance-de-ciego"
-      },
-      {
-        "title": "El viaje de la reina",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.49",
-        "ratingsCount": "84",
-        "url": "https://www.goodreads.com/book/show/73789.El_viaje_de_la_reina"
-      },
-      {
-        "title": "Perlas Para Un Collar",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.63",
-        "ratingsCount": "59",
-        "url": "https://www.goodreads.com/book/show/6878291-perlas-para-un-collar"
-      },
-      {
-        "title": "Moras y Cristianas",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.53",
-        "ratingsCount": "55",
-        "url": "https://www.goodreads.com/book/show/276812.Moras_y_Cristianas"
-      },
-      {
-        "title": "La estrella peregrina: Una peregrinación a Santiago de Compostela en el año mil",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.28",
-        "ratingsCount": "54",
-        "url": "https://www.goodreads.com/book/show/12486265-la-estrella-peregrina"
-      },
-      {
-        "title": "Las damas del fin del mundo",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.85",
-        "ratingsCount": "33",
-        "url": "https://www.goodreads.com/book/show/6534321-las-damas-del-fin-del-mundo"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/41817._ngeles_de_Irisarri?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL2989994A",
     "wikiUrl": "",
     "planetaUrl": "https://www.planetadelibros.com/autor/isabel-rojas-estape/000062053",
-    "goodreadsFollowers": 16,
+    "goodreadsFollowers": 0,
     "links": {
       "goodreads": "https://www.goodreads.com/author/show/41817._ngeles_de_Irisarri?from_search=true&amp;from_srp=true",
       "openLibrary": "https://openlibrary.org/authors/OL2989994A",
@@ -22425,28 +21510,6 @@
         "rating": "3.61",
         "ratingsCount": "3768",
         "url": "https://www.goodreads.com/book/show/23488236-forsaken"
-      },
-      {
-        "title": "The Noise",
-        "cover": "https://covers.openlibrary.org/b/id/10662432-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL24211941W"
-      },
-      {
-        "title": "The Coast-to-Coast Murders",
-        "cover": "https://covers.openlibrary.org/b/id/10373852-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL21465153W"
       },
       {
         "title": "Horen, zien, zwijgen",
@@ -23601,17 +22664,6 @@
     "presentingBook": "Javier (The Castillo Family, #2)",
     "books": [
       {
-        "title": "Javier (The Castillo Family, #2)",
-        "cover": "https://covers.openlibrary.org/b/id/14060896-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.16",
-        "ratingsCount": "394",
-        "url": "https://www.goodreads.com/book/show/57447374-javier"
-      },
-      {
         "title": "La chica de nieve",
         "cover": "https://covers.openlibrary.org/b/id/11953764-L.jpg",
         "description": "",
@@ -23711,94 +22763,6 @@
         "url": "https://openlibrary.org/works/OL35217883W"
       },
       {
-        "title": "His Dirty Demands (Dirty Billionaires, #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.09",
-        "ratingsCount": "2073",
-        "url": "https://www.goodreads.com/book/show/44174342-his-dirty-demands"
-      },
-      {
-        "title": "His on Demand",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.97",
-        "ratingsCount": "1273",
-        "url": "https://www.goodreads.com/book/show/39669803-his-on-demand"
-      },
-      {
-        "title": "His: Dominic (The Sabatini Family #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.06",
-        "ratingsCount": "1171",
-        "url": "https://www.goodreads.com/book/show/55686892-his"
-      },
-      {
-        "title": "His Dirty Bargain (Dirty Billionaires #3)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.14",
-        "ratingsCount": "943",
-        "url": "https://www.goodreads.com/book/show/48525151-his-dirty-bargain"
-      },
-      {
-        "title": "His Dirty Promises (Dirty Billionaires, #2)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.21",
-        "ratingsCount": "825",
-        "url": "https://www.goodreads.com/book/show/45871933-his-dirty-promises"
-      },
-      {
-        "title": "Beautiful Broken Obsession (Bratva Bound, #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.92",
-        "ratingsCount": "700",
-        "url": "https://www.goodreads.com/book/show/60868882-beautiful-broken-obsession"
-      },
-      {
-        "title": "His Christmas Wish",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.98",
-        "ratingsCount": "650",
-        "url": "https://www.goodreads.com/book/show/59689667-his-christmas-wish"
-      },
-      {
-        "title": "Rafael (The Castillo Family, #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.13",
-        "ratingsCount": "489",
-        "url": "https://www.goodreads.com/book/show/57045288-rafael"
-      },
-      {
         "title": "Co się stało z Mirandą Huff?",
         "cover": "",
         "description": "",
@@ -23821,11 +22785,11 @@
         "url": "https://openlibrary.org/works/OL44584329W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/8154700.Fiona_Murphy?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL7415119A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Javier_Castillo",
     "planetaUrl": "",
-    "goodreadsFollowers": 555,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Javier_Castillo",
       "goodreads": "https://www.goodreads.com/author/show/8154700.Fiona_Murphy?from_search=true&amp;from_srp=true",
@@ -24503,17 +23467,6 @@
         "url": "https://openlibrary.org/works/OL24276057W"
       },
       {
-        "title": "The Master of the Prado",
-        "cover": "https://covers.openlibrary.org/b/id/7913378-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL17640776W"
-      },
-      {
         "title": "L'àngel perdut",
         "cover": "https://covers.openlibrary.org/b/id/7950945-L.jpg",
         "description": "",
@@ -24657,17 +23610,6 @@
         "url": "https://openlibrary.org/works/OL17711707W"
       },
       {
-        "title": "A rota proibida o outros enigmas da história",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL17711706W"
-      },
-      {
         "title": "¿Qué se oculta tras los expedientes X?",
         "cover": "",
         "description": "",
@@ -24787,17 +23729,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL17677539W"
-      },
-      {
-        "title": "A kék dáma titka",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL17677502W"
       },
       {
         "title": "Izgubljeni andeo",
@@ -27134,7 +26065,7 @@
     "bioCa": "",
     "presentingBook": "",
     "books": [],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/5481957.Various?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL4148496A",
     "wikiUrl": "",
     "planetaUrl": "",
@@ -28194,17 +27125,6 @@
         "url": "https://www.goodreads.com/book/show/18050082-dispara-yo-ya-estoy-muerto"
       },
       {
-        "title": "The Bible of Clay",
-        "cover": "https://covers.openlibrary.org/b/id/2411991-L.jpg",
-        "description": "",
-        "publishedDate": "2008",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL2183083W"
-      },
-      {
         "title": "La sangre de los inocentes",
         "cover": "https://covers.openlibrary.org/b/id/1165336-L.jpg",
         "description": "\"Algún día alguien vengará la sangre de los inocentes... Misterios, pistas falsas y enigmas salpican este nuevo best seller de Julia Navarro. De la Inquisición hasta hoy, pasando por la II Guerra Mundial, el lector sigue a varios protagonistas en sus intentos por resolver injusticias, encontrar teso",
@@ -29075,17 +27995,6 @@
         "rating": "4.18",
         "ratingsCount": "28",
         "url": "https://www.goodreads.com/book/show/27268199-orain-hilak-ditugu"
-      },
-      {
-        "title": "My Father's House",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL36044356W"
       },
       {
         "title": "Her Mother's Hands",
@@ -30681,17 +29590,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL713431W"
-      },
-      {
-        "title": "A contrallum",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL713432W"
       },
       {
         "title": "El buit i la medusa",
@@ -33121,112 +32019,13 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL20798883W"
-      },
-      {
-        "title": "Around the World in Eighty Days",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.95",
-        "ratingsCount": "285854",
-        "url": "https://www.goodreads.com/book/show/54479.Around_the_World_in_Eighty_Days"
-      },
-      {
-        "title": "Twenty Thousand Leagues Under the Sea",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.89",
-        "ratingsCount": "279431",
-        "url": "https://www.goodreads.com/book/show/33507.Twenty_Thousand_Leagues_Under_the_Sea"
-      },
-      {
-        "title": "Journey to the Center of the Earth",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.85",
-        "ratingsCount": "227866",
-        "url": "https://www.goodreads.com/book/show/32829.Journey_to_the_Center_of_the_Earth"
-      },
-      {
-        "title": "The Mysterious Island",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.14",
-        "ratingsCount": "59532",
-        "url": "https://www.goodreads.com/book/show/32831.The_Mysterious_Island"
-      },
-      {
-        "title": "From the Earth to the Moon",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.75",
-        "ratingsCount": "39776",
-        "url": "https://www.goodreads.com/book/show/32827.From_the_Earth_to_the_Moon"
-      },
-      {
-        "title": "Five Weeks in a Balloon",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.75",
-        "ratingsCount": "26224",
-        "url": "https://www.goodreads.com/book/show/1219103.Five_Weeks_in_a_Balloon"
-      },
-      {
-        "title": "In Search of the Castaways; or the Children of Captain Grant",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.07",
-        "ratingsCount": "14945",
-        "url": "https://www.goodreads.com/book/show/267071.In_Search_of_the_Castaways_or_the_Children_of_Captain_Grant"
-      },
-      {
-        "title": "20,000 Leagues Under the Sea and other Classic Novels",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.87",
-        "ratingsCount": "15651",
-        "url": "https://www.goodreads.com/book/show/15762322-20-000-leagues-under-the-sea-and-other-classic-novels"
-      },
-      {
-        "title": "Miguel Strogoff",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.93",
-        "ratingsCount": "11077",
-        "url": "https://www.goodreads.com/book/show/15707099-miguel-strogoff"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/696805.Jules_Verne?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL7934404A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Luna_Miguel",
     "planetaUrl": "https://www.planetadelibros.com/autor/luna-miguel/000049966",
-    "goodreadsFollowers": 12178,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Luna_Miguel",
       "goodreads": "https://www.goodreads.com/author/show/696805.Jules_Verne?from_search=true&amp;from_srp=true",
@@ -33455,17 +32254,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL16807907W"
-      },
-      {
-        "title": "The Wrath of the Just",
-        "cover": "https://covers.openlibrary.org/b/id/8993570-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL20330692W"
       },
       {
         "title": "Antes De Que Todo Cambie",
@@ -34902,17 +33690,6 @@
         "url": "https://openlibrary.org/works/OL35231638W"
       },
       {
-        "title": "On s'amaga la por",
-        "cover": "https://covers.openlibrary.org/b/id/14234167-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL22443608W"
-      },
-      {
         "title": "La Gina, el gat i l'emparedat",
         "cover": "https://covers.openlibrary.org/b/id/13735840-L.jpg",
         "description": "",
@@ -35532,112 +34309,12 @@
     "bioEs": "Marina Rossell i Figueras (Castellet y Gornal, Barcelona, 17 de enero de 1954) es una cantautora española en lengua catalana y castellana.",
     "bioCa": "Marina Rossell i Figueras   (Castellet i la Gornal, 17 de gener de 1954) és una cantant catalana, figura clau de la segona generació de la Nova Cançó. Entre el seu repertori s'hi troben tant cançons tradicionals clàssiques catalanes, així com havaneres i cançons pròpies.",
     "presentingBook": "El dia que vaig marxar",
-    "books": [
-      {
-        "title": "El dia que vaig marxar",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.74",
-        "ratingsCount": "171",
-        "url": "https://www.goodreads.com/book/show/57588893-el-dia-que-vaig-marxar"
-      },
-      {
-        "title": "Els veïns de dalt. La volta a Europa en 88 dies",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.81",
-        "ratingsCount": "27",
-        "url": "https://www.goodreads.com/book/show/11305283-els-ve-ns-de-dalt-la-volta-a-europa-en-88-dies"
-      },
-      {
-        "title": "No faré cap més llibre: Retrat íntim de Marina Rossell",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.29",
-        "ratingsCount": "14",
-        "url": "https://www.goodreads.com/book/show/223868040-no-far-cap-m-s-llibre"
-      },
-      {
-        "title": "El nom del porc (Humor i sàtira)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.00",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/106662660-el-nom-del-porc-humor-i-s-tira"
-      },
-      {
-        "title": "Aaaaahhh... DOTZE CONTES EROTICS",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "5.00",
-        "ratingsCount": "2",
-        "url": "https://www.goodreads.com/book/show/15498216-aaaaahhh-dotze-contes-erotics"
-      },
-      {
-        "title": "El dia que plegui Jordi Pujol: 100 catalans pronostiquen què passarà l'endemà",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/15152329-el-dia-que-plegui-jordi-pujol"
-      },
-      {
-        "title": "A la cara: Retrats que ens retraten",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/28007028-a-la-cara"
-      },
-      {
-        "title": "Coses meves",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/39680492-coses-meves"
-      },
-      {
-        "title": "Ada, la rebel·lió democràtica",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/52364116-ada-la-rebel-li-democr-tica"
-      }
-    ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/5581009.Albert_Om?from_search=true&amp;from_srp=true",
+    "books": [],
+    "goodreadsUrl": "",
     "openLibraryUrl": "",
     "wikiUrl": "https://es.wikipedia.org/wiki/Marina_Rossell",
     "planetaUrl": "",
-    "goodreadsFollowers": 3,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Marina_Rossell",
       "goodreads": "https://www.goodreads.com/author/show/5581009.Albert_Om?from_search=true&amp;from_srp=true",
@@ -36788,17 +35465,6 @@
         "url": "https://openlibrary.org/works/OL24281178W"
       },
       {
-        "title": "The Heart Has Its Reasons",
-        "cover": "https://covers.openlibrary.org/b/id/8327869-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL19992191W"
-      },
-      {
         "title": "Vineyard, The",
         "cover": "https://covers.openlibrary.org/b/id/11408730-L.jpg",
         "description": "",
@@ -36863,17 +35529,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL32253886W"
-      },
-      {
-        "title": "The Vineyard",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL19724551W"
       },
       {
         "title": "Vineyard in Andalusia",
@@ -37055,17 +35710,6 @@
         "url": "https://www.goodreads.com/book/show/1278796.Whistle_in_the_Graveyard"
       },
       {
-        "title": "how the people sang the mountains up",
-        "cover": "https://covers.openlibrary.org/b/id/6861019-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL43227350W"
-      },
-      {
         "title": "Noodles, Nitwits, and Numskulls",
         "cover": "https://covers.openlibrary.org/b/id/15027020-L.jpg",
         "description": "",
@@ -37075,28 +35719,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL37993878W"
-      },
-      {
-        "title": "The Luck Book",
-        "cover": "https://covers.openlibrary.org/b/id/6780935-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL31905602W"
-      },
-      {
-        "title": "The rainbow book of American folk tales and legends",
-        "cover": "https://covers.openlibrary.org/b/id/8392419-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL31556246W"
       },
       {
         "title": "Riddle Me, Riddle Me Ree",
@@ -37110,17 +35732,6 @@
         "url": "https://openlibrary.org/works/OL29308743W"
       },
       {
-        "title": "The soup stone",
-        "cover": "https://covers.openlibrary.org/b/id/15066442-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL28199336W"
-      },
-      {
         "title": "Funk & Wagnalls standard dictionary of folklore, mythology, and legend",
         "cover": "https://covers.openlibrary.org/b/id/10035144-L.jpg",
         "description": "",
@@ -37130,50 +35741,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL16992312W"
-      },
-      {
-        "title": "The lion sneezed",
-        "cover": "https://covers.openlibrary.org/b/id/6859013-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL15943577W"
-      },
-      {
-        "title": "The ultimate insult",
-        "cover": "https://covers.openlibrary.org/b/id/542708-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL18234534W"
-      },
-      {
-        "title": "The turnspit dog",
-        "cover": "https://covers.openlibrary.org/b/id/6824068-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL5900749W"
-      },
-      {
-        "title": "The beginning",
-        "cover": "https://covers.openlibrary.org/b/id/9250050-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL5900751W"
       },
       {
         "title": "The Wicked Wit of Oscar Wilde Centenary Edition",
@@ -37196,17 +35763,6 @@
         "rating": "4.28",
         "ratingsCount": "78",
         "url": "https://www.goodreads.com/book/show/137466.Funk_and_Wagnall_s_Standard_Dictionary_of_Folklore_Mythology_and_Legend"
-      },
-      {
-        "title": "The Thing At the Foot of the Bod, and Other Scary Tales",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL44150246W"
       },
       {
         "title": "Maria Leach The Wicked Wit of Insults",
@@ -37286,17 +35842,6 @@
     "presentingBook": "Cocínalo. Recetas Con Sabor Y Alma / Cook It. Recipes with Lots of Flavor and Soul",
     "books": [
       {
-        "title": "The art of Italian cooking",
-        "cover": "https://covers.openlibrary.org/b/id/5729642-L.jpg",
-        "description": "",
-        "publishedDate": "1948",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL142969W"
-      },
-      {
         "title": "Honey Cookbook",
         "cover": "https://covers.openlibrary.org/b/id/12869158-L.jpg",
         "description": "",
@@ -37317,28 +35862,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL16467618W"
-      },
-      {
-        "title": "The art of regional Italian cooking",
-        "cover": "https://covers.openlibrary.org/b/id/14873317-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL18361535W"
-      },
-      {
-        "title": "The art of making Italian desserts",
-        "cover": "https://covers.openlibrary.org/b/id/14905741-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL18304283W"
       },
       {
         "title": "Como Hacer Que Te Pasen Cosas Buenas Edicion Especial",
@@ -37418,116 +35941,6 @@
         "url": "https://openlibrary.org/works/OL142964W"
       },
       {
-        "title": "Amanti e regine",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.09",
-        "ratingsCount": "1335",
-        "url": "https://www.goodreads.com/book/show/3092754-amanti-e-regine"
-      },
-      {
-        "title": "Maria Antonietta e lo scandalo della collana",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.81",
-        "ratingsCount": "707",
-        "url": "https://www.goodreads.com/book/show/9715698-maria-antonietta-e-lo-scandalo-della-collana"
-      },
-      {
-        "title": "The Age of Conversation",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.99",
-        "ratingsCount": "139",
-        "url": "https://www.goodreads.com/book/show/830129.The_Age_of_Conversation"
-      },
-      {
-        "title": "The Last Libertines",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.85",
-        "ratingsCount": "117",
-        "url": "https://www.goodreads.com/book/show/51268308-the-last-libertines"
-      },
-      {
-        "title": "La contessa",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.73",
-        "ratingsCount": "95",
-        "url": "https://www.goodreads.com/book/show/59137636-la-contessa"
-      },
-      {
-        "title": "Madame du Deffand e il suo mondo",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "35",
-        "url": "https://www.goodreads.com/book/show/9714813-madame-du-deffand-e-il-suo-mondo"
-      },
-      {
-        "title": "Vita privata del maresciallo di Richelieu",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.57",
-        "ratingsCount": "7",
-        "url": "https://www.goodreads.com/book/show/9760118-vita-privata-del-maresciallo-di-richelieu"
-      },
-      {
-        "title": "Kochanki i krolowe Wladza kobiet",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/99453712-kochanki-i-krolowe-wladza-kobiet"
-      },
-      {
-        "title": "La cultura de la conversación",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/61882459-la-cultura-de-la-conversaci-n"
-      },
-      {
-        "title": "Amantes y reinas: el poder de las mujeres",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/207972098-amantes-y-reinas"
-      },
-      {
         "title": "Prince treasury of Italian recipes",
         "cover": "",
         "description": "",
@@ -37539,11 +35952,11 @@
         "url": "https://openlibrary.org/works/OL33450361W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/277346.Benedetta_Craveri?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL2196550A",
     "wikiUrl": "",
     "planetaUrl": "https://www.planetadelibros.com/autor/marian-rojas-estape/000049623",
-    "goodreadsFollowers": 49,
+    "goodreadsFollowers": 0,
     "links": {
       "goodreads": "https://www.goodreads.com/author/show/277346.Benedetta_Craveri?from_search=true&amp;from_srp=true",
       "openLibrary": "https://openlibrary.org/authors/OL2196550A",
@@ -38155,17 +36568,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
-      },
-      {
-        "title": "The bridge to the self",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL42591692W"
       },
       {
         "title": "Delicias Veganas",
@@ -39216,17 +37618,6 @@
         "rating": "3.02",
         "ratingsCount": "177",
         "url": "https://www.goodreads.com/book/show/216364195-no-pienses-mira"
-      },
-      {
-        "title": "A la ciutat en obres",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2002",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL12995959W"
       },
       {
         "title": "Una noia a la ciutat",
@@ -40356,39 +38747,6 @@
         "url": "https://openlibrary.org/works/OL12679404W"
       },
       {
-        "title": "Tirant lo Blanc",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.00",
-        "ratingsCount": "3545",
-        "url": "https://www.goodreads.com/book/show/13641489-tirant-lo-blanc"
-      },
-      {
-        "title": "Lletres de batalla",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "3",
-        "url": "https://www.goodreads.com/book/show/40208654-lletres-de-batalla"
-      },
-      {
-        "title": "Tirante el Blanco vol. 1-2",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "5.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/208776404-tirante-el-blanco-vol-1-2"
-      },
-      {
         "title": "CONTAGI",
         "cover": "",
         "description": "",
@@ -40400,11 +38758,11 @@
         "url": "https://openlibrary.org/works/OL34765358W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/78613.Joanot_Martorell?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL5665822A",
     "wikiUrl": "https://es.wikipedia.org/wiki/M%C3%A0rius_Serra",
     "planetaUrl": "https://www.planetadelibros.com/autor/marius-serra/000002877",
-    "goodreadsFollowers": 21,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/M%C3%A0rius_Serra",
       "goodreads": "https://www.goodreads.com/author/show/78613.Joanot_Martorell?from_search=true&amp;from_srp=true",
@@ -40877,116 +39235,6 @@
         "url": ""
       },
       {
-        "title": "The Bookish Life of Nina Hill",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.79",
-        "ratingsCount": "113462",
-        "url": "https://www.goodreads.com/book/show/42379022-the-bookish-life-of-nina-hill"
-      },
-      {
-        "title": "The Garden of Small Beginnings",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.92",
-        "ratingsCount": "24569",
-        "url": "https://www.goodreads.com/book/show/33877155-the-garden-of-small-beginnings"
-      },
-      {
-        "title": "Other People's Houses",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.61",
-        "ratingsCount": "19526",
-        "url": "https://www.goodreads.com/book/show/56514908-other-people-s-houses"
-      },
-      {
-        "title": "Adult Assembly Required",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.70",
-        "ratingsCount": "14616",
-        "url": "https://www.goodreads.com/book/show/58813189-adult-assembly-required"
-      },
-      {
-        "title": "I Was Told It Would Get Easier",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.70",
-        "ratingsCount": "13392",
-        "url": "https://www.goodreads.com/book/show/49348458-i-was-told-it-would-get-easier"
-      },
-      {
-        "title": "Christa Comes Out of Her Shell",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.55",
-        "ratingsCount": "3703",
-        "url": "https://www.goodreads.com/book/show/192723842-christa-comes-out-of-her-shell"
-      },
-      {
-        "title": "One Death at a Time",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.72",
-        "ratingsCount": "3255",
-        "url": "https://www.goodreads.com/book/show/216522751-one-death-at-a-time"
-      },
-      {
-        "title": "The Bookish Holiday of Nina Hill",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.93",
-        "ratingsCount": "1036",
-        "url": "https://www.goodreads.com/book/show/50997439-the-bookish-holiday-of-nina-hill"
-      },
-      {
-        "title": "Polly and Nina Take Manhattan",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.84",
-        "ratingsCount": "45",
-        "url": "https://www.goodreads.com/book/show/204223938-polly-and-nina-take-manhattan"
-      },
-      {
-        "title": "Deadly Does It",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "10",
-        "url": "https://www.goodreads.com/book/show/243042933-deadly-does-it"
-      },
-      {
         "title": "Porter Archives",
         "cover": "",
         "description": "",
@@ -41007,17 +39255,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL41899926W"
-      },
-      {
-        "title": "On Us 3",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL41894143W"
       },
       {
         "title": "Oh the Places You'll Go by Dr. Seuss",
@@ -41152,17 +39389,6 @@
         "url": "https://openlibrary.org/works/OL28403522W"
       },
       {
-        "title": "My Recipe Journal",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL27943258W"
-      },
-      {
         "title": "Journal de Bord Investisseur Immobilier",
         "cover": "",
         "description": "",
@@ -41185,11 +39411,11 @@
         "url": "https://openlibrary.org/works/OL25446948W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/15958858.Abbi_Waxman?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL3009040A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Nina",
     "planetaUrl": "https://www.planetadelibros.com/autor/nina/000033439",
-    "goodreadsFollowers": 4915,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Nina",
       "goodreads": "https://www.goodreads.com/author/show/15958858.Abbi_Waxman?from_search=true&amp;from_srp=true",
@@ -43799,17 +42025,6 @@
         "url": "https://openlibrary.org/works/OL20756853W"
       },
       {
-        "title": "The Light of the Fireflies",
-        "cover": "https://covers.openlibrary.org/b/id/8905636-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL20249729W"
-      },
-      {
         "title": "Construyendo una Casa entre los cactus",
         "cover": "",
         "description": "",
@@ -44062,17 +42277,6 @@
         "rating": "5.00",
         "ratingsCount": "1",
         "url": "https://www.goodreads.com/book/show/44637675-pel-culas-madrile-as"
-      },
-      {
-        "title": "How They Rule the World",
-        "cover": "https://covers.openlibrary.org/b/id/13191982-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL25057104W"
       },
       {
         "title": "El Tao De La Guerra",
@@ -45612,17 +43816,6 @@
         "url": "https://openlibrary.org/works/OL1642756W"
       },
       {
-        "title": "The Loneliness of the Queen",
-        "cover": "https://covers.openlibrary.org/b/id/13542739-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL16915193W"
-      },
-      {
         "title": "Pasión imperial",
         "cover": "https://covers.openlibrary.org/b/id/8436035-L.jpg",
         "description": "",
@@ -46874,17 +45067,6 @@
         "url": "https://www.goodreads.com/book/show/16161982-figures-de-calidoscopi"
       },
       {
-        "title": "A paraules em convides",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL24030069W"
-      },
-      {
         "title": "Cementiri de butxaca",
         "cover": "",
         "description": "",
@@ -47281,17 +45463,6 @@
         "url": "https://openlibrary.org/works/OL2433966W"
       },
       {
-        "title": "My brother's gun",
-        "cover": "https://covers.openlibrary.org/b/id/174556-L.jpg",
-        "description": "",
-        "publishedDate": "1997",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL2433957W"
-      },
-      {
         "title": "Caídos del cielo",
         "cover": "https://covers.openlibrary.org/b/id/3831827-L.jpg",
         "description": "Una road movie que cuenta la historia de una huida. Un adolescente escapa con una chica a la que ha secuestrado tras matar con una pistola a un guardia de seguridad. Una road movie que cuenta la historia de una huida. La maldad disimulada, la imposición de una identidad, el machismo soterrado... son",
@@ -47301,17 +45472,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL2433951W"
-      },
-      {
-        "title": "La vida privada de los héroes",
-        "cover": "https://covers.openlibrary.org/b/id/4901294-L.jpg",
-        "description": "La novela de Ray Loriga que deslumbró a toda una generación. Héroes cuenta la historia de un chico que se encierra en su habitación para vivir fuera de un mundo sin alicientes y dentro de las canciones. Una chica rubia, amigos, viajes que le llevan lejos de lo que no quiere ver... todo está en ese c",
-        "publishedDate": "1994",
-        "publisher": "National Geographic Books",
-        "isbn": "9788420454153",
-        "rating": "3.33",
-        "ratingsCount": "21",
-        "url": "https://www.goodreads.com/book/show/55017483-la-vida-privada-de-los-h-roes"
       },
       {
         "title": "Días extraños",
@@ -47369,105 +45529,6 @@
         "url": "https://openlibrary.org/works/OL2433963W"
       },
       {
-        "title": "El plagio",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.10",
-        "ratingsCount": "200",
-        "url": "https://www.goodreads.com/book/show/60163652-el-plagio"
-      },
-      {
-        "title": "El incidente",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.65",
-        "ratingsCount": "170",
-        "url": "https://www.goodreads.com/book/show/222698715-el-incidente"
-      },
-      {
-        "title": "Cocaína",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.47",
-        "ratingsCount": "164",
-        "url": "https://www.goodreads.com/book/show/28580438-coca-na"
-      },
-      {
-        "title": "Deshumanizando al varón: Pasado, presente y futuro del sexo masculino",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.46",
-        "ratingsCount": "74",
-        "url": "https://www.goodreads.com/book/show/48814038-deshumanizando-al-var-n"
-      },
-      {
-        "title": "Las dos muertes de Ray Loriga (Narrativa)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.11",
-        "ratingsCount": "19",
-        "url": "https://www.goodreads.com/book/show/46034784-las-dos-muertes-de-ray-loriga-narrativa"
-      },
-      {
-        "title": "La paz encontrada",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.50",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/219311905-la-paz-encontrada"
-      },
-      {
-        "title": "De la paz al odio",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.50",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/234779717-de-la-paz-al-odio"
-      },
-      {
-        "title": "Dave & Death",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.50",
-        "ratingsCount": "2",
-        "url": "https://www.goodreads.com/book/show/123344625-dave-death"
-      },
-      {
-        "title": "Venture",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "5.00",
-        "ratingsCount": "1",
-        "url": "https://www.goodreads.com/book/show/80348576-venture"
-      },
-      {
         "title": "Ex ouranou",
         "cover": "",
         "description": "",
@@ -47490,11 +45551,11 @@
         "url": "https://openlibrary.org/works/OL22392760W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/19211688.Daniel_Jim_nez?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL336170A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Ray_Loriga",
     "planetaUrl": "",
-    "goodreadsFollowers": 14,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Ray_Loriga",
       "goodreads": "https://www.goodreads.com/author/show/19211688.Daniel_Jim_nez?from_search=true&amp;from_srp=true",
@@ -47774,17 +45835,6 @@
         "url": ""
       },
       {
-        "title": "El llibre de les bèsties",
-        "cover": "https://covers.openlibrary.org/b/id/14114456-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "2.79",
-        "ratingsCount": "853",
-        "url": "https://www.goodreads.com/book/show/13506388-el-llibre-de-les-b-sties"
-      },
-      {
         "title": "Gira Barcelona",
         "cover": "https://covers.openlibrary.org/b/id/14196985-L.jpg",
         "description": "",
@@ -47807,105 +45857,6 @@
         "url": ""
       },
       {
-        "title": "Book of Knighthood and Chivalry: With the anonymous Ordene de Chevalerie",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.97",
-        "ratingsCount": "181",
-        "url": "https://www.goodreads.com/book/show/440557.Book_of_Knighthood_and_Chivalry"
-      },
-      {
-        "title": "Book of the Lover and the Beloved",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.88",
-        "ratingsCount": "111",
-        "url": "https://www.goodreads.com/book/show/1407389.Book_of_the_Lover_and_the_Beloved"
-      },
-      {
-        "title": "Doctor Illuminatus: A Ramon Llull Reader",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.19",
-        "ratingsCount": "26",
-        "url": "https://www.goodreads.com/book/show/129127.Doctor_Illuminatus"
-      },
-      {
-        "title": "Blanquerna",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.39",
-        "ratingsCount": "31",
-        "url": "https://www.goodreads.com/book/show/2419658.Blanquerna"
-      },
-      {
-        "title": "Llibre De Meravelles",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.16",
-        "ratingsCount": "19",
-        "url": "https://www.goodreads.com/book/show/3513900-llibre-de-meravelles"
-      },
-      {
-        "title": "Libro del gentil y los tres sabios",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.57",
-        "ratingsCount": "14",
-        "url": "https://www.goodreads.com/book/show/15144770-libro-del-gentil-y-los-tres-sabios"
-      },
-      {
-        "title": "Selected Works",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "7",
-        "url": "https://www.goodreads.com/book/show/778922.Selected_Works"
-      },
-      {
-        "title": "Vida de mestre Ramon",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "7",
-        "url": "https://www.goodreads.com/book/show/55854330-vida-de-mestre-ramon"
-      },
-      {
-        "title": "The Memoirs of Blessed Ramon Llull: The First Missionary Martyr to the Muslims",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.17",
-        "ratingsCount": "6",
-        "url": "https://www.goodreads.com/book/show/230104429-the-memoirs-of-blessed-ramon-llull"
-      },
-      {
         "title": "L'amor Fora De Mapa (sembra Llibres) (catalan Edition)",
         "cover": "",
         "description": "",
@@ -47917,11 +45868,11 @@
         "url": "https://openlibrary.org/works/OL37489127W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/38167.Ramon_Llull?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL12703560A",
     "wikiUrl": "https://ca.wikipedia.org/wiki/Roc_Casagran_i_Casa%C3%B1as",
     "planetaUrl": "",
-    "goodreadsFollowers": 60,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaCa": "https://ca.wikipedia.org/wiki/Roc_Casagran_i_Casa%C3%B1as",
       "goodreads": "https://www.goodreads.com/author/show/38167.Ramon_Llull?from_search=true&amp;from_srp=true",
@@ -48129,28 +46080,6 @@
         "url": "https://www.goodreads.com/book/show/36660872-mi-amigo-extraterrestre"
       },
       {
-        "title": "What colour is a kiss?",
-        "cover": "https://covers.openlibrary.org/b/id/13939266-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL34985648W"
-      },
-      {
-        "title": "A dinar!",
-        "cover": "https://covers.openlibrary.org/b/id/13735607-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL34920611W"
-      },
-      {
         "title": "Tinc por!",
         "cover": "https://covers.openlibrary.org/b/id/13735606-L.jpg",
         "description": "",
@@ -48239,17 +46168,6 @@
         "url": "https://openlibrary.org/works/OL34814650W"
       },
       {
-        "title": "A recollir!",
-        "cover": "https://covers.openlibrary.org/b/id/13579670-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL34814647W"
-      },
-      {
         "title": "¡A comer!",
         "cover": "https://covers.openlibrary.org/b/id/13489352-L.jpg",
         "description": "",
@@ -48314,17 +46232,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL34759891W"
-      },
-      {
-        "title": "A cuadrilla dos 11",
-        "cover": "https://covers.openlibrary.org/b/id/13488485-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL34759889W"
       },
       {
         "title": "Zer izango ote da maitasunaren kontu hori, Minimoni?",
@@ -48402,17 +46309,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL34759730W"
-      },
-      {
-        "title": "A recoller!",
-        "cover": "https://covers.openlibrary.org/b/id/13488217-L.jpg",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL34759728W"
       },
       {
         "title": "Pantallas y mucho más",
@@ -49438,17 +47334,6 @@
         "url": "https://openlibrary.org/works/OL991961W"
       },
       {
-        "title": "A filha do canibal",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL44974639W"
-      },
-      {
         "title": "I Love NY",
         "cover": "",
         "description": "",
@@ -50010,17 +47895,6 @@
         "rating": "3.70",
         "ratingsCount": "5639",
         "url": "https://www.goodreads.com/book/show/2805158-caos-calmo"
-      },
-      {
-        "title": "The force of the past",
-        "cover": "https://covers.openlibrary.org/b/id/6806129-L.jpg",
-        "description": "",
-        "publishedDate": "2003",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL11659741W"
       },
       {
         "title": "Sein anderes Leben",
@@ -50762,17 +48636,6 @@
         "url": "https://openlibrary.org/works/OL43879167W"
       },
       {
-        "title": "I Am Rome",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL37582035W"
-      },
-      {
         "title": "Trilogia de Roma",
         "cover": "",
         "description": "",
@@ -51388,116 +49251,6 @@
         "url": "https://openlibrary.org/works/OL13725679W"
       },
       {
-        "title": "Adalberto Dias. A Procura do Paraíso (A Casa de Quem Faz Casas, #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.64",
-        "ratingsCount": "11",
-        "url": "https://www.goodreads.com/book/show/33305512-adalberto-dias-a-procura-do-para-so"
-      },
-      {
-        "title": "Alexandre Alves Costa. Os Verdes Anos (A Casa de Quem Faz Casas, #2)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.13",
-        "ratingsCount": "8",
-        "url": "https://www.goodreads.com/book/show/33815848-alexandre-alves-costa-os-verdes-anos"
-      },
-      {
-        "title": "Álvaro Siza. Dar Forma a um Lugar (A Casa de Quem Faz Casas, #13)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.33",
-        "ratingsCount": "9",
-        "url": "https://www.goodreads.com/book/show/34468067-lvaro-siza-dar-forma-a-um-lugar"
-      },
-      {
-        "title": "Manuel Aires Mateus. A Casa que Nunca Acaba (A Casa de Quem Faz Casas, #11)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.71",
-        "ratingsCount": "7",
-        "url": "https://www.goodreads.com/book/show/34468047-manuel-aires-mateus-a-casa-que-nunca-acaba"
-      },
-      {
-        "title": "José Carvalho Araújo. A Casa que Nós Somos (A Casa de Quem Faz Casas, #3)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.57",
-        "ratingsCount": "7",
-        "url": "https://www.goodreads.com/book/show/33815866-jos-carvalho-ara-jo-a-casa-que-n-s-somos"
-      },
-      {
-        "title": "Eduardo Souto Moura. Gosto de Chegar a Casa (A Casa de Quem Faz Casas, #4)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.20",
-        "ratingsCount": "5",
-        "url": "https://www.goodreads.com/book/show/33815882-eduardo-souto-moura-gosto-de-chegar-a-casa"
-      },
-      {
-        "title": "Sergio Fernandez. Um Espaço de Liberdade (A Casa de Quem Faz Casas, #5)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.00",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/33815918-sergio-fernandez-um-espa-o-de-liberdade"
-      },
-      {
-        "title": "Manuel Graça Dias. Uma Colecção de Surpresas (A Casa de Quem Faz Casas, #6)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.75",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/34467944-manuel-gra-a-dias-uma-colec-o-de-surpresas"
-      },
-      {
-        "title": "José Carlos Loureiro. A Nossa Casa (A Casa de Quem Faz Casas, #12)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.25",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/34468055-jos-carlos-loureiro-a-nossa-casa"
-      },
-      {
-        "title": "Gonçalo Byrne. A Intimidade dos Espaços (A Casa de Quem Faz Casas, #10)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.00",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/34468034-gon-alo-byrne-a-intimidade-dos-espa-os"
-      },
-      {
         "title": "Antonio Peláez",
         "cover": "",
         "description": "",
@@ -51575,7 +49328,7 @@
         "url": ""
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/5759962.Maria_Milano?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL6571526A",
     "wikiUrl": "",
     "planetaUrl": "https://www.planetadelibros.com/autor/sergio-fernandez/000004021",
@@ -53116,7 +50869,7 @@
         "url": ""
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/22294257.Unknown_Author?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL7247740A",
     "wikiUrl": "https://ca.wikipedia.org/wiki/Susanna_Isern",
     "planetaUrl": "https://www.planetadelibros.com/autor/susanna-isern/000058170",
@@ -55766,94 +53519,6 @@
         "url": ""
       },
       {
-        "title": "Una família americana",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.83",
-        "ratingsCount": "508368",
-        "url": "https://www.goodreads.com/book/show/40130892-una-fam-lia-americana"
-      },
-      {
-        "title": "La supèrbia",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.76",
-        "ratingsCount": "100",
-        "url": "https://www.goodreads.com/book/show/51475489-la-sup-rbia"
-      },
-      {
-        "title": "La perplexitat",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.13",
-        "ratingsCount": "91",
-        "url": "https://www.goodreads.com/book/show/75509311-la-perplexitat"
-      },
-      {
-        "title": "Estimaràs Déu sobre totes les coses",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.76",
-        "ratingsCount": "42",
-        "url": "https://www.goodreads.com/book/show/200143964-estimar-s-d-u-sobre-totes-les-coses"
-      },
-      {
-        "title": "Diálogos con Xavier Sala i Martín",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.13",
-        "ratingsCount": "16",
-        "url": "https://www.goodreads.com/book/show/15133759-di-logos-con-xavier-sala-i-mart-n"
-      },
-      {
-        "title": "The Seven Deadly Sins",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.92",
-        "ratingsCount": "12",
-        "url": "https://www.goodreads.com/book/show/59491550-the-seven-deadly-sins"
-      },
-      {
-        "title": "Prim i gruixut: Argumentació moral adreçada a propis i a estranys",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.25",
-        "ratingsCount": "8",
-        "url": "https://www.goodreads.com/book/show/149167500-prim-i-gruixut"
-      },
-      {
-        "title": "Una proposta per a Barcelona",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "2.80",
-        "ratingsCount": "5",
-        "url": "https://www.goodreads.com/book/show/42514449-una-proposta-per-a-barcelona"
-      },
-      {
         "title": "Economia en colors",
         "cover": "",
         "description": "",
@@ -55865,11 +53530,11 @@
         "url": "https://openlibrary.org/works/OL37488411W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/6242541.Jordi_Graupera?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL7932771A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Xavier_Sala_i_Mart%C3%ADn",
     "planetaUrl": "",
-    "goodreadsFollowers": 7,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Xavier_Sala_i_Mart%C3%ADn",
       "goodreads": "https://www.goodreads.com/author/show/6242541.Jordi_Graupera?from_search=true&amp;from_srp=true",
@@ -56438,116 +54103,6 @@
         "url": ""
       },
       {
-        "title": "Skeletons on the Zahara: A True Story of Survival",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.07",
-        "ratingsCount": "12354",
-        "url": "https://www.goodreads.com/book/show/408147.Skeletons_on_the_Zahara"
-      },
-      {
-        "title": "A Sea of Words: A Lexicon and Companion to the Complete Seafaring Tales of Patrick O'Brian",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.11",
-        "ratingsCount": "2988",
-        "url": "https://www.goodreads.com/book/show/218275.A_Sea_of_Words"
-      },
-      {
-        "title": "The Feud: The Hatfields and McCoys, The True Story",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.73",
-        "ratingsCount": "1529",
-        "url": "https://www.goodreads.com/book/show/15790838-the-feud"
-      },
-      {
-        "title": "Harbors and High Seas: An Atlas and Geographical Guide to the Complete Aubrey-Maturin Novels of Patrick O'Brian",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "4.09",
-        "ratingsCount": "1065",
-        "url": "https://www.goodreads.com/book/show/93200.Harbors_and_High_Seas"
-      },
-      {
-        "title": "Guardians of the Valley: John Muir and the Friendship that Saved Yosemite",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.88",
-        "ratingsCount": "875",
-        "url": "https://www.goodreads.com/book/show/176443269-guardians-of-the-valley"
-      },
-      {
-        "title": "Patrick O'Brian: A Life",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.91",
-        "ratingsCount": "310",
-        "url": "https://www.goodreads.com/book/show/521564.Patrick_O_Brian"
-      },
-      {
-        "title": "Unbound: A True Story of War, Love, and Survival",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.48",
-        "ratingsCount": "212",
-        "url": "https://www.goodreads.com/book/show/7241924-unbound"
-      },
-      {
-        "title": "Every Man Will Do His Duty: An Anthology of Firsthand Accounts from the Age of Nelson",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.98",
-        "ratingsCount": "112",
-        "url": "https://www.goodreads.com/book/show/1127439.Every_Man_Will_Do_His_Duty"
-      },
-      {
-        "title": "9/11...The Tragic Story of the Day that Changed America: The Terror, The Horror and The Heroes (Tragedies That Shaped America Book 2)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.83",
-        "ratingsCount": "103",
-        "url": "https://www.goodreads.com/book/show/18931538-9-11-the-tragic-story-of-the-day-that-changed-america"
-      },
-      {
-        "title": "Ironman: A History of Marvel's Armored Avenger (Superhero Sagas Book 4)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "3.82",
-        "ratingsCount": "66",
-        "url": "https://www.goodreads.com/book/show/18923262-ironman"
-      },
-      {
         "title": "I Didn't Give Up",
         "cover": "",
         "description": "",
@@ -56581,11 +54136,11 @@
         "url": "https://openlibrary.org/works/OL25591809W"
       }
     ],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/13803.Dean_King?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL7387729A",
     "wikiUrl": "https://es.wikipedia.org/wiki/Zahara",
     "planetaUrl": "",
-    "goodreadsFollowers": 202,
+    "goodreadsFollowers": 0,
     "links": {
       "wikipediaEs": "https://es.wikipedia.org/wiki/Zahara",
       "goodreads": "https://www.goodreads.com/author/show/13803.Dean_King?from_search=true&amp;from_srp=true",
@@ -56856,17 +54411,6 @@
         "url": "https://openlibrary.org/works/OL34436830W"
       },
       {
-        "title": "On Heroes, Hero-Worship, and the Heroic in History",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL29531502W"
-      },
-      {
         "title": "Garri Kasparov: Campeon Del Mundo",
         "cover": "",
         "description": "",
@@ -57090,7 +54634,7 @@
     "bioCa": "",
     "presentingBook": "",
     "books": [],
-    "goodreadsUrl": "https://www.goodreads.com/author/show/22294257.Unknown_Author?from_search=true&amp;from_srp=true",
+    "goodreadsUrl": "",
     "openLibraryUrl": "https://openlibrary.org/authors/OL8006474A",
     "wikiUrl": "",
     "planetaUrl": "",

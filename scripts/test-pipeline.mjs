@@ -191,6 +191,54 @@ test('goodreadsFollowers >= 0 for all authors', () => {
   return assert(bad.length === 0, `${bad.length} authors with negative followers`);
 });
 
+// ─── Regression Tests (known bad data) ──────────────────────────────
+
+console.log('\n🛡️  REGRESSION TESTS');
+
+test('Blue Jeans GR URL is not Tai Sheridan', () => {
+  const a = data['Blue Jeans'];
+  return assert(!a?.goodreadsUrl?.includes('Tai_Sheridan'), `Still pointing to Tai Sheridan: ${a?.goodreadsUrl}`);
+});
+
+test('Luna Miguel GR URL is not Jules Verne', () => {
+  const a = data['Luna Miguel'];
+  return assert(!a?.goodreadsUrl?.includes('Jules_Verne'), `Still pointing to Jules Verne: ${a?.goodreadsUrl}`);
+});
+
+test('Javier Castillo GR URL is not Fiona Murphy', () => {
+  const a = data['Javier Castillo'];
+  return assert(!a?.goodreadsUrl?.includes('Fiona_Murphy'), `Still pointing to Fiona Murphy: ${a?.goodreadsUrl}`);
+});
+
+test('Zahara GR URL is not Dean King', () => {
+  const a = data['Zahara'];
+  return assert(!a?.goodreadsUrl?.includes('Dean_King'), `Still pointing to Dean King: ${a?.goodreadsUrl}`);
+});
+
+test('Dolores Redondo GR URL is not I.L. Escudero', () => {
+  const a = data['Dolores Redondo'];
+  return assert(!a?.goodreadsUrl?.includes('Escudero'), `Still pointing to Escudero: ${a?.goodreadsUrl}`);
+});
+
+test('Lola Vendetta is preserved (pen name for Raquel Riba Rossy)', () => {
+  const a = data['Lola Vendetta'];
+  return assert(a?.goodreadsUrl?.includes('Raquel_Riba_Rossy'), 'Lola Vendetta should keep her GR URL');
+});
+
+test('No English-title books from Open Library', () => {
+  const pattern = /^(The |A |An |My |How |What |Why |In |On |Of |It |Is |Do |I Am |I Was )/i;
+  const bad = [];
+  authors.forEach(a => a.books?.forEach(b => {
+    if (pattern.test(b.title) && b.url?.includes('openlibrary')) bad.push(`${a.name}: "${b.title}"`);
+  }));
+  return assert(bad.length === 0, `${bad.length} English OL books: ${bad.slice(0, 3).join(', ')}`);
+});
+
+test('No GR URL pointing to Unknown_Author', () => {
+  const bad = authors.filter(a => a.goodreadsUrl?.includes('Unknown_Author'));
+  return assert(bad.length === 0, `${bad.length} authors with Unknown_Author GR URL`);
+});
+
 // ─── Summary ────────────────────────────────────────────────────────
 
 console.log(`\n${'═'.repeat(50)}`);
