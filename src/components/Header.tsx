@@ -1,5 +1,6 @@
 import type { ActiveView } from '../types';
 import { useI18n } from '../i18n/I18nContext';
+import { SearchBar } from './SearchBar';
 
 interface HeaderProps {
   activeView: ActiveView;
@@ -9,13 +10,16 @@ interface HeaderProps {
   favoritesCount: number;
   theme: 'light' | 'dark';
   onToggleTheme: () => void;
+  searchText: string;
+  onSearchChange: (value: string) => void;
 }
 
-export function Header({ activeView, onViewChange, totalSignings, filteredCount, favoritesCount, theme, onToggleTheme }: HeaderProps) {
+export function Header({ activeView, onViewChange, totalSignings, filteredCount, favoritesCount, theme, onToggleTheme, searchText, onSearchChange }: HeaderProps) {
   const { locale, setLocale, t } = useI18n();
 
-  const navItems: { view: 'list' | 'favorites'; label: string }[] = [
+  const navItems: { view: 'list' | 'favorites' | 'map'; label: string }[] = [
     { view: 'list', label: t('list') },
+    { view: 'map', label: t('map') },
     { view: 'favorites', label: `${t('favorites')}${favoritesCount > 0 ? ` (${favoritesCount})` : ''}` },
   ];
 
@@ -52,6 +56,10 @@ export function Header({ activeView, onViewChange, totalSignings, filteredCount,
               </button>
             ))}
           </nav>
+        </div>
+
+        <div className="flex items-center gap-3 flex-1 max-w-md mx-4 lg:mx-8">
+          <SearchBar value={searchText} onChange={onSearchChange} />
         </div>
 
         <div className="flex items-center gap-2">

@@ -10,7 +10,7 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
 
   return (
     <div className="relative group">
-      <div className="absolute inset-y-0 left-4 flex items-center pointer-events-none">
+      <div className="absolute inset-y-0 left-3 flex items-center pointer-events-none">
         <span className="material-symbols-outlined text-outline group-focus-within:text-primary transition-colors">
           search
         </span>
@@ -21,7 +21,7 @@ export function SearchBar({ value, onChange }: SearchBarProps) {
         aria-label={t('searchPlaceholder')}
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        className="w-full bg-surface-lowest dark:bg-on-surface/10 border-none py-4 pl-12 pr-10 rounded-xl shadow-sm text-sm font-body text-on-surface dark:text-surface-highest placeholder:text-tertiary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+        className="w-full bg-surface-lowest dark:bg-on-surface/10 border-none py-2.5 pl-10 pr-9 rounded-lg text-sm font-body text-on-surface dark:text-surface-highest placeholder:text-tertiary/40 focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
       />
       {value && (
         <button

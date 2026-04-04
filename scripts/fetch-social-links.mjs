@@ -125,6 +125,70 @@ async function fetchPlanetaSocial(planetaUrl) {
   return null;
 }
 
+// ─── Goodreads author page (URLs section) ───────────────────────────
+
+async function fetchGoodreadsSocial(goodreadsUrl) {
+  if (!goodreadsUrl) return null;
+  try {
+    const res = await fetch(goodreadsUrl, { headers: SCRAPE_HEADERS, redirect: 'follow' });
+    if (!res.ok) return null;
+    const html = await res.text();
+
+    const result = {};
+
+    // Twitter/X links anywhere on the page
+    const twitterMatch = html.match(/href="(https?:\/\/(?:www\.)?(?:twitter|x)\.com\/[A-Za-z0-9_]+)"/i);
+    if (twitterMatch && !twitterMatch[1].includes('/home') && !twitterMatch[1].includes('/share'))
+      result.twitter = twitterMatch[1].replace('twitter.com', 'x.com').replace('http://', 'https://');
+
+    // Instagram
+    const instaMatch = html.match(/href="(https?:\/\/(?:www\.)?instagram\.com\/[A-Za-z0-9_.]+)"/i);
+    if (instaMatch && !instaMatch[1].includes('/p/'))
+      result.instagram = instaMatch[1].replace('http://', 'https://');
+
+    // Website (from dataUrl or author links section)
+    const webMatch = html.match(/href="(https?:\/\/(?:www\.)?[a-z0-9][\w.-]+\.[a-z]{2,}\/?)"\s*[^>]*class="[^"]*authorUrl[^"]*"/i)
+      || html.match(/"webUrl"\s*:\s*"(https?:\/\/[^"]+)"/i);
+    if (webMatch) result.website = webMatch[1];
+
+    return Object.keys(result).length > 0 ? result : null;
+  } catch { return null; }
+}
+
+// ─── Wikipedia external links ───────────────────────────────────────
+
+async function fetchWikipediaSocial(wikiUrl) {
+  if (!wikiUrl) return null;
+  try {
+    // Get the page title from the URL
+    const title = decodeURIComponent(wikiUrl.split('/wiki/').pop());
+    const lang = wikiUrl.includes('ca.wikipedia') ? 'ca' : 'es';
+    const apiUrl = `https://${lang}.wikipedia.org/w/api.php?action=parse&page=${encodeURIComponent(title)}&prop=externallinks&format=json`;
+
+    const res = await fetch(apiUrl, { headers: HEADERS });
+    if (!res.ok) return null;
+    const data = await res.json();
+
+    const links = data.parse?.externallinks || [];
+    const result = {};
+
+    for (const link of links) {
+      if (!result.twitter && /(?:twitter|x)\.com\/[A-Za-z0-9_]+\/?$/i.test(link)) {
+        result.twitter = link.replace('http://', 'https://').replace('twitter.com', 'x.com');
+      }
+      if (!result.instagram && /instagram\.com\/[A-Za-z0-9_.]+\/?$/i.test(link)) {
+        result.instagram = link.replace('http://', 'https://');
+      }
+      if (!result.website && !/twitter|instagram|facebook|youtube|tiktok|wikipedia|wikidata|goodreads/.test(link)
+          && /^https?:\/\/(?:www\.)?[a-z0-9][\w.-]+\.[a-z]{2,}/i.test(link)) {
+        result.website = link;
+      }
+    }
+
+    return Object.keys(result).length > 0 ? result : null;
+  } catch { return null; }
+}
+
 // ─── Main ───────────────────────────────────────────────────────────
 
 async function main() {
@@ -132,7 +196,7 @@ async function main() {
   const authors = Object.values(data);
 
   let processed = 0;
-  const stats = { wikidata: 0, planeta: 0, total: 0 };
+  const stats = { wikidata: 0, planeta: 0, goodreads: 0, wikipedia: 0, total: 0 };
 
   for (const author of authors) {
     if (processed >= limit) break;
@@ -155,13 +219,36 @@ async function main() {
     if (author.planetaUrl && (!socialLinks.twitter || !socialLinks.instagram)) {
       const pl = await fetchPlanetaSocial(author.planetaUrl);
       if (pl) {
-        // Only add what we don't have from Wikidata
         for (const [k, v] of Object.entries(pl)) {
           if (!socialLinks[k]) socialLinks[k] = v;
         }
         stats.planeta++;
       }
       await sleep(800);
+    }
+
+    // 3. Goodreads author page (supplement)
+    if (author.goodreadsUrl && (!socialLinks.twitter || !socialLinks.instagram)) {
+      const gr = await fetchGoodreadsSocial(author.goodreadsUrl);
+      if (gr) {
+        for (const [k, v] of Object.entries(gr)) {
+          if (!socialLinks[k]) socialLinks[k] = v;
+        }
+        stats.goodreads++;
+      }
+      await sleep(1500);
+    }
+
+    // 4. Wikipedia external links (supplement)
+    if (author.wikiUrl && (!socialLinks.twitter || !socialLinks.instagram)) {
+      const wp = await fetchWikipediaSocial(author.wikiUrl);
+      if (wp) {
+        for (const [k, v] of Object.entries(wp)) {
+          if (!socialLinks[k]) socialLinks[k] = v;
+        }
+        stats.wikipedia++;
+      }
+      await sleep(300);
     }
 
     // Merge into author.links
@@ -187,7 +274,7 @@ async function main() {
   }).length;
 
   console.log(`\n─── Results ───`);
-  console.log(`Sources: Wikidata ${stats.wikidata} | Planeta ${stats.planeta}`);
+  console.log(`Sources: Wikidata ${stats.wikidata} | Planeta ${stats.planeta} | Goodreads ${stats.goodreads} | Wikipedia ${stats.wikipedia}`);
   console.log(`Twitter/X: ${withTwitter}/${total} | Instagram: ${withInsta}/${total} | Website: ${withWebsite}/${total}`);
   console.log(`Any social: ${withAny}/${total} (${Math.round(withAny*100/total)}%)`);
 }
