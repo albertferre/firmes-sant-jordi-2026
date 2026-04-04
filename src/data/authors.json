@@ -1642,6 +1642,17 @@
         "url": "https://openlibrary.org/works/OL17927873W"
       },
       {
+        "title": "Un perro (Amalia, #2)",
+        "cover": "https://covers.openlibrary.org/b/id/7898037-L.jpg",
+        "description": "",
+        "publishedDate": "2016",
+        "publisher": "",
+        "isbn": "9788423350223",
+        "rating": "4.16",
+        "ratingsCount": "1883",
+        "url": "https://www.goodreads.com/book/show/28502577-un-perro"
+      },
+      {
         "title": "El día que mi hermana quiso volar",
         "cover": "",
         "description": "«Cuando hay dos mellizos y uno muere, ¿el otro sigue siendo un mellizo o se llama de otra manera?» Esta es la primera pregunta que Elio se hace después de que Eva, su hermana, su compañera inseparable y su amiga del alma, caiga desde lo alto de una azotea. En ausencia de Eva, tan inteligente, tan in",
@@ -1651,17 +1662,6 @@
         "rating": "4.43",
         "ratingsCount": "1028",
         "url": "https://www.goodreads.com/book/show/219051661-el-d-a-que-mi-hermana-quiso-volar"
-      },
-      {
-        "title": "Un perro (Amalia, #2)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2016",
-        "publisher": "",
-        "isbn": "9788423350223",
-        "rating": "4.16",
-        "ratingsCount": "1883",
-        "url": "https://www.goodreads.com/book/show/28502577-un-perro"
       },
       {
         "title": "Tanto amor",
@@ -2899,7 +2899,7 @@
       },
       {
         "title": "Preparativos para un viaje",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/7281839-L.jpg",
         "description": "",
         "publishedDate": "2013",
         "publisher": "",
@@ -2910,7 +2910,7 @@
       },
       {
         "title": "Hagamos caso al tigre",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/7281617-L.jpg",
         "description": "Los ojos del gato que no parpadea son grandes ventanas que nunca se cierran. Cocodrilos y ovejas, monstruos y sirenas, arañas y dragones... Animales y seres estrafalarios pasean por las páginas de este libro entre versos llenos de ritmo para descubrirnos algunos secretos que tienen muy escondidos.",
         "publishedDate": "2010",
         "publisher": "Anaya Infantil",
@@ -2921,11 +2921,22 @@
       },
       {
         "title": "El cómic hispánico",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/7281837-L.jpg",
         "description": "Interpretación de los cómics como factor cultural capaz de representar la modernidad masiva y popular del siglo XX. Varios ejemplos descritos muestran el espacio de la cultura de masas en el que se forjaron los cómics y cómo algunos de los cómics españoles, cubanos, mexicanos y argentinos que surgie",
         "publishedDate": "2003",
         "publisher": "Catedra Ediciones",
         "isbn": "9788437620572",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "Salvemos al elefante",
+        "cover": "https://covers.openlibrary.org/b/id/13589452-L.jpg",
+        "description": "",
+        "publishedDate": "2017-05",
+        "publisher": "",
+        "isbn": "9788491222514",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -2948,17 +2959,6 @@
         "publishedDate": "2017-11",
         "publisher": "",
         "isbn": "9788497738989",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "Salvemos al elefante",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2017-05",
-        "publisher": "",
-        "isbn": "9788491222514",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -3131,7 +3131,7 @@
       },
       {
         "title": "Just friends",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/12713432-L.jpg",
         "description": "",
         "publishedDate": "2021",
         "publisher": "",
@@ -3142,7 +3142,7 @@
       },
       {
         "title": "Astrolabio",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/12372805-L.jpg",
         "description": "",
         "publishedDate": "2019",
         "publisher": "",
@@ -3337,11 +3337,22 @@
       },
       {
         "title": "Los bajos de la alta cocina",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/6259300-L.jpg",
         "description": "",
         "publishedDate": "2008-12",
         "publisher": "",
         "isbn": "9788493385385",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "De la alta cocina a tu casa",
+        "cover": "https://covers.openlibrary.org/b/id/13682021-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788408182689",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -3375,17 +3386,6 @@
         "publishedDate": "2008",
         "publisher": "",
         "isbn": "9788489158658",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "De la alta cocina a tu casa",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788408182689",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -3601,23 +3601,23 @@
         "url": "https://openlibrary.org/works/OL34909110W"
       },
       {
+        "title": "Joan Reventós",
+        "cover": "https://covers.openlibrary.org/b/id/13833080-L.jpg",
+        "description": "",
+        "publishedDate": "1977",
+        "publisher": "",
+        "isbn": "9788485229277",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Jordi Mercader",
         "cover": "",
         "description": "",
         "publishedDate": "2018",
         "publisher": "",
         "isbn": "",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "Joan Reventós",
-        "cover": "",
-        "description": "",
-        "publishedDate": "1977",
-        "publisher": "",
-        "isbn": "9788485229277",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -4187,7 +4187,7 @@
       },
       {
         "title": "Estuve aquí y me acordé de nosotros: Una historia sobre turismo, trabajo y clase (Nuevos cuadernos Anagrama, #61)",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/14628286-L.jpg",
         "description": "An essay on job insecurity. Between the chronicle and the essay, a chilling x-ray of the labor dynamics in the tourism sector, just when the climate crisis is going to change the map of tourist destinations worldwide from top to bottom.",
         "publishedDate": "2024-05-21",
         "publisher": "Anagrama",
@@ -4871,7 +4871,7 @@
       },
       {
         "title": "Madre de Dios y Madre Nuestra. Iniciación a la Mariología",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13703826-L.jpg",
         "description": "",
         "publishedDate": "2008",
         "publisher": "Ediciones Rialp",
@@ -6012,7 +6012,7 @@
       },
       {
         "title": "Números",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13257871-L.jpg",
         "description": "\"Basado en los Cuentos del Bosque de la Bellota de Julia Donaldson [y] Axel Scheffler\"--Cover.",
         "publishedDate": "2018-02-15",
         "publisher": "Juventud",
@@ -6023,7 +6023,7 @@
       },
       {
         "title": "Las aventuras de un pez fantasioso",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/6295186-L.jpg",
         "description": "En este libro se narra la historia de un pequeño pez que contaba grandes historias.",
         "publishedDate": "2007-09",
         "publisher": "",
@@ -6034,7 +6034,7 @@
       },
       {
         "title": "El grufaló",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/14628463-L.jpg",
         "description": "A clever mouse uses the threat of a terrifying creature to keep from being eaten by a fox, an owl, and a snake--only to have to outwit that creature as well.",
         "publishedDate": "2010",
         "publisher": "",
@@ -6912,6 +6912,17 @@
         "url": "https://openlibrary.org/works/OL24702491W"
       },
       {
+        "title": "Antología poética",
+        "cover": "https://covers.openlibrary.org/b/id/14041914-L.jpg",
+        "description": "",
+        "publishedDate": "2020",
+        "publisher": "",
+        "isbn": "9788467058925",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Poéticas de la Niñería",
         "cover": "",
         "description": "",
@@ -6954,17 +6965,6 @@
         "rating": "4.43",
         "ratingsCount": "147",
         "url": "https://www.goodreads.com/book/show/199509948-el-arte-de-encender-las-palabras"
-      },
-      {
-        "title": "Antología poética",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2020",
-        "publisher": "",
-        "isbn": "9788467058925",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       },
       {
         "title": "XIII Certamen de Teatro Mínimo Rafael Guerrero",
@@ -7364,6 +7364,17 @@
         "url": "https://www.goodreads.com/book/show/53410362-dime-qu-comes-y-te-dir-qu-bacterias-tienes"
       },
       {
+        "title": "¿Y ahora qué como, doctor?",
+        "cover": "https://covers.openlibrary.org/b/id/12345146-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788416336081",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Dulce y sin azúcar: 80 propuestas fáciles, saludables y deliciosas",
         "cover": "",
         "description": "",
@@ -7373,17 +7384,6 @@
         "rating": "3.80",
         "ratingsCount": "5",
         "url": "https://www.goodreads.com/book/show/195694467-dulce-y-sin-az-car"
-      },
-      {
-        "title": "¿Y ahora qué como, doctor?",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788416336081",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/20291227.Blanca_Garc_a_Orea_Haro?from_search=true&amp;from_srp=true",
@@ -9040,6 +9040,17 @@
         "url": ""
       },
       {
+        "title": "LA TERCERA MÁSCARA",
+        "cover": "https://covers.openlibrary.org/b/id/12929459-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788468355894",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Mentira (Mentira, #1)",
         "cover": "",
         "description": "",
@@ -9093,17 +9104,6 @@
         "rating": "3.87",
         "ratingsCount": "1286",
         "url": "https://www.goodreads.com/book/show/44769042-miedo"
-      },
-      {
-        "title": "LA TERCERA MÁSCARA",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788468355894",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/298546.Care_Santos?from_search=true&amp;from_srp=true",
@@ -11574,6 +11574,17 @@
         "url": "https://www.goodreads.com/book/show/43718556-manual-ultravioleta"
       },
       {
+        "title": "La búsqueda de Colette",
+        "cover": "https://covers.openlibrary.org/b/id/9286059-L.jpg",
+        "description": "",
+        "publishedDate": "2019",
+        "publisher": "",
+        "isbn": "9788494927690",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Ceder No Es Consentir",
         "cover": "",
         "description": "Yielding is not consenting.' This may seem obvious. However, it is necessary to delineate the boundary between 'yielding' and 'consenting', as there can sometimes be a dangerous proximity between the two. Consent, in fact, always carries a risk: I can never know in advance where it will lead me. Cou",
@@ -11605,17 +11616,6 @@
         "rating": "4.18",
         "ratingsCount": "134",
         "url": "https://www.goodreads.com/book/show/58189781-alianzas-rebeldes"
-      },
-      {
-        "title": "La búsqueda de Colette",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2019",
-        "publisher": "",
-        "isbn": "9788494927690",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       },
       {
         "title": "Cambiar la vida",
@@ -12511,7 +12511,7 @@
       },
       {
         "title": "Neurociencia aplicada a la educación",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13567650-L.jpg",
         "description": "",
         "publishedDate": "2019",
         "publisher": "",
@@ -12753,7 +12753,7 @@
       },
       {
         "title": "Los límites de la vida",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13713712-L.jpg",
         "description": "",
         "publishedDate": "2014",
         "publisher": "",
@@ -12764,7 +12764,7 @@
       },
       {
         "title": "El arte de persistir: Un viaje al interior del cerebro para aprender a gestionar el cambio y la incertidumbre",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/14212248-L.jpg",
         "description": "¿Cómo reaccionamos ante las dificultades? ¿Cómo afrontamos los cambios y las incertidumbres que se suceden en la vida? ¿Cómo nos afecta lo desconocido? Las actitudes vitales que adoptamos frente a lo inesperado nacen en nuestro cerebro y al mismo tiempo lo condicionan. Son maneras de sentir y de act",
         "publishedDate": "2021",
         "publisher": "",
@@ -12775,7 +12775,7 @@
       },
       {
         "title": "La práctica educativa con mirada neurocientífica",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/11440268-L.jpg",
         "description": "",
         "publishedDate": "2020",
         "publisher": "",
@@ -12786,7 +12786,7 @@
       },
       {
         "title": "Neurociencia aplicada a la educación",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13567650-L.jpg",
         "description": "",
         "publishedDate": "2019",
         "publisher": "",
@@ -12797,7 +12797,7 @@
       },
       {
         "title": "Gamificación en educación física",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/10417869-L.jpg",
         "description": "",
         "publishedDate": "2019",
         "publisher": "",
@@ -12808,7 +12808,7 @@
       },
       {
         "title": "Neurociencia para educadores : todo lo que los educadores siempre han querido saber sobre el cerebro",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/12329093-L.jpg",
         "description": "",
         "publishedDate": "2017-09",
         "publisher": "",
@@ -13699,7 +13699,7 @@
       },
       {
         "title": "La tiranía sin tiranos",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/8181213-L.jpg",
         "description": "This written work questions the nature of individualism as a source of self-inflicted harm, as if it were a new regime, a tyranny without tyrants in which, perhaps, the tyrants are ourselves.",
         "publishedDate": "2018",
         "publisher": "Anagrama",
@@ -14649,6 +14649,17 @@
         "url": ""
       },
       {
+        "title": "Manual shining de atención a las altas capacidades intelectuales",
+        "cover": "https://covers.openlibrary.org/b/id/13740116-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788494323706",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "La Princesa de Éboli",
         "cover": "",
         "description": "",
@@ -14746,17 +14757,6 @@
         "rating": "0.00",
         "ratingsCount": "0",
         "url": "https://www.goodreads.com/book/show/22186225-conciliaci-n-trabajo-familia"
-      },
-      {
-        "title": "Manual shining de atención a las altas capacidades intelectuales",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788494323706",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/7848117.Eduardo_Infante?from_search=true&amp;from_srp=true",
@@ -16148,23 +16148,23 @@
         "url": "https://openlibrary.org/works/OL17053134W"
       },
       {
+        "title": "Sitcom",
+        "cover": "https://covers.openlibrary.org/b/id/13746549-L.jpg",
+        "description": "",
+        "publishedDate": "2019",
+        "publisher": "",
+        "isbn": "9788483812327",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Medianenas Y Milhombres",
         "cover": "",
         "description": "A gateway to one of the most personal, fun and unusual intelligences of Spanish essay writing in the last 20 years. Compendium of texts on gender issues that the author has published over 12 years in newspapers, magazines, catalogs and collective books.",
         "publishedDate": "2024-06-25",
         "publisher": "",
         "isbn": "9788433922885",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "Sitcom",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2019",
-        "publisher": "",
-        "isbn": "9788483812327",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -18813,7 +18813,7 @@
       },
       {
         "title": "La vida secreta de nuestros médicos",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/7264502-L.jpg",
         "description": "Vida secreta de nuestros médicos nos cuenta de forma amena y documentada la vida y obra de veinte genios de la medicina española que en el siglo XX han modificado el curso de sus respectivas especialidades.El periodista Genís Sinca (Manresa, 1970) explora aquí la impronta científica y humana de apel",
         "publishedDate": "2011-03",
         "publisher": "",
@@ -19298,7 +19298,7 @@
       },
       {
         "title": "Imposible Decir Adiós",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/15114032-L.jpg",
         "description": "LA NUEVA NOVELA DE HAN KANG PREMIO NOBEL DE LITERATURA 2024 PREMIO MÉDICIS ÉTRANGER 2023 «Una novela inquietantemente bella sobre la imposibilidad de despertar de la pesadilla histórica. Inolvidable». -Hernán Díaz Una gélida mañana de finales de diciembre, Gyeongha recibe un inesperado mensaje de su",
         "publishedDate": "2025-01-21",
         "publisher": "Literatura Random House",
@@ -19309,7 +19309,7 @@
       },
       {
         "title": "La Clase de Griego",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/14555039-L.jpg",
         "description": "POR LA AUTORA GANADORA DEL PREMIO NOBEL DE LITERATURA 2024 Y EL PREMIO BOOKER INTERNACIONAL POR LA VEGETARIANA. « La clase de griego es impresionante. En humanidad, en lenguaje, en las formas del dolor y el silencio dentro y alrededor de nosotros. Han Kang siempre es una de las escritoras más lúcida",
         "publishedDate": "2024-01-23",
         "publisher": "Literatura Random House",
@@ -19613,7 +19613,7 @@
       },
       {
         "title": "El ahogado más hermoso del mundo",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/12595453-L.jpg",
         "description": "Text of a short story by the notable Colombian author accompanied by photographs recreating the tale.",
         "publishedDate": "1995",
         "publisher": "Lectorum Publications",
@@ -19842,6 +19842,61 @@
         "url": "https://openlibrary.org/works/OL24244007W"
       },
       {
+        "title": "El faro del silencio (Leire Altuna #1)",
+        "cover": "https://covers.openlibrary.org/b/id/14574545-L.jpg",
+        "description": "",
+        "publishedDate": "2024-01-25",
+        "publisher": "",
+        "isbn": "9788466373494",
+        "rating": "3.90",
+        "ratingsCount": "2769",
+        "url": "https://www.goodreads.com/book/show/24659151-el-faro-del-silencio"
+      },
+      {
+        "title": "último Aquelarre",
+        "cover": "https://covers.openlibrary.org/b/id/14574547-L.jpg",
+        "description": "«Las brujas están más cerca de lo que creéis». Bilbao se prepara para una noche festiva cuando un macabro asesinato atrae todas las miradas hacia la chimenea del parque de Etxebarria. Un joven estudiante pende envuelto en llamas de su vieja estructura de ladrillo. La escritora Leire Altuna y la ertz",
+        "publishedDate": "2024-01-25",
+        "publisher": "Debolsillo",
+        "isbn": "9788466373517",
+        "rating": "",
+        "ratingsCount": "",
+        "url": "https://openlibrary.org/works/OL37664817W"
+      },
+      {
+        "title": "Onin y la fiesta de las ballenas",
+        "cover": "https://covers.openlibrary.org/b/id/13633417-L.jpg",
+        "description": "",
+        "publishedDate": "2019",
+        "publisher": "",
+        "isbn": "9788494934919",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "El último akelarre (Leire Altuna #3)",
+        "cover": "https://covers.openlibrary.org/b/id/12669141-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788494407796",
+        "rating": "4.00",
+        "ratingsCount": "1470",
+        "url": "https://www.goodreads.com/book/show/33622781-el-ltimo-akelarre"
+      },
+      {
+        "title": "La jaula de sal (Leire Altuna #4)",
+        "cover": "https://covers.openlibrary.org/b/id/12561035-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788494629761",
+        "rating": "3.99",
+        "ratingsCount": "1201",
+        "url": "https://www.goodreads.com/book/show/36990913-la-jaula-de-sal"
+      },
+      {
         "title": "El valle sin nombre",
         "cover": "",
         "description": "La tierra de Oialde se desangra bajo el yugo de un altivo señor. Pero sus vasallos están cansados de su tiranía... Trescientos años antes de que la Revolución francesa proclame la igualdad entre los seres humanos, un clamor se adueña de los valles vascos: el de los hombres y mujeres que ansían su li",
@@ -19853,39 +19908,6 @@
         "url": "https://www.goodreads.com/book/show/29229170-el-valle-sin-nombre"
       },
       {
-        "title": "El faro del silencio (Leire Altuna #1)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2024-01-25",
-        "publisher": "",
-        "isbn": "9788466373494",
-        "rating": "3.90",
-        "ratingsCount": "2769",
-        "url": "https://www.goodreads.com/book/show/24659151-el-faro-del-silencio"
-      },
-      {
-        "title": "último Aquelarre",
-        "cover": "",
-        "description": "«Las brujas están más cerca de lo que creéis». Bilbao se prepara para una noche festiva cuando un macabro asesinato atrae todas las miradas hacia la chimenea del parque de Etxebarria. Un joven estudiante pende envuelto en llamas de su vieja estructura de ladrillo. La escritora Leire Altuna y la ertz",
-        "publishedDate": "2024-01-25",
-        "publisher": "Debolsillo",
-        "isbn": "9788466373517",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL37664817W"
-      },
-      {
-        "title": "Onin y la fiesta de las ballenas",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2019",
-        "publisher": "",
-        "isbn": "9788494934919",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
         "title": "La fábrica de las sombras (Leire Altuna, #2)",
         "cover": "",
         "description": "",
@@ -19895,28 +19917,6 @@
         "rating": "3.88",
         "ratingsCount": "1669",
         "url": "https://www.goodreads.com/book/show/29985384-la-f-brica-de-las-sombras"
-      },
-      {
-        "title": "El último akelarre (Leire Altuna #3)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788494407796",
-        "rating": "4.00",
-        "ratingsCount": "1470",
-        "url": "https://www.goodreads.com/book/show/33622781-el-ltimo-akelarre"
-      },
-      {
-        "title": "La jaula de sal (Leire Altuna #4)",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788494629761",
-        "rating": "3.99",
-        "ratingsCount": "1201",
-        "url": "https://www.goodreads.com/book/show/36990913-la-jaula-de-sal"
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/13161322.Ibon_Mart_n?from_search=true&amp;from_srp=true",
@@ -20403,6 +20403,28 @@
         "url": "https://openlibrary.org/works/OL35077464W"
       },
       {
+        "title": "Un aire inglés: Ensayos hispano-británicos",
+        "cover": "https://covers.openlibrary.org/b/id/13459440-L.jpg",
+        "description": "",
+        "publishedDate": "2021",
+        "publisher": "",
+        "isbn": "9788417425968",
+        "rating": "3.62",
+        "ratingsCount": "21",
+        "url": "https://www.goodreads.com/book/show/59779459-un-aire-ingl-s"
+      },
+      {
+        "title": "Pompa y circunstancia: Diccionario sentimental de la cultura inglesa",
+        "cover": "https://covers.openlibrary.org/b/id/13459481-L.jpg",
+        "description": "",
+        "publishedDate": "2014-11",
+        "publisher": "",
+        "isbn": "9788415174905",
+        "rating": "4.48",
+        "ratingsCount": "21",
+        "url": "https://www.goodreads.com/book/show/24501691-pompa-y-circunstancia"
+      },
+      {
         "title": "El español que enamoró al mundo",
         "cover": "",
         "description": "An image of seduction and success, wealth and fame, Julio Iglesias has achieved a global celebrity like no other Spaniard - with the exception of Dalí and Picasso - has achieved in our time. His career, however, has been riddled with contradictions: with more popular impact than approval from the cu",
@@ -20423,28 +20445,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
-      },
-      {
-        "title": "Un aire inglés: Ensayos hispano-británicos",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2021",
-        "publisher": "",
-        "isbn": "9788417425968",
-        "rating": "3.62",
-        "ratingsCount": "21",
-        "url": "https://www.goodreads.com/book/show/59779459-un-aire-ingl-s"
-      },
-      {
-        "title": "Pompa y circunstancia: Diccionario sentimental de la cultura inglesa",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2014-11",
-        "publisher": "",
-        "isbn": "9788415174905",
-        "rating": "4.48",
-        "ratingsCount": "21",
-        "url": "https://www.goodreads.com/book/show/24501691-pompa-y-circunstancia"
       },
       {
         "title": "Viridia Mundi",
@@ -22208,19 +22208,8 @@
         "url": "https://openlibrary.org/works/OL24623550W"
       },
       {
-        "title": "El Maravilloso, Singular y Sorprendente Libro de San Jorge - The Marvelous, Singular, and Suprising Book of Saint George",
-        "cover": "",
-        "description": "¡Os presentamos un libro sobre San Jorge único y singular como pocos! De los creadores de las series Agus y los monstruos y Bitmax&Co, Jaume Copons y Liliana Fortuny, este libro es un tributo a San Jorge a través de la leyenda, la historia y los lugares que han creado su imaginario a lo largo del ti",
-        "publishedDate": "2025-02",
-        "publisher": "",
-        "isbn": "9788411581462",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL42550231W"
-      },
-      {
         "title": "Animalada",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13923128-L.jpg",
         "description": "¡ Hola! Soy Agus Pianola y me encanta reencontrar a viejos amigos, como pasa en esta aventura. Unos laboratorios han creado unos pequeñ os tiranosaurios para venderlos como mascotas y todo el mundo está entusiasmado con la novedad, ¡ hasta que Galerna se ha llenado de pequeñ os T Rex y han comenzado",
         "publishedDate": "2023-03-08",
         "publisher": "Combel Ediciones Editorial Esin, S.A.",
@@ -22231,7 +22220,7 @@
       },
       {
         "title": "caso difícil",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13136076-L.jpg",
         "description": "¡Hola! Soy Agus Pianola. Ya sabéis que Lidia y yo hemos acabado siendo buenos amigos. Ahora pasa por un mal momento, porque su padre está metido en un buen lío, pero con la ayuda de los monstruos y la inspiración de los grandes detectives, vamos a solucionarlo. Porque los amigos también están para a",
         "publishedDate": "2023-01-10",
         "publisher": "",
@@ -22242,7 +22231,7 @@
       },
       {
         "title": "El Dragón de Oro",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/10668332-L.jpg",
         "description": "Unos cazadores han llegado al Bosque Azul en busca del dragón de oro. ¿Y si lo confunden con Rufus? Bitmax y los habitantes del bosque organizan un plan para protegerlo, pero... ¿qué hará Evo? Some hunters have come to the Blue Forest in search of the golden dragon. What if they mistake him for Rufu",
         "publishedDate": "2022-05",
         "publisher": "Bitmax",
@@ -22253,7 +22242,7 @@
       },
       {
         "title": "La Biblioteca Secreta",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/10227693-L.jpg",
         "description": "¡Hola! Soy Agus Pianola y, aunque no lo creáis, vivo con una cuadrilla de monstruos (¡de los buenos!, ¿eh?). Uno de ellos, el Sr. Flat, es mi mejor amigo. Mi vecina, Lidia, siempre tiene ideas geniales. Juntos intentamos detener las locuras que planea el Dr. Brot y su ayudante Nap. No sé cómo saldre",
         "publishedDate": "2021-05",
         "publisher": "Agus y Los Monstruos",
@@ -22261,6 +22250,17 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
+      },
+      {
+        "title": "El Maravilloso, Singular y Sorprendente Libro de San Jorge - The Marvelous, Singular, and Suprising Book of Saint George",
+        "cover": "",
+        "description": "¡Os presentamos un libro sobre San Jorge único y singular como pocos! De los creadores de las series Agus y los monstruos y Bitmax&Co, Jaume Copons y Liliana Fortuny, este libro es un tributo a San Jorge a través de la leyenda, la historia y los lugares que han creado su imaginario a lo largo del ti",
+        "publishedDate": "2025-02",
+        "publisher": "",
+        "isbn": "9788411581462",
+        "rating": "",
+        "ratingsCount": "",
+        "url": "https://openlibrary.org/works/OL42550231W"
       },
       {
         "title": "Los García y el muro",
@@ -24929,7 +24929,7 @@
       },
       {
         "title": "Dormido sobre los espejos",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13752305-L.jpg",
         "description": "Diego tiene 19 años cuando descubre que su abuelo, al que creía muerto, y del que la familia no habla, vive en Cuba. Cuando vaya a Cuba a buscarlo, conocerá a Tania, pero también descubrirà el pasado de su familia y la verdad de la historia de amor de su abuela Noelia, marcada por el tiempo y por el",
         "publishedDate": "2007-05",
         "publisher": "",
@@ -26464,7 +26464,7 @@
       },
       {
         "title": "Mentira / Lie",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/15172643-L.jpg",
         "description": "DUDAR DE TODO NUNCA FUE TAN ADICTIVO. EL AUTOR MÁS LEÍDO EN ESPAÑOL DESLUMBRA CON SU PRIMER THRILLER INDEPENDIENTE TRAS EL UNIVERSO REINA ROJA. «Lo ha conseguido: ésta es, sin duda, la mejor novela de Gómez-Jurado». ABC «El mejor thriller de los últimos veinte años. Una obra maestra». ZENDA «Mi trab",
         "publishedDate": "2026-06-23",
         "publisher": "EDICIONES B",
@@ -26475,7 +26475,7 @@
       },
       {
         "title": "Contrato con Dios",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/7964160-L.jpg",
         "description": "Financiada por un misterioso multimillonario norteamericano, y dirigida por un anciano arqueólogo israelí, una expedición secreta penetra en las profundidades del desierto de Jordania. A partir de dos mapas fragmentarios, se ha localizado por fin con mucha precisión el lugar en donde fue escondida e",
         "publishedDate": "2007",
         "publisher": "",
@@ -26803,6 +26803,17 @@
         "url": "https://openlibrary.org/works/OL21352250W"
       },
       {
+        "title": "Todos los perros son azules",
+        "cover": "https://covers.openlibrary.org/b/id/12340400-L.jpg",
+        "description": "",
+        "publishedDate": "2013",
+        "publisher": "",
+        "isbn": "9788415601272",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "El pasado anda atrás de nosotros",
         "cover": "",
         "description": "This is a novel about the past coming back. About family, former friends, an ex-girlfriend and Mexico. About the maturation process of a son whom his mother always accused of sneaking away, of avoiding the problem, of running away so as not to face reality... Until reality confronts him and there is",
@@ -26812,17 +26823,6 @@
         "rating": "3.76",
         "ratingsCount": "403",
         "url": "https://www.goodreads.com/book/show/205169782-el-pasado-anda-atr-s-de-nosotros"
-      },
-      {
-        "title": "Todos los perros son azules",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2013",
-        "publisher": "",
-        "isbn": "9788415601272",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       },
       {
         "title": "Quesadillas",
@@ -30916,7 +30916,7 @@
       },
       {
         "title": "Las hermanas Grimm",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/3334433-L.jpg",
         "description": "Orphans Sabrina and Daphne Grimm are sent to live with an eccentric grandmother that they have always believed to be dead.",
         "publishedDate": "2005",
         "publisher": "",
@@ -34157,7 +34157,7 @@
       },
       {
         "title": "Un mundo común",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/7376934-L.jpg",
         "description": "",
         "publishedDate": "2013-01",
         "publisher": "",
@@ -34165,6 +34165,28 @@
         "rating": "4.08",
         "ratingsCount": "144",
         "url": "https://www.goodreads.com/book/show/18303175-un-mundo-com-n"
+      },
+      {
+        "title": "La lengua en pedazos",
+        "cover": "https://covers.openlibrary.org/b/id/10829169-L.jpg",
+        "description": "",
+        "publishedDate": "2021",
+        "publisher": "",
+        "isbn": "9788495291950",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "Fuera de clase. Textos de filosofía de guerrilla",
+        "cover": "https://covers.openlibrary.org/b/id/7905122-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788416734580",
+        "rating": "4.06",
+        "ratingsCount": "177",
+        "url": "https://www.goodreads.com/book/show/33287757-fuera-de-clase-textos-de-filosof-a-de-guerrilla"
       },
       {
         "title": "La pasión de los extraños: Una filosofía de la amistad",
@@ -34178,17 +34200,6 @@
         "url": "https://www.goodreads.com/book/show/228023091-la-pasi-n-de-los-extra-os"
       },
       {
-        "title": "La lengua en pedazos",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2021",
-        "publisher": "",
-        "isbn": "9788495291950",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
         "title": "Malas compañías",
         "cover": "",
         "description": "",
@@ -34198,17 +34209,6 @@
         "rating": "3.38",
         "ratingsCount": "60",
         "url": "https://www.goodreads.com/book/show/62328837-malas-compa-as"
-      },
-      {
-        "title": "Fuera de clase. Textos de filosofía de guerrilla",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788416734580",
-        "rating": "4.06",
-        "ratingsCount": "177",
-        "url": "https://www.goodreads.com/book/show/33287757-fuera-de-clase-textos-de-filosof-a-de-guerrilla"
       },
       {
         "title": "Novo Iluminismo Radical",
@@ -34972,7 +34972,7 @@
       },
       {
         "title": "Una mujer con la cuna fracturada",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/10493438-L.jpg",
         "description": "",
         "publishedDate": "2020",
         "publisher": "",
@@ -39214,7 +39214,7 @@
       },
       {
         "title": "Bezimena",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13995958-L.jpg",
         "description": "Benny es un joven como los demás. De buena familia, con una buena educación, no le falta de nada. Y sin embargo... es diferente. Benny mira a las muchachas de una manera muy extraña. En su cabeza toman forma obsesiones innombrables. Tanto, que quizá le resulte difícil vivir en sociedad.",
         "publishedDate": "2019",
         "publisher": "",
@@ -39790,7 +39790,7 @@
       },
       {
         "title": "¡Vaya noche de Reyes!",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13752353-L.jpg",
         "description": "Bocagrande y Tapón son dos pajes del rey Melchor y juntos han vivido un montón de aventuras. Un noche de Reyes les pasó algo que recordarán siempre. Verás: Tapón es muy goloso y el cinco de enero no pudo evitar acercarse al rincón donde esperan las cajas de bombones para ser cargadas en los camellos",
         "publishedDate": "2004",
         "publisher": "",
@@ -40088,19 +40088,8 @@
         "url": "https://www.goodreads.com/book/show/75551234-els-sentinelles-de-la-llibertat"
       },
       {
-        "title": "No dormiràs",
-        "cover": "",
-        "description": "Un thriller psicológico trepidante que nos recuerda que el pasado siempre vuelve para rendir cuentas cuando menos te lo esperas. El Palau de la Música acoge el estreno de la gira mundial de la reconocida Orquesta Filarmónica de Barcelona, dirigida por Víctor Alemany, el gran maestro contemporáneo de",
-        "publishedDate": "2026-05-19",
-        "publisher": "Roca",
-        "isbn": "9791387629632",
-        "rating": "3.79",
-        "ratingsCount": "496",
-        "url": "https://www.goodreads.com/book/show/214368197-no-dormir-s"
-      },
-      {
         "title": "Malnacidos",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/14039498-L.jpg",
         "description": "",
         "publishedDate": "2013",
         "publisher": "",
@@ -40111,7 +40100,7 @@
       },
       {
         "title": "El Primate elegido",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/5270016-L.jpg",
         "description": "El exito obtenido por la Historia del tiempo, de Stephen Hawking, propicio la creacion, en 1991, de esta coleccion de divulgacion cientifica que fue dirigida durante largo tiempo por dos personas de formacion humanistica: de ahi ciertas contaminaciones al inicio de la coleccion. Sin embargo, cuando ",
         "publishedDate": "1996",
         "publisher": "",
@@ -40119,6 +40108,17 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
+      },
+      {
+        "title": "No dormiràs",
+        "cover": "",
+        "description": "Un thriller psicológico trepidante que nos recuerda que el pasado siempre vuelve para rendir cuentas cuando menos te lo esperas. El Palau de la Música acoge el estreno de la gira mundial de la reconocida Orquesta Filarmónica de Barcelona, dirigida por Víctor Alemany, el gran maestro contemporáneo de",
+        "publishedDate": "2026-05-19",
+        "publisher": "Roca",
+        "isbn": "9791387629632",
+        "rating": "3.79",
+        "ratingsCount": "496",
+        "url": "https://www.goodreads.com/book/show/214368197-no-dormir-s"
       },
       {
         "title": "Diví",
@@ -41355,6 +41355,17 @@
         "url": "https://openlibrary.org/works/OL5773995W"
       },
       {
+        "title": "Los contemplativos",
+        "cover": "https://covers.openlibrary.org/b/id/15171996-L.jpg",
+        "description": "«If you listen carefully to a story, you will never be the same again, since that story will enter your heart and, like a worm, it will end up gnawing away at all the obstacles that oppose the divine. So even if you read the stories in this book just to pass the time, there's no guarantee that one o",
+        "publishedDate": "2024-01-30",
+        "publisher": "Batiscafo",
+        "isbn": "9788419738059",
+        "rating": "3.43",
+        "ratingsCount": "97",
+        "url": "https://www.goodreads.com/book/show/195130138-los-contemplativos"
+      },
+      {
         "title": "Devoción",
         "cover": "",
         "description": "In the world of the spirit there are no borders, the absence of borders is what is truly spiritual. A mystic today can feel a mystic from any past, whether from his tradition or another, as a true brother. The author of Devotion arrives at this conclusion, as simple as it is universal, in his versio",
@@ -41364,17 +41375,6 @@
         "rating": "3.85",
         "ratingsCount": "100",
         "url": "https://www.goodreads.com/book/show/222741258-devoci-n"
-      },
-      {
-        "title": "Los contemplativos",
-        "cover": "",
-        "description": "«If you listen carefully to a story, you will never be the same again, since that story will enter your heart and, like a worm, it will end up gnawing away at all the obstacles that oppose the divine. So even if you read the stories in this book just to pass the time, there's no guarantee that one o",
-        "publishedDate": "2024-01-30",
-        "publisher": "Batiscafo",
-        "isbn": "9788419738059",
-        "rating": "3.43",
-        "ratingsCount": "97",
-        "url": "https://www.goodreads.com/book/show/195130138-los-contemplativos"
       },
       {
         "title": "Hacia una espiritualidad de la montaña",
@@ -42290,6 +42290,17 @@
         "url": ""
       },
       {
+        "title": "Medio ambiente y sociedad",
+        "cover": "https://covers.openlibrary.org/b/id/5277167-L.jpg",
+        "description": "Este libro responde a la necesidad de interpretar socialmente la problematica ecologica a la que se enfrentan quienes se dedican a la gestion, estudio e intervencion medioambiental. Para ello se muestra el amplio abanico metodologico e instrumental de la investigacion sociologica.",
+        "publishedDate": "2006",
+        "publisher": "Paraninfo",
+        "isbn": "9788497324984",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "El poder: Un estratega lee a Maquiavelo",
         "cover": "",
         "description": "Astucia, prudencia... Pedro Baños multiplica las enseñanzas de Maquiavelo y las actualiza cuando la realidad estratégica, que conoce tan bien, lo exige. ¿Cómo se alcanza el poder? ¿Cómo conservarlo? El poder cambia de forma o pasa de manos, pero siempre está ahí, muy presente. Nicolás Maquiavelo esc",
@@ -42299,17 +42310,6 @@
         "rating": "3.51",
         "ratingsCount": "197",
         "url": "https://www.goodreads.com/book/show/60223698-el-poder"
-      },
-      {
-        "title": "Medio ambiente y sociedad",
-        "cover": "",
-        "description": "Este libro responde a la necesidad de interpretar socialmente la problematica ecologica a la que se enfrentan quienes se dedican a la gestion, estudio e intervencion medioambiental. Para ello se muestra el amplio abanico metodologico e instrumental de la investigacion sociologica.",
-        "publishedDate": "2006",
-        "publisher": "Paraninfo",
-        "isbn": "9788497324984",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       },
       {
         "title": "Yonkis digitales",
@@ -42370,19 +42370,8 @@
         "url": "https://openlibrary.org/works/OL34892888W"
       },
       {
-        "title": "Las 7 Vidas De Federico Galante Gato: Novela De Suspenso Y..., Mucho Más",
-        "cover": "",
-        "description": "Suspenso, crimen, pasión, erotismo, misterio, intriga y conflictos existenciales. El presunto autor, siendo estudiante universitario, en un tétrico empleo para complementar su ingreso, se topa con un enigma, que descifrarlo, le lleva una vida. Descubre, a lo largo de la novela, que se trata de la hi",
-        "publishedDate": "2018-04-30",
-        "publisher": "",
-        "isbn": "9781506524245",
-        "rating": "0.00",
-        "ratingsCount": "0",
-        "url": "https://www.goodreads.com/book/show/40088026-las-7-vidas-de-federico-galante-gato"
-      },
-      {
         "title": "Donde lloran los demonios",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13695393-L.jpg",
         "description": "El inspector Cšar Giralt disfruta de una felicidad que le haba̕ sido negada desde el cruel asesinato de su hermana a manos del encerrador siete aǫs atrs̀. Pero cuando la vida por fin le muestra su lado ms̀ amable, la sombra de sus peores miedos regresa a Barcelona de la mano del invierno ms̀ fro̕ de",
         "publishedDate": "2018",
         "publisher": "",
@@ -42393,7 +42382,7 @@
       },
       {
         "title": "Los Galachos del Ebro",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/7435518-L.jpg",
         "description": "",
         "publishedDate": "2007",
         "publisher": "",
@@ -42401,6 +42390,17 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
+      },
+      {
+        "title": "Las 7 Vidas De Federico Galante Gato: Novela De Suspenso Y..., Mucho Más",
+        "cover": "",
+        "description": "Suspenso, crimen, pasión, erotismo, misterio, intriga y conflictos existenciales. El presunto autor, siendo estudiante universitario, en un tétrico empleo para complementar su ingreso, se topa con un enigma, que descifrarlo, le lleva una vida. Descubre, a lo largo de la novela, que se trata de la hi",
+        "publishedDate": "2018-04-30",
+        "publisher": "",
+        "isbn": "9781506524245",
+        "rating": "0.00",
+        "ratingsCount": "0",
+        "url": "https://www.goodreads.com/book/show/40088026-las-7-vidas-de-federico-galante-gato"
       },
       {
         "title": "Estudio de la calidad de los vertidos al mar en la provincia de Valencia",
@@ -43928,6 +43928,17 @@
         "url": "https://openlibrary.org/works/OL35218277W"
       },
       {
+        "title": "La parte del fuego",
+        "cover": "https://covers.openlibrary.org/b/id/14082561-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788412260274",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Submergir-se en el naufragi",
         "cover": "",
         "description": "",
@@ -44003,17 +44014,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL37590160W"
-      },
-      {
-        "title": "La parte del fuego",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788412260274",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/21058409.Pol_Guasch?from_search=true&amp;from_srp=true",
@@ -44405,7 +44405,7 @@
       },
       {
         "title": "Vuelta al Parc d'Aigüestortes en BTT",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13545603-L.jpg",
         "description": "Vuelta al Parc d'Aigüestortes en BTT es un libro doble. Por un lado es una descripción literaria de los lugares, las gentes y las costumbres que se conocen al hacer el recorrido perimetral del parque en bicicleta de montaña, y por otro es una relación detallada del itinerario y de sus característica",
         "publishedDate": "2009-06",
         "publisher": "",
@@ -44416,7 +44416,7 @@
       },
       {
         "title": "Recambios Luna",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13046978-L.jpg",
         "description": "Álex tiene 16 años y está harto de hacer Formación Profesional. Este curso ha suspendido ocho asignaturas de diez, por lo que decide dejar los estudios. Sus amigos Javi, Miguel y Salva tienen las mismas perspectivas de futuro que él. La misma noche de fin de curso, se reúnen todos en el local y deci",
         "publishedDate": "2003",
         "publisher": "",
@@ -45233,7 +45233,7 @@
       },
       {
         "title": "Londres",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/14098239-L.jpg",
         "description": "",
         "publishedDate": "2019",
         "publisher": "",
@@ -45508,7 +45508,7 @@
       },
       {
         "title": "Los indios no hacen ruido",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/14266382-L.jpg",
         "description": "",
         "publishedDate": "2006",
         "publisher": "",
@@ -45759,7 +45759,7 @@
       },
       {
         "title": "La diva",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/14858915-L.jpg",
         "description": "Reyes Monforte regresa con la apasionante novela sobre Adelina Patti, la mujer española que nació en una pensión y se convirtió en la mejor cantante de la historia. La soprano mejor pagada de la historia. La mujer más famosa del siglo XIX. La voz que enmudeció al mundo. Nueva York, 1851. Una niña pr",
         "publishedDate": "2025-08-19",
         "publisher": "Plaza & Janes Editores, S.A.",
@@ -46399,6 +46399,72 @@
         "url": "https://openlibrary.org/works/OL34317162W"
       },
       {
+        "title": "Abuelos, pirañas y otras historias",
+        "cover": "https://covers.openlibrary.org/b/id/10220778-L.jpg",
+        "description": "Nico y su abuelo Rodrigo van a pescar juntos, comparten momentos de lectura, hablan de arte, pasean en bicicleta y hacen los deberes de mates. Todo eso cuando no les toca huir de un montón de pirañas, claro. Con los abuelos y las abuelas, aprendemos, nos divertimos, nos emocionamos y traspasamos afe",
+        "publishedDate": "2020-03",
+        "publisher": "",
+        "isbn": "9788491423966",
+        "rating": "4.26",
+        "ratingsCount": "74",
+        "url": "https://www.goodreads.com/book/show/53839217-abuelos-pira-as-y-otras-historias"
+      },
+      {
+        "title": "de Que Color Es Un Beso?",
+        "cover": "https://covers.openlibrary.org/b/id/7411355-L.jpg",
+        "description": "\"A Minimoni le encanta pintar mil cosas de colores: mariquitas rojas, cielos azules, plátanos amarillos... pero nunca ha pintado un beso. ¿De qué color será? ¿Rojo como una deliciosa salsa de tomate? No, porque también es el color de cuando estás enfadado...¿Será verde como los cocodrilos, que siemp",
+        "publishedDate": "2018-05-15",
+        "publisher": "Algar Editorial",
+        "isbn": "9788498457841",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "La montaña de libros más alta del mundo",
+        "cover": "https://covers.openlibrary.org/b/id/8076423-L.jpg",
+        "description": "Billedbog. Lucas estaba convencido de que había nacido para volar. Miraba los aviones, intentaba fabricarse alas de todo tipo, pero nada parecía funcionar. Un día, su madre le explicó que había otras formas de cumplir su sueño y le puso un libro en las manos. Ese mismo día, sin darse cuenta, Lucas e",
+        "publishedDate": "2018-05-15",
+        "publisher": "",
+        "isbn": "9788491420507",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "Max y los superhéroes",
+        "cover": "https://covers.openlibrary.org/b/id/8076421-L.jpg",
+        "description": "\"A Max le fascinan todos los superhéroes, pero tiene uno favorito. En realidad, se trata de una superheroína: ¡Megapower! Ella es valiente, puede programar computadoras y desactivar bombas, tiene ultravisión y una descomunal... Pero lo mejor de todo es que Megapower es diferente a los otros superhér",
+        "publishedDate": "2018-05-15",
+        "publisher": "Algar Editorial",
+        "isbn": "9788491420231",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "Gracias",
+        "cover": "https://covers.openlibrary.org/b/id/11074420-L.jpg",
+        "description": "Gracias a una avería de Internet, la vida del vecindario cambiará del todo. Gracias a la valentía y la curiosidad, los vecinos y las vecinas llegarán lejos, muy lejos. Y lo harán juntos.Una historia sobre cómo un pequeño detalle puede mejorar nuestras vidas. Una historia sobre todos nosotros.El nuev",
+        "publishedDate": "2021",
+        "publisher": "",
+        "isbn": "9788491424628",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "¡Me enfado!",
+        "cover": "https://covers.openlibrary.org/b/id/13012152-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788491425465",
+        "rating": "",
+        "ratingsCount": "",
+        "url": "https://openlibrary.org/works/OL30937302W"
+      },
+      {
         "title": "Hora Del Baño",
         "cover": "",
         "description": "¡Es la hora del baño y Babymoni se está preparando! ¿Qué necesitará? Aprende con ella cómo tomar un baño y luego... ¡a jugar! Presentamos una nueva serie de libros Board Books basada en la querida serie Minimoni. Este libro lleva a los lectores a conocer a Minimoni cuando ella era bebé. En esta dulc",
@@ -46416,50 +46482,6 @@
         "publishedDate": "2025-11-04",
         "publisher": "Albatros Media",
         "isbn": "9788000076102",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "Abuelos, pirañas y otras historias",
-        "cover": "",
-        "description": "Nico y su abuelo Rodrigo van a pescar juntos, comparten momentos de lectura, hablan de arte, pasean en bicicleta y hacen los deberes de mates. Todo eso cuando no les toca huir de un montón de pirañas, claro. Con los abuelos y las abuelas, aprendemos, nos divertimos, nos emocionamos y traspasamos afe",
-        "publishedDate": "2020-03",
-        "publisher": "",
-        "isbn": "9788491423966",
-        "rating": "4.26",
-        "ratingsCount": "74",
-        "url": "https://www.goodreads.com/book/show/53839217-abuelos-pira-as-y-otras-historias"
-      },
-      {
-        "title": "de Que Color Es Un Beso?",
-        "cover": "",
-        "description": "\"A Minimoni le encanta pintar mil cosas de colores: mariquitas rojas, cielos azules, plátanos amarillos... pero nunca ha pintado un beso. ¿De qué color será? ¿Rojo como una deliciosa salsa de tomate? No, porque también es el color de cuando estás enfadado...¿Será verde como los cocodrilos, que siemp",
-        "publishedDate": "2018-05-15",
-        "publisher": "Algar Editorial",
-        "isbn": "9788498457841",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "La montaña de libros más alta del mundo",
-        "cover": "",
-        "description": "Billedbog. Lucas estaba convencido de que había nacido para volar. Miraba los aviones, intentaba fabricarse alas de todo tipo, pero nada parecía funcionar. Un día, su madre le explicó que había otras formas de cumplir su sueño y le puso un libro en las manos. Ese mismo día, sin darse cuenta, Lucas e",
-        "publishedDate": "2018-05-15",
-        "publisher": "",
-        "isbn": "9788491420507",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "Max y los superhéroes",
-        "cover": "",
-        "description": "\"A Max le fascinan todos los superhéroes, pero tiene uno favorito. En realidad, se trata de una superheroína: ¡Megapower! Ella es valiente, puede programar computadoras y desactivar bombas, tiene ultravisión y una descomunal... Pero lo mejor de todo es que Megapower es diferente a los otros superhér",
-        "publishedDate": "2018-05-15",
-        "publisher": "Algar Editorial",
-        "isbn": "9788491420231",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -46485,17 +46507,6 @@
         "rating": "4.23",
         "ratingsCount": "109",
         "url": "https://www.goodreads.com/book/show/45719951-te-aburres-minimoni"
-      },
-      {
-        "title": "Gracias",
-        "cover": "",
-        "description": "Gracias a una avería de Internet, la vida del vecindario cambiará del todo. Gracias a la valentía y la curiosidad, los vecinos y las vecinas llegarán lejos, muy lejos. Y lo harán juntos.Una historia sobre cómo un pequeño detalle puede mejorar nuestras vidas. Una historia sobre todos nosotros.El nuev",
-        "publishedDate": "2021",
-        "publisher": "",
-        "isbn": "9788491424628",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       },
       {
         "title": "The Highest Mountain of Books in the World",
@@ -46595,17 +46606,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL32687779W"
-      },
-      {
-        "title": "¡Me enfado!",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788491425465",
-        "rating": "",
-        "ratingsCount": "",
-        "url": "https://openlibrary.org/works/OL30937302W"
       },
       {
         "title": "M'enfade!",
@@ -46785,7 +46785,7 @@
       },
       {
         "title": "La piedra blanda",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/15133291-L.jpg",
         "description": "RODRIGO CORTÉS Y TOMÁS HIJO TALLAN CON LA PALABRA Y LA GUBIA UNA FÁBULA GRÁFICA ÚNICA «Los libros de Rodrigo Cortés contienen un espectáculo maravilloso y deslumbrante de imaginacióny fantasía. Es uno de nuestros escritores más originales, distintos, un elegido llamado a perdurar». Manuel Vilas «Tom",
         "publishedDate": "2025-09-23",
         "publisher": "Literatura Random House",
@@ -46796,7 +46796,7 @@
       },
       {
         "title": "A las 3 son las 2",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/15133272-L.jpg",
         "description": "",
         "publishedDate": "2013",
         "publisher": "",
@@ -46804,6 +46804,39 @@
         "rating": "4.04",
         "ratingsCount": "68",
         "url": "https://www.goodreads.com/book/show/20813772-a-las-3-son-las-2"
+      },
+      {
+        "title": "Administración del paisaje",
+        "cover": "https://covers.openlibrary.org/b/id/15133283-L.jpg",
+        "description": "",
+        "publishedDate": "1992",
+        "publisher": "",
+        "isbn": "9789580420279",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "Dormir es de patos",
+        "cover": "https://covers.openlibrary.org/b/id/15133278-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788415739142",
+        "rating": "3.97",
+        "ratingsCount": "60",
+        "url": "https://www.goodreads.com/book/show/28433750-dormir-es-de-patos"
+      },
+      {
+        "title": "Guía práctica de la gestión del patrimonio personal y empresarial",
+        "cover": "https://covers.openlibrary.org/b/id/14102734-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788499540504",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
       },
       {
         "title": "Concursante",
@@ -46839,28 +46872,6 @@
         "url": ""
       },
       {
-        "title": "Administración del paisaje",
-        "cover": "",
-        "description": "",
-        "publishedDate": "1992",
-        "publisher": "",
-        "isbn": "9789580420279",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "Dormir es de patos",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788415739142",
-        "rating": "3.97",
-        "ratingsCount": "60",
-        "url": "https://www.goodreads.com/book/show/28433750-dormir-es-de-patos"
-      },
-      {
         "title": "Buganvilia",
         "cover": "",
         "description": "",
@@ -46881,17 +46892,6 @@
         "rating": "2.40",
         "ratingsCount": "5",
         "url": "https://www.goodreads.com/book/show/17834670-patient"
-      },
-      {
-        "title": "Guía práctica de la gestión del patrimonio personal y empresarial",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788499540504",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/7058919.Rodrigo_Cort_s?from_search=true&amp;from_srp=true",
@@ -48724,23 +48724,23 @@
         "url": "https://www.goodreads.com/book/show/57292401-es-la-microbiota-idiota"
       },
       {
+        "title": "500 preguntas razonadas de medicina interna",
+        "cover": "https://covers.openlibrary.org/b/id/14233250-L.jpg",
+        "description": "",
+        "publishedDate": "2021",
+        "publisher": "",
+        "isbn": "9788418068669",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "El revolucionario mundo de los probióticos",
         "cover": "",
         "description": "\"La microbiota es el conjunto de microorganismos que viven dentro de tu cuerpo y realizan funciones decisivas para tu salud. Probablemente conoces su existencia, igual que la de los probióticos y los prebióticos, pero ¿sabes realmente algo sobre ellos? No te preocupes, Olalla Otero te cuenta qué son",
         "publishedDate": "2022",
         "publisher": "",
         "isbn": "9786070788321",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "500 preguntas razonadas de medicina interna",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2021",
-        "publisher": "",
-        "isbn": "9788418068669",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -49602,7 +49602,7 @@
       },
       {
         "title": "Los cinco reinos eternos (La puerta de los tres cerrojos, #3)",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/10239133-L.jpg",
         "description": "A Niko se le acumulan los problemas en los distintos mundos. El tiempo se ha vuelto loco en la Tierra y corre hacia atrás. Quiona ha quedado atrapada en el Reino de Tiempo y reclama su ayuda. Para devolver la armonía a los multiversos, Niko y sus amigos deberán atravesar agujeros de gusano, teleport",
         "publishedDate": "2019-11",
         "publisher": "",
@@ -49724,7 +49724,7 @@
       },
       {
         "title": "Como Ser Un Budista Millonario",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/12528263-L.jpg",
         "description": "What would our life be like if instead of learning to meet other people's expectations, we had learned to love ourselves above all else? Sonia Rico has created a decalogue of self-esteem that transforms the ten divine commands into as many commandments of happiness. Starting with self-love, which is",
         "publishedDate": "2021-11-23",
         "publisher": "Urano",
@@ -49732,6 +49732,39 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
+      },
+      {
+        "title": "Amar a un hombre que mata",
+        "cover": "https://covers.openlibrary.org/b/id/14045872-L.jpg",
+        "description": "",
+        "publishedDate": "2021",
+        "publisher": "",
+        "isbn": "9788412290080",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
+        "title": "A telephone rings",
+        "cover": "https://covers.openlibrary.org/b/id/14045932-L.jpg",
+        "description": "",
+        "publishedDate": "2019",
+        "publisher": "",
+        "isbn": "9788412006520",
+        "rating": "4.25",
+        "ratingsCount": "4",
+        "url": "https://www.goodreads.com/book/show/45033803-a-telephone-rings"
+      },
+      {
+        "title": "Entresuelo izquierda",
+        "cover": "https://covers.openlibrary.org/b/id/14045968-L.jpg",
+        "description": "",
+        "publishedDate": "2018",
+        "publisher": "",
+        "isbn": "9788494805516",
+        "rating": "4.67",
+        "ratingsCount": "6",
+        "url": "https://www.goodreads.com/book/show/40386561-entresuelo-izquierda"
       },
       {
         "title": "De Puertas para Adentro",
@@ -49754,39 +49787,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": ""
-      },
-      {
-        "title": "Amar a un hombre que mata",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2021",
-        "publisher": "",
-        "isbn": "9788412290080",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "A telephone rings",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2019",
-        "publisher": "",
-        "isbn": "9788412006520",
-        "rating": "4.25",
-        "ratingsCount": "4",
-        "url": "https://www.goodreads.com/book/show/45033803-a-telephone-rings"
-      },
-      {
-        "title": "Entresuelo izquierda",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2018",
-        "publisher": "",
-        "isbn": "9788494805516",
-        "rating": "4.67",
-        "ratingsCount": "6",
-        "url": "https://www.goodreads.com/book/show/40386561-entresuelo-izquierda"
       },
       {
         "title": "La Transparencia administrativa: la experiencia del Ayuntamiento de Badia del Vallès",
@@ -51334,7 +51334,7 @@
       },
       {
         "title": "La alimentación española",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/10494103-L.jpg",
         "description": "",
         "publishedDate": "2018",
         "publisher": "",
@@ -51752,6 +51752,17 @@
         "url": "https://openlibrary.org/works/OL22927532W"
       },
       {
+        "title": "Andrey nin. Siguiendo tus pasos",
+        "cover": "https://covers.openlibrary.org/b/id/8167604-L.jpg",
+        "description": "",
+        "publishedDate": "",
+        "publisher": "",
+        "isbn": "9788415944461",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Les noies de Sants",
         "cover": "",
         "description": "",
@@ -51849,17 +51860,6 @@
         "rating": "",
         "ratingsCount": "",
         "url": "https://openlibrary.org/works/OL25408567W"
-      },
-      {
-        "title": "Andrey nin. Siguiendo tus pasos",
-        "cover": "",
-        "description": "",
-        "publishedDate": "",
-        "publisher": "",
-        "isbn": "9788415944461",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
       }
     ],
     "goodreadsUrl": "https://www.goodreads.com/author/show/6524396.T_nia_Juste?from_search=true&amp;from_srp=true",
@@ -53256,7 +53256,7 @@
       },
       {
         "title": "Barcelona Suites",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13929094-L.jpg",
         "description": "",
         "publishedDate": "2019",
         "publisher": "",
@@ -53718,6 +53718,17 @@
         "url": "https://openlibrary.org/works/OL34891993W"
       },
       {
+        "title": "Salud capilar",
+        "cover": "https://covers.openlibrary.org/b/id/13622455-L.jpg",
+        "description": "1. Introducción. 2. Productos de higiene. 3. Cuero cabelludo sensible. 4. Cuero cabelludo seco o deshidratado. 5. Cuero cabelludo graso. 6. Descamación. 7. Dermatitis seborreica. 8. Alopecia (Congénita, androgénica, areata, por efluvio telógeno, por efluvio anágeno, cicatrizal, por tracción). 9. Pso",
+        "publishedDate": "2021",
+        "publisher": "",
+        "isbn": "9788418418945",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Efectos de los partos operatorios en el suelo pélvico",
         "cover": "",
         "description": "Entre los mitos y creencias sobre las disfunciones del suelo pelvico, se encuentran afirmaciones como: \"es consecuencia del envejecimiento,\" es natural despues de los partos..\". y puede que con razon. Por otra parte, nos encontramos con que se nos exige unos resultados perfectos tanto para la madre ",
@@ -53735,17 +53746,6 @@
         "publishedDate": "2022",
         "publisher": "",
         "isbn": "9788413530840",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "Salud capilar",
-        "cover": "",
-        "description": "1. Introducción. 2. Productos de higiene. 3. Cuero cabelludo sensible. 4. Cuero cabelludo seco o deshidratado. 5. Cuero cabelludo graso. 6. Descamación. 7. Dermatitis seborreica. 8. Alopecia (Congénita, androgénica, areata, por efluvio telógeno, por efluvio anágeno, cicatrizal, por tracción). 9. Pso",
-        "publishedDate": "2021",
-        "publisher": "",
-        "isbn": "9788418418945",
         "rating": "",
         "ratingsCount": "",
         "url": ""
@@ -54093,7 +54093,7 @@
       },
       {
         "title": "El señor Ibrahim y las flores del Corán",
-        "cover": "",
+        "cover": "https://covers.openlibrary.org/b/id/13972076-L.jpg",
         "description": "",
         "publishedDate": "2017-06",
         "publisher": "",
@@ -54334,23 +54334,23 @@
         "url": "https://www.goodreads.com/book/show/247779054-el-dolor-est-en-tu-cabeza-no-en-tu-cuerpo"
       },
       {
+        "title": "Los 120 días de Sodoma",
+        "cover": "https://covers.openlibrary.org/b/id/7267328-L.jpg",
+        "description": "",
+        "publishedDate": "2012-10",
+        "publisher": "",
+        "isbn": "9788493997489",
+        "rating": "",
+        "ratingsCount": "",
+        "url": ""
+      },
+      {
         "title": "Bug",
         "cover": "",
         "description": "Este bicho, creado por Miguel Ángel Martín como complemento para la serie de los álbumes de su personaje más famoso, Brian the Brain, vive aventuras mudas y en blanco y negro, lo que permite demostrar la enorme capacidad narrativa de Martín y su facilidad para contar con el mínimo número de elemento",
         "publishedDate": "2011-09-12",
         "publisher": "",
         "isbn": "9788493891374",
-        "rating": "",
-        "ratingsCount": "",
-        "url": ""
-      },
-      {
-        "title": "Los 120 días de Sodoma",
-        "cover": "",
-        "description": "",
-        "publishedDate": "2012-10",
-        "publisher": "",
-        "isbn": "9788493997489",
         "rating": "",
         "ratingsCount": "",
         "url": ""

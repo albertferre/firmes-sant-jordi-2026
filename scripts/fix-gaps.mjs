@@ -136,7 +136,7 @@ async function main() {
   const data = JSON.parse(readFileSync(AUTHORS_PATH, 'utf-8'));
   const authors = Object.values(data);
 
-  let photosFixed = 0, booksFixed = 0, presentingFixed = 0;
+  let photosFixed = 0, booksFixed = 0, presentingFixed = 0, coversFixed = 0;
 
   for (let i = 0; i < authors.length; i++) {
     const a = authors[i];
@@ -144,8 +144,10 @@ async function main() {
     if (!a.photo) needs.push('foto');
     if (!a.books?.length) needs.push('llibres');
     if (!a.presentingBook && a.books?.length) needs.push('presenting');
+    const needsCovers = a.books?.some(b => !b.cover && b.isbn);
+    if (needsCovers) needs.push('covers');
 
-    if (needs.length === 0 && a.presentingBook) continue;
+    if (needs.length === 0) continue;
 
     process.stdout.write(`[${i + 1}/${authors.length}] ${a.name}...`);
 
@@ -180,6 +182,25 @@ async function main() {
       presentingFixed++;
     }
 
+    // 4. Fix missing covers via Open Library ISBN lookup
+    if (a.books?.length) {
+      for (const book of a.books) {
+        if (book.cover || !book.isbn) continue;
+        try {
+          const res = await fetch(`https://openlibrary.org/isbn/${book.isbn}.json`, { headers: HEADERS });
+          if (res.ok) {
+            const olData = await res.json();
+            const coverId = olData.covers?.[0];
+            if (coverId && coverId > 0) {
+              book.cover = `https://covers.openlibrary.org/b/id/${coverId}-L.jpg`;
+              coversFixed++;
+            }
+          }
+        } catch { /* ignore */ }
+        await sleep(300);
+      }
+    }
+
     const fixed = [];
     if (a.photo && needs.includes('foto')) fixed.push('foto✓');
     if (a.books?.length && needs.includes('llibres')) fixed.push('llibres✓');
@@ -198,6 +219,7 @@ async function main() {
   console.log(`Photos fixed: ${photosFixed} → ${withPhoto}/${total} (${Math.round(withPhoto*100/total)}%)`);
   console.log(`Books fixed: ${booksFixed} → ${withBooks}/${total} (${Math.round(withBooks*100/total)}%)`);
   console.log(`Presenting: ${presentingFixed} → ${withPresenting}/${total} (${Math.round(withPresenting*100/total)}%)`);
+  console.log(`Covers fixed by ISBN: ${coversFixed}`);
 }
 
 main().catch(console.error);
