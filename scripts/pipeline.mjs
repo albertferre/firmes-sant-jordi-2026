@@ -48,14 +48,15 @@ const steps = [
   { n: 1, name: 'Discover author URLs on all sources', cmd: `node ${resolve(__dirname, 'discover-authors.mjs')}` },
   { n: 2, name: 'Scrape full bibliographies from all sources', cmd: `node ${resolve(__dirname, 'scrape-bibliographies.mjs')} ${resume}` },
   { n: 3, name: 'Deduplicate and merge books across sources', cmd: `node ${resolve(__dirname, 'dedup-books.mjs')}` },
-  { n: 4, name: 'Collect raw bios from all sources', cmd: `node ${resolve(__dirname, 'collect-raw-bios.mjs')} ${resume}` },
-  { n: 5, name: 'Generate bilingual bios via Claude Haiku', cmd: `node ${resolve(__dirname, 'generate-bios-llm.mjs')} ${resume}` },
-  { n: 6, name: 'Fetch social links (Wikidata + Planeta)', cmd: `node ${resolve(__dirname, 'fetch-social-links.mjs')} ${resume}` },
-  { n: 7, name: 'Fill gaps (photos, presentingBook)', cmd: `node ${resolve(__dirname, 'fix-gaps.mjs')}` },
-  { n: 8, name: 'Consolidate links', cmd: `node ${resolve(__dirname, 'consolidate-links.mjs')}` },
-  { n: 9, name: 'Cleanup (publisher links, placeholders)', cmd: `node ${resolve(__dirname, 'cleanup.mjs')}` },
-  { n: 10, name: 'Verify data integrity', cmd: `node ${resolve(__dirname, 'test-pipeline.mjs')}` },
-  { n: 11, name: 'Split author data for lazy loading', cmd: `node ${resolve(__dirname, 'split-author-data.mjs')}` },
+  { n: 4, name: 'Validate data quality (wrong GR, homonyms)', cmd: `node ${resolve(__dirname, 'validate-authors.mjs')}` },
+  { n: 5, name: 'Collect raw bios from all sources', cmd: `node ${resolve(__dirname, 'collect-raw-bios.mjs')} ${resume}` },
+  { n: 6, name: 'Generate bilingual bios via Claude Haiku', cmd: `node ${resolve(__dirname, 'generate-bios-llm.mjs')} ${resume}` },
+  { n: 7, name: 'Fetch social links (Wikidata + Planeta)', cmd: `node ${resolve(__dirname, 'fetch-social-links.mjs')} ${resume}` },
+  { n: 8, name: 'Fill gaps (photos, presentingBook)', cmd: `node ${resolve(__dirname, 'fix-gaps.mjs')}` },
+  { n: 9, name: 'Consolidate links', cmd: `node ${resolve(__dirname, 'consolidate-links.mjs')}` },
+  { n: 10, name: 'Cleanup (publisher links, placeholders)', cmd: `node ${resolve(__dirname, 'cleanup.mjs')}` },
+  { n: 11, name: 'Verify data integrity', cmd: `node ${resolve(__dirname, 'test-pipeline.mjs')}` },
+  { n: 12, name: 'Split author data for lazy loading', cmd: `node ${resolve(__dirname, 'split-author-data.mjs')}` },
 ];
 
 console.log('╔══════════════════════════════════════════════════╗');

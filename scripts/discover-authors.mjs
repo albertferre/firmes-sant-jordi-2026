@@ -139,7 +139,11 @@ async function searchGoodreads(authorName) {
     const matches = [...html.matchAll(pattern)];
 
     const authorNorm = normalize(authorName);
-    const authorParts = authorNorm.split(' ').filter(p => p.length > 2 && !['del', 'las', 'los', 'les', 'the'].includes(p));
+    const particles = new Set(['del', 'las', 'los', 'les', 'the', 'de', 'la', 'el', 'i', 'y']);
+    const authorParts = authorNorm.split(' ').filter(p => p.length > 2 && !particles.has(p));
+
+    // For names with ≤1 significant part (Nina, Zahara, Custodio), require exact full match
+    const needsExactMatch = authorParts.length <= 1;
 
     const seen = new Set();
     for (const m of matches) {
@@ -150,20 +154,29 @@ async function searchGoodreads(authorName) {
       seen.add(key);
 
       const displayNorm = normalize(displayName);
+
+      // Exact match mode for short/single-word names
+      if (needsExactMatch) {
+        if (displayNorm === authorNorm) {
+          const fullUrl = grUrl.startsWith('http') ? grUrl : `https://www.goodreads.com${grUrl}`;
+          return fullUrl.replace(/&amp;/g, '&');
+        }
+        continue;
+      }
+
       const displayParts = displayNorm.split(' ').filter(p => p.length > 2);
       if (!displayParts.length) continue;
 
+      // Count exact word matches (no prefix matching — too loose)
       let matchCount = 0;
       for (const ap of authorParts) {
         for (const dp of displayParts) {
-          if (ap === dp || (ap.length > 3 && dp.startsWith(ap)) || (dp.length > 3 && ap.startsWith(dp))) {
-            matchCount++;
-            break;
-          }
+          if (ap === dp) { matchCount++; break; }
         }
       }
 
-      const threshold = Math.min(2, authorParts.length);
+      // Always require at least 2 matching parts
+      const threshold = Math.max(2, Math.ceil(authorParts.length * 0.6));
       if (matchCount >= threshold) {
         const fullUrl = grUrl.startsWith('http') ? grUrl : `https://www.goodreads.com${grUrl}`;
         return fullUrl.replace(/&amp;/g, '&');
