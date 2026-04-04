@@ -65,6 +65,6 @@ export interface AuthorInfo {
   links: AuthorLinks;
 }
 
-export type ActiveView = 'list' | 'favorites' | 'author';
+export type ActiveView = 'list' | 'favorites' | 'map' | 'author';
 
 export type Locale = 'ca' | 'es';

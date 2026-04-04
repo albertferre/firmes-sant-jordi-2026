@@ -8,12 +8,12 @@ import { useFavorites } from './hooks/useFavorites';
 import { useDarkMode } from './hooks/useDarkMode';
 import { useI18n } from './i18n/I18nContext';
 import { Header } from './components/Header';
-import { SearchBar } from './components/SearchBar';
 import { Filters } from './components/Filters';
 import { SigningList } from './components/SigningList';
 import { BottomNav } from './components/BottomNav';
 import { FeaturedCards } from './components/FeaturedCards';
 import { AuthorDetail } from './components/AuthorDetail';
+import { MapView } from './components/MapView';
 
 const signings: Signing[] = signingsData as Signing[];
 const authorsIndex: Record<string, AuthorIndex> = authorsIndexRaw as unknown as Record<string, AuthorIndex>;
@@ -63,6 +63,14 @@ function App() {
     setActiveView('list');
   }, []);
 
+  const handleSearchChange = useCallback((value: string) => {
+    setSearchText(value);
+    if (value && activeView !== 'list') {
+      setSelectedAuthor(null);
+      setActiveView('list');
+    }
+  }, [activeView, setSearchText]);
+
   const handleViewChange = useCallback((view: ActiveView) => {
     if (view !== 'author') {
       setSelectedAuthor(null);
@@ -103,6 +111,8 @@ function App() {
         favoritesCount={favoriteIds.size}
         theme={theme}
         onToggleTheme={toggleTheme}
+        searchText={searchText}
+        onSearchChange={handleSearchChange}
       />
 
       <main className="relative z-10 pt-[72px] pb-24 lg:pb-8">
@@ -120,12 +130,18 @@ function App() {
                   La Diada de <br />
                   <span className="text-primary font-bold not-italic">Sant Jordi</span>
                 </h2>
-                <div className="max-w-xl">
-                  <SearchBar value={searchText} onChange={setSearchText} />
-                </div>
               </div>
             </div>
           </section>
+        )}
+
+        {/* Map view — full width, no padding */}
+        {activeView === 'map' && (
+          <MapView
+            signings={signings}
+            authorsData={authorsIndex}
+            onAuthorClick={handleAuthorClick}
+          />
         )}
 
         <div className="px-6 lg:px-12 max-w-screen-2xl mx-auto">
