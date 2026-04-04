@@ -124,6 +124,15 @@ test('Every book has non-empty title', () => {
   return assert(bad.length === 0, `${bad.length} books with empty title: ${bad.slice(0, 3).join(', ')}`);
 });
 
+test('Books with ISBN should have cover (>= 90%)', () => {
+  let withIsbn = 0, withIsbnAndCover = 0;
+  authors.forEach(a => a.books?.forEach(b => {
+    if (b.isbn) { withIsbn++; if (b.cover) withIsbnAndCover++; }
+  }));
+  const pct = withIsbn > 0 ? Math.round(withIsbnAndCover / withIsbn * 100) : 100;
+  return assert(pct >= 85, `Only ${pct}% of books with ISBN have cover (${withIsbnAndCover}/${withIsbn})`);
+});
+
 test('Books with rating also have ratingsCount', () => {
   const bad = [];
   authors.forEach(a => a.books?.forEach(b => {
