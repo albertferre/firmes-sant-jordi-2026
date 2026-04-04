@@ -1,12 +1,12 @@
-import type { AuthorInfo, Signing } from '../types';
+import type { AuthorIndex, Signing } from '../types';
 import { useI18n } from '../i18n/I18nContext';
 import { isEventDay } from '../hooks/useEventDay';
 
 interface FeaturedCardsProps {
   signings: Signing[];
-  authorsData: Record<string, AuthorInfo>;
+  authorsData: Record<string, AuthorIndex>;
   onToggleFavorite: (id: string) => void;
-  isFavorite: (id: string) => boolean;
+  favoriteIds: Set<string>;
   onAuthorClick?: (authorName: string) => void;
 }
 
@@ -20,13 +20,25 @@ const bgColors = [
   'bg-jordi-green-surface',
 ];
 
-export function FeaturedCards({ signings, authorsData, onToggleFavorite, isFavorite, onAuthorClick }: FeaturedCardsProps) {
+export function FeaturedCards({ signings, authorsData, onToggleFavorite, favoriteIds, onAuthorClick }: FeaturedCardsProps) {
   const { t } = useI18n();
   const live = isEventDay();
 
-  // Pick first signings that have confirmed time + location
-  const featured = signings
-    .filter((s) => s.startTime && s.endTime && s.location !== 'Per confirmar')
+  // Pick most popular authors with confirmed time + location, one per author
+  const seen = new Set<string>();
+  const candidates = signings.filter((s) => {
+    if (!s.startTime || !s.endTime || s.location === 'Per confirmar') return false;
+    if (seen.has(s.author)) return false;
+    seen.add(s.author);
+    return true;
+  });
+  // Sort by Goodreads followers (best popularity proxy)
+  const featured = candidates
+    .sort((a, b) => {
+      const fA = authorsData[a.author]?.goodreadsFollowers || 0;
+      const fB = authorsData[b.author]?.goodreadsFollowers || 0;
+      return fB - fA;
+    })
     .slice(0, 6);
 
   if (featured.length === 0) return null;
@@ -50,11 +62,11 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, isFavor
       {/* Mobile: horizontal scroll / Desktop: 3-column grid */}
       <div className="flex lg:grid lg:grid-cols-3 gap-5 overflow-x-auto lg:overflow-visible hide-scrollbar -mx-6 px-6 lg:mx-0 lg:px-0 snap-x lg:snap-none">
         {featured.map((signing, i) => {
-          const fav = isFavorite(signing.id);
+          const fav = favoriteIds.has(signing.id);
           const bgColor = bgColors[i % bgColors.length];
           const authorInfo = authorsData[signing.author];
           const authorPhoto = authorInfo?.photo;
-          const bookTitle = signing.book || authorInfo?.books?.[0]?.title || '';
+          const bookTitle = signing.book || authorInfo?.presentingBook || '';
           return (
             <div
               key={signing.id}
@@ -65,6 +77,9 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, isFavor
                 <div
                   className={`w-24 h-28 lg:w-28 lg:h-32 rounded-lg ${bgColor} flex-shrink-0 relative overflow-hidden ${onAuthorClick ? 'cursor-pointer' : ''}`}
                   onClick={onAuthorClick ? () => onAuthorClick(signing.author) : undefined}
+                  onKeyDown={onAuthorClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onAuthorClick(signing.author); } } : undefined}
+                  role={onAuthorClick ? 'button' : undefined}
+                  tabIndex={onAuthorClick ? 0 : undefined}
                 >
                   {authorPhoto ? (
                     <img
@@ -86,6 +101,9 @@ export function FeaturedCards({ signings, authorsData, onToggleFavorite, isFavor
                     <h3
                       className={`font-headline text-xl lg:text-2xl text-on-surface dark:text-surface-highest leading-tight mb-1 ${onAuthorClick ? 'cursor-pointer hover:text-primary transition-colors' : ''}`}
                       onClick={onAuthorClick ? () => onAuthorClick(signing.author) : undefined}
+                      onKeyDown={onAuthorClick ? (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); onAuthorClick(signing.author); } } : undefined}
+                      role={onAuthorClick ? 'button' : undefined}
+                      tabIndex={onAuthorClick ? 0 : undefined}
                     >
                       {signing.author}
                     </h3>

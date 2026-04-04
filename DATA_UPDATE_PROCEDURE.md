@@ -1,16 +1,67 @@
 # Procediment d'actualització de dades
 
+## Script d'actualització automatitzat
+
+```bash
+# Mostra un informe comparatiu (no modifica res)
+python3 scripts/update-signings.py
+
+# Aplica les noves entrades detectades
+python3 scripts/update-signings.py --apply
+
+# Informe + recerca de noves fonts
+python3 scripts/update-signings.py --research
+
+# Tot: aplica + recerca
+python3 scripts/update-signings.py --apply --research
+```
+
+L'script fa:
+1. Descarrega i compara dades de **Flourish** (ECI + Ona Llibres) i **PDFs de Casa del Llibre**
+2. Sondeja l'estat de les pàgines de Planeta, Penguin, FNAC, CdL
+3. Detecta entrades noves, duplicades i variants ortogràfiques (fuzzy matching)
+4. Amb `--research`: explora fonts addicionals (Abacus, La Central, Laie, Gremi, Ajuntament...)
+5. Amb `--apply`: afegeix les entrades noves a `signings.json` amb IDs i coordenades correctes
+
 ## Fonts de dades
+
+### Fonts automatitzades (scraper integrat)
 
 | Font | URL | Tipus | Notes |
 |------|-----|-------|-------|
-| Casa del Llibre | casadellibro.com/firmas-sant-jordi | PDFs descarregables | 3 ubicacions a BCN. PDFs amb horaris exactes |
-| El Corte Inglés | elcorteingles.es/centroscomerciales/es/eci/agendas/San-Jordi-cataluna | Web | Sovint timeout, cal reintentar |
-| beteve.cat (Flourish) | public.flourish.studio/visualisation/28186563/visualisation.json | JSON directe | Taula amb autors, ubicació, adreça, horari. ~187 entrades (ECI + Ona Llibres) |
-| CASA SEAT | Xarxes socials / web CASA SEAT | Variada | Firmes pròpies |
-| Editorials (Planeta, Anagrama, etc.) | Xarxes socials / notes de premsa | Variada | Confirmen autors setmanes abans |
-| FNAC / Abacus | Webs respectives | Web | Solen publicar ~1-2 setmanes abans |
-| Llibreries independents (Laie, etc.) | Xarxes socials / webs | Variada | Calendari propi |
+| beteve.cat (Flourish) | `public.flourish.studio/visualisation/28186563/visualisation.json` | JSON directe | ~187 entrades (ECI + Ona Llibres). Dades a `data.rows` |
+| Casa del Llibre | `imagessl.casadellibro.com/documentacion/sj-firmas-*-a4-2025.pdf` | PDFs | 3 ubicacions BCN. URLs amb "2025" serveixen l'edició actual. L'script prova 2026 primer |
+
+### Fonts monitoritzades (probe automàtic)
+
+L'script comprova si aquestes fonts ja tenen horaris disponibles:
+
+| Font | URL | Estat típic |
+|------|-----|-------------|
+| Planeta de Libros | `planetadelibros.com/firmas-sant-jordi` | Activa ~2 setmanes abans |
+| Penguin Random House | `santjordi.penguinllibres.com` | Activa ~1-2 setmanes abans |
+| Penguin Libros (ES) | `santjordi.penguinlibros.com` | Activa ~1-2 setmanes abans |
+| FNAC | `fnac.es/Firmas-de-libros-Sant-Jordi-2026-autores-y-horarios-en-Fnac/cp16524/w-4` | 403 o activa ~1 setmana abans |
+| Casa del Llibre (web) | `casadellibro.com/firmas-sant-jordi` | Activa (amb links als PDFs) |
+
+### Fonts explorades amb `--research`
+
+| Font | URL | Què buscar |
+|------|-----|------------|
+| Abacus | `abacus.coop/ca/sant-jordi` | Firmes a botigues Abacus |
+| La Central | `lacentral.com` | Firmes a La Central del Raval |
+| Laie | `laie.es` | Firmes a Llibreria Laie |
+| Gremi de Llibreters | `gremidellibreters.cat` | Informació general de parades |
+| Ajuntament BCN | `barcelona.cat/santjordi/ca` | Superilla literària, permisos |
+| beteve.cat agenda | `beteve.cat/agenda/sant-jordi-barcelona/` | Informació general + noves fonts |
+
+### Fonts manuals (no automatitzables)
+
+| Font | On buscar | Notes |
+|------|-----------|-------|
+| CASA SEAT | Xarxes socials / web CASA SEAT | Firmes pròpies |
+| Editorials petites | Instagram / Twitter | Anuncien autors individualment |
+| Llibreries independents | Xarxes socials / webs | Calendari propi |
 
 ## Format de dades (`signings.json`)
 
@@ -18,14 +69,15 @@ Cada entrada ha de tenir:
 
 ```json
 {
-  "id": "<prefix>-<number>",     // Ex: "cdl-04", "planeta-01"
+  "id": "<prefix>-<number>",
   "author": "Nom Autor",
-  "book": "",                     // Títol si es coneix
-  "publisher": "Editorial",       // O font (Casa del Llibre, CASA SEAT...)
+  "book": "",
+  "publisher": "Editorial",
   "location": "Nom del lloc",
   "address": "Adreça completa",
   "coordinates": { "lat": 41.XXXX, "lng": 2.XXXX },
-  "startTime": "HH:MM",          // Format 24h
+  "date": "2026-04-23",
+  "startTime": "HH:MM",
   "endTime": "HH:MM"
 }
 ```
@@ -45,6 +97,8 @@ Cada entrada ha de tenir:
 | `laie-` | Llibreria Laie |
 | `varios-` | Altres / múltiples fonts |
 | `jsif-` | Jordi Sierra i Fabra (confirmació individual) |
+| `fnac-` | FNAC (quan estigui disponible) |
+| `abacus-` | Abacus (quan estigui disponible) |
 
 ### Coordenades de les ubicacions conegudes
 
@@ -63,45 +117,30 @@ CCCB:                                               41.3836, 2.1673
 Biblioteca Jaume Fuster:                            41.4089, 2.1514
 ```
 
-## Pas a pas per actualitzar
+## Procediment manual (quan cal afegir fonts noves)
 
 ### 1. Recollir dades noves
 
 ```bash
-# beteve.cat / Flourish - descarregar JSON (ECI + Ona Llibres)
-curl -sL "https://public.flourish.studio/visualisation/28186563/visualisation.json" -o /tmp/flourish_vis.json
-python3 -c "
-import json
-with open('/tmp/flourish_vis.json') as f:
-    data = json.load(f)
-rows = data['data']['rows']
-print(f'Columns: {rows[0]}')
-print(f'Data rows: {len(rows)-1}')
-for row in rows[1:]:
-    print(f'{row[0]:30s} | {row[1]:20s} | {row[2]:30s} | {row[3]}')
-"
+# Primer, executar l'script automatitzat amb recerca
+python3 scripts/update-signings.py --research
 
-# Casa del Llibre - descarregar PDFs
-curl -sL -o /tmp/cdl-pgracia-av.pdf "https://imagessl.casadellibro.com/documentacion/sj-firmas-pgracia-entre-arago-i-valencia-a4-2025.pdf"
-curl -sL -o /tmp/cdl-pgracia-dc.pdf "https://imagessl.casadellibro.com/documentacion/sj-firmas-pgracia-entre-diputacio-i-consell-de-cent--a4-2025.pdf"
-curl -sL -o /tmp/cdl-psantjoan.pdf "https://imagessl.casadellibro.com/documentacion/sj-firmas-psantjoan-entre-ausias-marc-i-casp--a4-2025.pdf"
-
-# Extraure text amb pdfplumber (pip install pdfplumber)
-python3 -c "
-import pdfplumber
-for f in ['/tmp/cdl-pgracia-av.pdf', '/tmp/cdl-pgracia-dc.pdf', '/tmp/cdl-psantjoan.pdf']:
-    with pdfplumber.open(f) as pdf:
-        for page in pdf.pages:
-            print(page.extract_text())
+# Si es detecten noves fonts amb dades (★), investigar manualment
+# Per exemple, per a Abacus:
+curl -sL "https://www.abacus.coop/ca/sant-jordi" | python3 -c "
+import sys
+html = sys.stdin.read()
+# Buscar patrons de firmes
+import re
+for m in re.findall(r'(?:firma|signatura|dedicat)[^<]{0,200}', html, re.I):
+    print(m[:150])
 "
 ```
 
 ### 2. Comparar amb dades existents
 
-Abans d'afegir, verificar duplicats:
-
 ```bash
-# Llistar autors actuals
+# L'script ja fa la comparació, però per verificar manualment:
 python3 -c "
 import json
 with open('src/data/signings.json') as f:
@@ -115,17 +154,14 @@ for e in sorted(data, key=lambda x: x['author']):
 
 **Regles de merge:**
 - Si un autor existeix amb `location: "Per confirmar"` -> actualitzar amb les noves dades
-- Si un autor ja té ubicació i les noves dades són per un altre lloc/hora -> afegir nova entrada (un autor pot firmar a múltiples llocs)
+- Si un autor ja té ubicació i les noves dades són per un altre lloc/hora -> afegir nova entrada
 - Si un autor té múltiples franges horàries al mateix lloc -> crear una entrada per franja
 - Mantenir sempre els IDs existents (no canviar IDs ja publicats)
 
 ### 4. Validar
 
 ```bash
-# Comprovar JSON vàlid
-python3 -c "import json; json.load(open('src/data/signings.json')); print('OK')"
-
-# Estadístiques
+# Comprovar JSON vàlid + estadístiques
 python3 -c "
 import json
 with open('src/data/signings.json') as f:
@@ -133,7 +169,8 @@ with open('src/data/signings.json') as f:
 total = len(data)
 confirmed = sum(1 for e in data if e['location'] != 'Per confirmar')
 with_time = sum(1 for e in data if e.get('startTime'))
-print(f'Total: {total} | Amb ubicació: {confirmed} | Amb horari: {with_time}')
+with_date = sum(1 for e in data if e.get('date'))
+print(f'Total: {total} | Amb ubicació: {confirmed} | Amb horari: {with_time} | Amb data: {with_date}')
 "
 
 # Build
@@ -149,16 +186,18 @@ git commit -m "feat: update data with [font] signings ([N] total)"
 
 ## Calendari típic de publicació
 
-| Quan | Què s'espera |
-|------|-------------|
-| Març | Editorials grans confirmen autors (sense horaris) |
-| 1-2 setmanes abans (7-16 abril) | Horaris i ubicacions concretes |
-| Última setmana (17-22 abril) | Canvis d'última hora, confirmacions finals |
-| 23 abril (Sant Jordi) | Canvis en temps real |
+| Quan | Què s'espera | Acció |
+|------|-------------|-------|
+| Març | Editorials grans confirmen autors (sense horaris) | `python3 scripts/update-signings.py --research` |
+| 1-2 setmanes abans (7-16 abril) | Horaris i ubicacions concretes | `python3 scripts/update-signings.py --apply` |
+| Última setmana (17-22 abril) | Canvis d'última hora, confirmacions finals | Executar script diàriament |
+| 23 abril (Sant Jordi) | Canvis en temps real | Actualització manual |
 
 ## Problemes coneguts
 
-- **El Corte Inglés**: La pàgina fa timeout freqüentment. Cal reintentar o buscar manualment.
-- **beteve.cat / Flourish**: El JSON és accessible directament a `public.flourish.studio/visualisation/28186563/visualisation.json`. Les dades estan a `data.rows` (array d'arrays, primera fila = header). Inclou El Corte Inglés i Ona Llibres.
-- **URLs dels PDFs de Casa del Llibre**: Contenen "2025" a la URL però són per l'edició actual. Caldrà actualitzar l'any si canvien els paths.
+- **El Corte Inglés**: La pàgina fa timeout o retorna 403 freqüentment. Les dades d'ECI s'obtenen via Flourish/beteve.cat.
+- **beteve.cat / Flourish**: El JSON és accessible directament. Les dades estan a `data.rows` (array d'arrays, primera fila = header). Inclou El Corte Inglés i Ona Llibres.
+- **URLs dels PDFs de Casa del Llibre**: Contenen "2025" a la URL però serveixen l'edició actual. L'script prova primer les URLs amb "2026".
 - **Autors amb múltiples sessions**: Un autor pot firmar a 2-3 franges horàries o a múltiples llocs. Cada sessió = una entrada separada al JSON.
+- **Variants ortogràfiques**: L'script utilitza fuzzy matching (Levenshtein + bigrams) per detectar noms com "Eduardo Mendonza" vs "Eduardo Mendoza". Variants detectades es marquen amb ≈.
+- **FNAC**: Retorna 403 amb fetches automatitzats. Cal consultar manualment o provar amb un navegador.

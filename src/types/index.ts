@@ -13,21 +13,58 @@ export interface Signing {
 
 export interface AuthorBook {
   title: string;
+  cover: string;
+  description: string;
+  publishedDate: string;
+  publisher: string;
+  isbn: string;
+  rating: string;
+  ratingsCount: string;
   url: string;
+}
+
+export interface AuthorIndex {
+  name: string;
+  photo: string;
+  presentingBook: string;
+  goodreadsFollowers: number;
+  goodreadsUrl: string;
+  openLibraryUrl: string;
+  wikiUrl: string;
+  planetaUrl: string;
+}
+
+export interface AuthorLinks {
+  goodreads?: string;
+  wikipediaEs?: string;
+  wikipediaCa?: string;
+  planeta?: string;
+  googleBooks?: string;
+  twitter?: string;
+  instagram?: string;
+  youtube?: string;
+  tiktok?: string;
+  facebook?: string;
+  website?: string;
 }
 
 export interface AuthorInfo {
   name: string;
-  goodreadsUrl: string;
   photo: string;
-  bio: string;
-  bornInfo: string;
-  rating: string;
-  ratingsCount: string;
+  bioEs: string;
+  bioCa: string;
+  generatedBioEs: string;
+  generatedBioCa: string;
+  presentingBook: string;
   books: AuthorBook[];
-  genres: string[];
+  goodreadsUrl: string;
+  openLibraryUrl: string;
+  goodreadsFollowers: number;
+  wikiUrl: string;
+  planetaUrl: string;
+  links: AuthorLinks;
 }
 
-export type ActiveView = 'list' | 'favorites' | 'map' | 'author';
+export type ActiveView = 'list' | 'favorites' | 'author';
 
 export type Locale = 'ca' | 'es';

@@ -1,6 +1,8 @@
-import { useMemo, useState, useCallback } from 'react';
-import type { ActiveView, AuthorInfo, Signing } from './types';
+import { useMemo, useState, useCallback, useRef } from 'react';
+import { Analytics } from '@vercel/analytics/react';
+import type { ActiveView, AuthorIndex, AuthorInfo, Signing } from './types';
 import signingsData from './data/signings.json';
+import authorsIndexRaw from './data/authors-index.json';
 import { useFilters } from './hooks/useFilters';
 import { useFavorites } from './hooks/useFavorites';
 import { useDarkMode } from './hooks/useDarkMode';
@@ -9,39 +11,21 @@ import { Header } from './components/Header';
 import { SearchBar } from './components/SearchBar';
 import { Filters } from './components/Filters';
 import { SigningList } from './components/SigningList';
-import { MapView } from './components/MapView';
 import { BottomNav } from './components/BottomNav';
 import { FeaturedCards } from './components/FeaturedCards';
 import { AuthorDetail } from './components/AuthorDetail';
-import authorsDataRaw from './data/authors.json';
 
 const signings: Signing[] = signingsData as Signing[];
-const authorsData: Record<string, AuthorInfo> = authorsDataRaw as unknown as Record<string, AuthorInfo>;
+const authorsIndex: Record<string, AuthorIndex> = authorsIndexRaw as unknown as Record<string, AuthorIndex>;
 
 function App() {
   const [activeView, setActiveView] = useState<ActiveView>('list');
   const [selectedAuthor, setSelectedAuthor] = useState<string | null>(null);
-  const { favoriteIds, toggleFavorite, isFavorite } = useFavorites();
+  const [authorsDetail, setAuthorsDetail] = useState<Record<string, AuthorInfo>>({});
+  const detailLoadedRef = useRef(false);
+  const { favoriteIds, toggleFavorite } = useFavorites();
   const { theme, toggleTheme } = useDarkMode();
   const { t } = useI18n();
-
-  const handleAuthorClick = useCallback((authorName: string) => {
-    setSelectedAuthor(authorName);
-    setActiveView('author');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
-
-  const handleBackFromAuthor = useCallback(() => {
-    setSelectedAuthor(null);
-    setActiveView('list');
-  }, []);
-
-  const handleViewChange = useCallback((view: ActiveView) => {
-    if (view !== 'author') {
-      setSelectedAuthor(null);
-    }
-    setActiveView(view);
-  }, []);
   const {
     searchText,
     setSearchText,
@@ -54,6 +38,41 @@ function App() {
     filtered,
   } = useFilters(signings);
 
+  const loadAuthorsDetail = useCallback(async () => {
+    if (detailLoadedRef.current) return;
+    detailLoadedRef.current = true;
+    try {
+      const res = await fetch('/data/authors.json');
+      const data = await res.json();
+      setAuthorsDetail(data as Record<string, AuthorInfo>);
+    } catch (err) {
+      console.error('Failed to load author details:', err);
+      detailLoadedRef.current = false;
+    }
+  }, []);
+
+  const handleAuthorClick = useCallback((authorName: string) => {
+    setSelectedAuthor(authorName);
+    setActiveView('author');
+    loadAuthorsDetail();
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [loadAuthorsDetail]);
+
+  const handleBackFromAuthor = useCallback(() => {
+    setSelectedAuthor(null);
+    setActiveView('list');
+  }, []);
+
+  const handleViewChange = useCallback((view: ActiveView) => {
+    if (view !== 'author') {
+      setSelectedAuthor(null);
+    }
+    if (view !== 'list') {
+      setSearchText('');
+    }
+    setActiveView(view);
+  }, [setSearchText]);
+
   const favoriteSignings = useMemo(
     () => signings.filter((s) => favoriteIds.has(s.id)),
     [favoriteIds],
@@ -61,7 +80,7 @@ function App() {
 
   const displayedSignings = activeView === 'favorites' ? favoriteSignings : filtered;
 
-  const authorInfo = selectedAuthor ? authorsData[selectedAuthor] ?? null : null;
+  const authorInfo = selectedAuthor ? authorsDetail[selectedAuthor] ?? null : null;
 
   return (
     <div className="min-h-screen transition-colors overflow-x-hidden">
@@ -69,10 +88,10 @@ function App() {
       <div className="fixed inset-0 noise-overlay z-0" />
 
       {/* Bookmark ribbon - desktop only */}
-      <div className="hidden lg:block fixed top-0 left-12 w-8 h-32 z-[60] shadow-xl bookmark-ribbon" style={{ background: 'linear-gradient(to bottom, #b10528 0%, #b10528 55%, #1a6b5a 55%, #1a6b5a 100%)' }} aria-hidden="true">
-        <div className="flex flex-col items-center pt-8 text-on-primary gap-4">
+      <div className="hidden lg:block fixed top-0 left-3 w-8 h-32 z-[60] shadow-xl bookmark-ribbon" aria-hidden="true">
+        <div className="flex flex-col items-center pt-6 text-on-primary">
           <span className="material-symbols-outlined text-sm">local_florist</span>
-          <div className="w-[1px] h-12 bg-on-primary/30" />
+          <div className="w-[1px] h-16 bg-on-primary/30" />
         </div>
       </div>
 
@@ -116,7 +135,7 @@ function App() {
               author={authorInfo}
               authorName={selectedAuthor}
               signings={signings}
-              isFavorite={isFavorite}
+              favoriteIds={favoriteIds}
               onToggleFavorite={toggleFavorite}
               onBack={handleBackFromAuthor}
             />
@@ -149,23 +168,21 @@ function App() {
           )}
 
           {/* Content */}
-          {activeView === 'map' ? (
-            <MapView signings={displayedSignings} />
-          ) : activeView !== 'author' ? (
+          {activeView !== 'author' ? (
             <>
-              {/* Featured cards - only on list view without active filters */}
-              {activeView === 'list' && !searchText && !locationFilter && !timeSlotFilter && (
+              {/* Featured cards - on list view, dynamic with filters */}
+              {activeView === 'list' && !searchText && (
                 <FeaturedCards
                   signings={filtered}
-                  authorsData={authorsData}
+                  authorsData={authorsIndex}
                   onToggleFavorite={toggleFavorite}
-                  isFavorite={isFavorite}
+                  favoriteIds={favoriteIds}
                   onAuthorClick={handleAuthorClick}
                 />
               )}
 
               {/* Section header for upcoming signings */}
-              {activeView === 'list' && !searchText && !locationFilter && !timeSlotFilter && (
+              {activeView === 'list' && (
                 <h2 className="font-headline text-3xl lg:text-4xl text-on-surface dark:text-surface-highest mb-6">
                   <span className="text-jordi-green mr-1">&mdash;</span> {t('upcomingSignings')}
                 </h2>
@@ -173,8 +190,8 @@ function App() {
 
               <SigningList
                 signings={displayedSignings}
-                authorsData={authorsData}
-                isFavorite={isFavorite}
+                authorsData={authorsIndex}
+                favoriteIds={favoriteIds}
                 onToggleFavorite={toggleFavorite}
                 onAuthorClick={handleAuthorClick}
                 emptyStateType={activeView === 'favorites' ? 'noFavorites' : 'noResults'}
@@ -202,6 +219,7 @@ function App() {
         onViewChange={handleViewChange}
         favoritesCount={favoriteIds.size}
       />
+      <Analytics />
     </div>
   );
 }

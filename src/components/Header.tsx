@@ -14,9 +14,8 @@ interface HeaderProps {
 export function Header({ activeView, onViewChange, totalSignings, filteredCount, favoritesCount, theme, onToggleTheme }: HeaderProps) {
   const { locale, setLocale, t } = useI18n();
 
-  const navItems: { view: 'list' | 'map' | 'favorites'; label: string }[] = [
+  const navItems: { view: 'list' | 'favorites'; label: string }[] = [
     { view: 'list', label: t('list') },
-    { view: 'map', label: t('map') },
     { view: 'favorites', label: `${t('favorites')}${favoritesCount > 0 ? ` (${favoritesCount})` : ''}` },
   ];
 
@@ -37,7 +36,7 @@ export function Header({ activeView, onViewChange, totalSignings, filteredCount,
           </div>
 
           {/* Desktop navigation */}
-          <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
+          <nav className="hidden lg:flex items-center gap-6" aria-label="Desktop navigation">
             {navItems.map(({ view, label }) => (
               <button
                 key={view}
